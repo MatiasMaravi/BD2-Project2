@@ -1,5 +1,6 @@
 import math
 import numpy as np
+from collections import defaultdict
 def tf_dic(tf) -> dict:
     for token, books in tf.items():
         for book, freq in books.items():
@@ -13,55 +14,32 @@ def idf_dic(df, num_textos) -> dict:
         # df[token] = math.log10(num_textos / df[token])
     return df
 
-def tf(books,textos) -> dict:
-    frecuencia = {}
-    tokens = []
-    #1. Crear una lista de tokens general
-    for i in books:
-        tokens+=i
+def tf(books, textos) -> dict:
+    frecuencia = defaultdict(lambda: defaultdict(int))
 
-    tokens=set(tokens)
-
-    #2. Crear la matriz de frecuencias de cada documento
-    for i,libro in enumerate(books):
-
-        tokens_libro = libro
-
-        for token in tokens:
-            if token not in frecuencia:
-                frecuencia[token] = {textos[i]: 0}
-            else:
-                frecuencia[token][textos[i]] = 0
-
-        for token_libro in tokens_libro:
-            if token_libro in frecuencia:
-                frecuencia[token_libro][textos[i]] += 1
-
-    frecuencia= dict(sorted(frecuencia.items()))
-    return frecuencia
+    for i, libro in enumerate(books):
+        for token in libro:
+            frecuencia[token][textos[i]] += 1
+    
+    return dict(frecuencia)
 
 def df(books) -> dict:
-    pesos={}
-    for i in books:
-        lista=set(i)
-        for j in lista:
-            if j not in pesos:
-                pesos[j]=1
-            else:
-                pesos[j]+=1
+    pesos = defaultdict(int)
 
-    pesos=dict(sorted(pesos.items()))
-    return pesos
+    for libro in books:
+        for token in set(libro):
+            pesos[token] += 1
+
+    return dict(pesos)
+
 
 # La norma se saca a partir de los pesos tf-idf
-def norma(tf,idf,collection_text) -> dict:
-    length={}
-    TF = np.array([[tf[token][collection_text[i]] for token in tf] for i,tokens in enumerate(collection_text)])
-    IDF = np.array([idf[token] for token in idf])
-    
-    TF_IDF=TF*IDF
+def norma(tf, idf, collection_text) -> dict:
+    length = {}
 
-    for i,book in enumerate(collection_text):
-        length[book]=np.linalg.norm(TF_IDF[i])
+    TF_IDF = np.array([[tf[token][book] * idf[token] for token in tf] for book in collection_text])
+
+    for i, book in enumerate(collection_text):
+        length[book] = np.linalg.norm(TF_IDF[i])
 
     return length
