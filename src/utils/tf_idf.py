@@ -1,16 +1,16 @@
 import math
 import numpy as np
 def tf_dic(tf) -> dict:
-    #np.log10(1 + np.array([[TF[token]['libro'+ str(i+1)] for token in TF] for i,book in enumerate(collection)]))
-    for token in tf:
-        for book in tf[token]:
-            tf[token][book]=math.log10(1+ tf[token][book])
+    for token, books in tf.items():
+        for book, freq in books.items():
+            books[book] = math.log10(1 + freq)
     return tf
-def idf_dic(df,num_textos) -> dict:
-    #IDF = np.log10(len(collection)/np.array([DF[token] for token in DF]))
-    for token in df:
-        df[token]=math.log10(num_textos/df[token])
 
+def idf_dic(df, num_textos) -> dict:
+    div = math.log10(num_textos)
+    for token in df:
+        df[token] = div - math.log10(df[token])
+        # df[token] = math.log10(num_textos / df[token])
     return df
 
 def tf(books,textos) -> dict:
