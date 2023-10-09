@@ -2,7 +2,7 @@ import nltk
 from nltk.stem.snowball import SnowballStemmer
 
 
-with open("stoplist.txt", encoding='latin1', ) as file:
+with open("docs/stoplist.txt", encoding='latin1', ) as file:
     stoplist = [line.rstrip().lower() for line in file]
 
 def preprocesamiento(texto):
