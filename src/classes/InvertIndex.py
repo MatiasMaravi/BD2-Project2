@@ -1,3 +1,5 @@
+import concurrent.futures # para procesamiento paralelo
+import os
 import json
 import math
 import numpy as np
@@ -19,14 +21,15 @@ class InvertIndex:
         except FileNotFoundError:
             print("El archivo de índice no existe. Debe construirlo primero usando la función `building`.") 
     def building(self, collection_text):
-        # build the inverted index with the collection
-        textos_procesados = []
-        
-        for file_name in collection_text:
-            file = open("docs/"+file_name)
-            texto = file.read().rstrip()
-            texto = preprocesamiento(texto)  
-            textos_procesados.append(texto) 
+        # Procesamiento en paralelo
+        def process_file(file_name):
+            with open(os.path.join("docs", file_name), 'r') as file:
+                texto = file.read().rstrip()
+                return preprocesamiento(texto)
+
+        # Procesamiento paralelo para leer y preprocesar los documentos
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            textos_procesados = list(executor.map(process_file, collection_text))
 
         # compute the tf
         self.index=tf_dic(tf(textos_procesados,collection_text))
@@ -35,8 +38,6 @@ class InvertIndex:
         self.idf=idf_dic(df(textos_procesados),len(textos_procesados))
     
         # compute the length (norm)
-        
-        #self.length=norm(textos_procesados,collection_text)
         self.length=norma(self.index,self.idf,collection_text)
 
         # store in disk
@@ -47,6 +48,7 @@ class InvertIndex:
         }
         with open(self.index_file, 'w') as f:
             json.dump(data, f)
+            
     def retrieval(self, query, k):
         self.load_index(self.index_file)
         # diccionario para el score
