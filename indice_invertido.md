@@ -29,7 +29,7 @@ class InvertIndex:
             print("El archivo de índice no existe. Debe construirlo primero usando la función `building`.") 
 ```
 
-- En la funcion `building()` construimos el indice invertido a partir de los documentos que se encuentran en la carpeta `docs` y lo guardamos en el archivo `index.json`.
+- En la funcion `building()` construimos el indice invertido a partir de los documentos que se encuentran en la carpeta `docs` y lo guardamos en el archivo `index.json`, esto lo realizamos con el proposito de evitar recalculos al momento de querer usar el indice invertido , es decir, lo calculamos una vez y lo guardamos para una futura utilizacion del mismo, ademas que si el indice invertido es muy grande no se podria tener en memoria principal `(RAM)`, por ello se lleva a memoria secundaria.
 
 ``` python
     def building(self, collection_text):
@@ -147,6 +147,17 @@ def retrieval(self, query, k):
                 
         return frecuencia
     ```
+  - `tf_dic()` es esta funcion normalizamos los pesos tf de cada palabra en cada documento,esto lo realizamos aplicando la funcion `math.log10()`, la cual calcula el logaritmo en base 10.
+
+    ``` python
+    def tf_dic(tf):
+        #np.log10(1 + np.array([[TF[token]['libro'+ str(i+1)] for token in TF] for i,book in enumerate(collection)]))
+        for token in tf:
+            for book in tf[token]:
+                tf[token][book]=math.log10(1+ tf[token][book])
+        return tf  
+    ```     
+
   - `df()` la cual calcula el df de cada palabra, es decir la cantidad de documentos en los que aparece cada palabra.
 
     ``` python
@@ -165,7 +176,21 @@ def retrieval(self, query, k):
         pesos=dict(sorted(pesos.items()))            
         return pesos 
     ```
-  - `norma()` la cual calcula la norma de cada documento.
+  - `idf_dic()` en esta funcion hallamos el peso idf de cada palabra, asi como tambien la normalizacion la cual realizamos a travez de la funcion `math.log10()`.
+
+    ``` python
+    def idf_dic(df,num_textos):
+        #IDF = np.log10(len(collection)/np.array([DF[token] for token in DF]))
+        for token in df:
+            df[token]=math.log10(num_textos/df[token])
+
+        return df
+    ```
+
+  - `norma()` en esta funcion hallamos la norma de un documento, la cual consiste en la raiz cuadrada de la sumatoria de los cuadrados de cada valor de frecuencia de los terminos de un documento, esto lo determinamos de manera mas simplificada con la funcion `np.lialg.norm`.
+
+     ![Alt text](image.png)
+
 
     ``` python
     # La norma se saca a partir de los pesos tf-idf
