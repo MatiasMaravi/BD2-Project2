@@ -4,15 +4,6 @@ from nltk.stem.snowball import SnowballStemmer
 
 with open("docs/stoplist.txt", encoding='latin1', ) as file:
     stoplist = [line.rstrip().lower() for line in file]
-
-def preprocesamiento(texto):
-  # Tokenizar
-    tokens = nltk.word_tokenize(texto)
-    tokens = [word.lower() for word in tokens if word.isalpha()] #Lo volvemos minuscula
-  # filtrar stopwords
-    tokens = [word for word in tokens if word.lower() not in stoplist]
-  # reducir palabras
-    stemmer = SnowballStemmer("spanish")
-    tokens = [stemmer.stem(word) for word in tokens]
-
-    return tokens
+stemmer = SnowballStemmer("spanish")
+def preprocesamiento(texto) -> list:
+    return [stemmer.stem(word.lower()) for word in nltk.word_tokenize(texto) if word.isalpha() and word.lower() not in stoplist]

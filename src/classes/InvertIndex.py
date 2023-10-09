@@ -49,13 +49,10 @@ class InvertIndex:
             json.dump(data, f)
     def retrieval(self, query, k):
         self.load_index(self.index_file)
-
         # diccionario para el score
         score = {}
-
         # preprocesar la query: extraer los terminos unicos
         queryPrep = preprocesamiento(query)
-
         # aplicar similitud de coseno y guardarlo en el diccionario score
         for key in self.length.keys():
             score[key] = 0
