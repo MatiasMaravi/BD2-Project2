@@ -15,10 +15,14 @@ Un equipo diverso y apasionado de estudiantes está detrás de este proyecto, li
 | Jose Leandro Machaca Soloaga        | JLeandroJM       |
 ## 📂 Estructura del Repositorio
 
-- 📁 `docs`: En esta carpeta están los archivos txt con los libros y el stoplist.
+- 📁 `assets`: En esta carpeta se encuentran los archivos estáticos del proyecto.
+- | 📁 `docs`: En esta carpeta se encuentran los documentos de texto que explican el proyecto.
+- | 📁 `images`: En esta carpeta se encuentran las imágenes que se usan en el proyecto.
+- | 📁 `resources`: En esta carpeta se encuentran los archivos auxiliares del proyecto.
+- 📁 `books`: En esta carpeta se encuentran los libros que se usan en el proyecto para realizar las consultas.
 - 📁 `src`: En esta carpeta esta todo nuesto código fuente
-- 📁 `src/classes`: En esta carpeta se encuentran todas las clases que definimos para nuestro proyecto
-- 📁 `src/utils`: En esta carpeta se encuentran todas las funciones auxiliares necesarias para el proyecto
+- |📁 `classes`: En esta carpeta se encuentran todas las clases que definimos para nuestro proyecto
+- |📁 `utils`: En esta carpeta se encuentran todas las funciones auxiliares necesarias para el proyecto
 - 📄 `README.md`: ¡Estás aquí! Este archivo contiene la información esencial que necesitas para comprender el proyecto.
 
 ## 🚀 Obejtivos del Proyecto
