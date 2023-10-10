@@ -1,6 +1,6 @@
 from src.classes.InvertIndex import InvertIndex
 
-textos = ["libro1.txt","libro2.txt","libro3.txt","libro4.txt","libro5.txt","libro6.txt"]
+textos = ["books/libro1.txt","books/libro2.txt","books/libro3.txt","books/libro4.txt","books/libro5.txt","books/libro6.txt"]
 A1 = InvertIndex("indice_invertido.json")
 A1.building(textos)
 

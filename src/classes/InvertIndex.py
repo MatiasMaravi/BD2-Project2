@@ -7,11 +7,11 @@ from ..utils.preprocesar import preprocesamiento
 from ..utils.tf_idf import tf_dic, idf_dic, tf, df, norma
 class InvertIndex:
     def __init__(self, index_file) -> None:
-        self.index_file = index_file
+        self.index_file = os.path.join("data",index_file) #Para guardar el archivo en la carpeta data
         self.index = {}
         self.idf = {}
         self.length = {}
-    def load_index(self, index_file):
+    def load_index(self, index_file) -> None:
         try:
             with open(index_file, 'r') as f:
                 data = json.load(f)
@@ -21,10 +21,10 @@ class InvertIndex:
         except FileNotFoundError:
             print("El archivo de índice no existe. Debe construirlo primero usando la función `building`.") 
 
-    def building(self, collection_text):
+    def building(self, collection_text) -> None:
         # Procesamiento en paralelo
         def process_file(file_name):
-            with open(os.path.join("docs", file_name), 'r') as file:
+            with open( file_name, 'r') as file:
                 texto = file.read().rstrip()
                 return preprocesamiento(texto)
 
@@ -50,7 +50,7 @@ class InvertIndex:
         with open(self.index_file, 'w') as f:
             json.dump(data, f)
     
-    def validate_query(self, query_term_unic):
+    def validate_query(self, query_term_unic) -> set:
         aux = set()
         for term in query_term_unic:
         # Validamos si existe el término en nuestros diccionarios
@@ -58,7 +58,7 @@ class InvertIndex:
                 aux.add(term)
         return aux
     
-    def retrieval(self, query, k):
+    def retrieval(self, query, k) -> list:
         self.load_index(self.index_file)
         # preprocesar la query: extraer los terminos unicos
         queryPrep = preprocesamiento(query)
