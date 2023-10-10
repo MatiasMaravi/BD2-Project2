@@ -7,7 +7,7 @@ from ..utils.preprocesar import preprocesamiento
 from ..utils.tf_idf import tf_dic, idf_dic, tf, df, norma
 class InvertIndex:
     def __init__(self, index_file) -> None:
-        self.index_file = index_file
+        self.index_file = os.path.join("data",index_file) #Para guardar el archivo en la carpeta data
         self.index = {}
         self.idf = {}
         self.length = {}
@@ -24,7 +24,7 @@ class InvertIndex:
     def building(self, collection_text) -> None:
         # Procesamiento en paralelo
         def process_file(file_name):
-            with open(os.path.join("books", file_name), 'r') as file:
+            with open( file_name, 'r') as file:
                 texto = file.read().rstrip()
                 return preprocesamiento(texto)
 
