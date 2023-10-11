@@ -4,7 +4,7 @@ El siguiente proyecto trata sobre entender y aplicar los algoritmos de
 búsqueda y recuperación de la información basado en el contenido. 
 ## 🧑‍🤝‍🧑 Integrantes del Equipo
 
-Un equipo diverso y apasionado de estudiantes está detrás de este proyecto, listo para sumergirse en el reino de las mariposas y el aprendizaje automático. Permítanos presentarnos:
+Un equipo diverso y apasionado de estudiantes está detrás de este proyecto, listo para sumergirse en el reino de las búsquedas y de la indexación multidimensional. Permítanos presentarnos:
 
 | Nombre Completo                     | Usuario Github   |
 |-------------------------------------|------------------|
@@ -25,7 +25,7 @@ Un equipo diverso y apasionado de estudiantes está detrás de este proyecto, li
 - |📁 `utils`: En esta carpeta se encuentran todas las funciones auxiliares necesarias para el proyecto
 - 📄 `README.md`: ¡Estás aquí! Este archivo contiene la información esencial que necesitas para comprender el proyecto.
 
-## 🚀 Obejtivos del Proyecto
+## 🚀 Objetivos del Proyecto
 El proyecto se divide en dos
 partes: 
 1. **Construcción eficiente de un Índice  Invertido** para tareas de búsqueda y recuperación en
