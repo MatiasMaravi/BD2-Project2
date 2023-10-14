@@ -1,16 +1,14 @@
-
-collection = ["doc1.txt", "doc2.txt", "doc3.txt", "doc4.txt", "doc5.txt"]
+import tempfile
+collection = ["/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc1.txt", "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc2.txt", "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc3.txt", "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc4.txt", "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc5.txt"]
 
 def BSBindexConstrucction():
     n = 0
+    merge_output_files = []
     while not all_documents_processed():
         n = n+1
         tokenstream = parse_document()
-        ouputfile = SPIMI_invert(tokenstream)
-
-        if n == 1:
-            merge_output_files = [ouputfile]
-        else:
+        if tokenstream is not None:
+            ouputfile = SPIMI_invert(tokenstream)
             merge_output_files.append(ouputfile)
 
     final_index = merge(merge_output_files)
@@ -71,3 +69,23 @@ def merge(files):
     
         outputfile.seek(0)
         return outputfile
+
+
+def parse_document():
+    document = collection.pop()
+    with open(document, 'r') as file:
+        for line in file:
+            for token in line.split():
+                yield token
+    return document
+
+index = BSBindexConstrucction()
+
+# Leer y mostrar el contenido del archivo temporal
+with open(index.name, 'r') as index_file:
+    index_content = index_file.read()
+    print("Índice Invertido Final:")
+    print(index_content)
+
+# Cerrar y eliminar el archivo temporal
+index.close()
