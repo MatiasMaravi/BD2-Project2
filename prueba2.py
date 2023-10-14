@@ -54,4 +54,5 @@ inverted_index = BSBindexConstrucction()
 
 # Mostrar el índice invertido en formato JSON
 print(json.dumps(inverted_index, indent=4))
-
+with open("json-data.json", "w") as file:
+   json.dump(inverted_index, file)
