@@ -1,12 +1,13 @@
 import tempfile
 import json
+import psutil
 
 collection = [
-    "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc1.txt",
-    "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc2.txt",
-    "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc3.txt",
-    "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc4.txt",
-    "/Users/pierre/Documents/5-ciclo/BaseDeDatosII/BD2-Project2/doc/doc5.txt"
+    "doc/doc1.txt",
+    "doc/doc2.txt",
+    "doc/doc3.txt",
+    "doc/doc4.txt",
+    "doc/doc5.txt"
 ]
 
 def BSBindexConstrucction():
@@ -50,9 +51,17 @@ def parse_document(document):
             for token in line.split():
                 yield token
 
+initialRam = psutil.virtual_memory().available
+
 inverted_index = BSBindexConstrucction()
 
 # Mostrar el índice invertido en formato JSON
 print(json.dumps(inverted_index, indent=4))
 with open("json-data.json", "w") as file:
    json.dump(inverted_index, file)
+
+finalRam = psutil.virtual_memory().available
+
+print("Initial Ram:", initialRam)
+print("Final RAM:", finalRam)
+print("Difference RAM:", initialRam - finalRam)
