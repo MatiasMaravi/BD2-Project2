@@ -1,5 +1,9 @@
 import psutil
 import json
+import nltk
+from nltk.stem.snowball import SnowballStemmer
+from nltk.tokenize import RegexpTokenizer
+nltk.download('punkt')
 
 collection = [
     "doc/doc1.txt",
@@ -8,19 +12,6 @@ collection = [
     "doc/doc4.txt",
     "doc/doc5.txt"
 ]
-
-def BSBindexConstrucction():
-    n = 0
-    inverted_index = {}
-
-    while not all_documents_processed():
-        n = n + 1
-        document = get_current_document()
-        tokenstream = parse_document(document)
-        if tokenstream is not None:
-            update_inverted_index(inverted_index, tokenstream, document)
-
-    return inverted_index
 
 def BSBIndexConstruction (collection: list):
     files = list()
@@ -32,7 +23,7 @@ def BSBIndexConstruction (collection: list):
         nFile = SPIMI_Invert(tokenStream)
         files.append(nFile)
 
-    return MergeBlocks(files, mergedFile)
+    return mergeBlocks(files, mergedFile)
 
 def allDocumentsProcessed (collection: list):
     # Retorna True si la lista está vacía
@@ -42,5 +33,52 @@ def getCurrentDoc (collection: list):
     # Retorna el último valor de la lista
     return collection.pop()
 
-def SPIMI_Invert (tokenStream):
-    return False
+def parseDoc (document: str):
+    with open("stoplist.txt", encoding='latin1') as file:
+        stoplist = [line.rstrip().lower() for line in file]
+    
+    # Obtener el texto del documento
+    texto = document.read()
+    
+    # Tokenizar
+    tokens = []
+    tk = RegexpTokenizer(r'\w+')
+    tokens = tk.tokenize(texto.lower())
+
+    # Filtrar stopwords
+    tokens = [word for word in tokens if word not in stoplist]
+
+    # Reducir palabras
+    snowStemmer = SnowballStemmer(language='spanish')
+    for i in range (0, len(tokens)):
+        tokens[i] = snowStemmer.stem(tokens[i])
+    
+    return tokens
+
+def SPIMI_Invert (tokenStream: list):
+    outputFile = "outputFile.json"
+    dictionary = dict()
+
+    initialRam = psutil.virtual_memory().available
+    usedRam = -1
+
+    while usedRam != 0 and tokenStream:
+        currentRam = psutil.virtual_memory().available
+        usedRam = initialRam - currentRam
+        
+        token = tokenStream.pop()
+        
+        if token not in dictionary:
+            postingsList = addToDict(dictionary, token)
+        else:
+            postingsList = getPostingsList(dictionary, token)
+        
+        if full(postingsList):
+            postingsList = doublePostingsList(dictionary, token)
+        
+        addToPostingsList(postingsList, docID(token))
+    
+    sT = sortedTerms(dictionary)
+    writeBlockFile(sT, dictionary, outputFile)
+
+    return outputFile
