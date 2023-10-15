@@ -82,3 +82,14 @@ def SPIMI_Invert (tokenStream: list):
     writeBlockFile(sT, dictionary, outputFile)
 
     return outputFile
+
+
+def getPostingsList(dictionary: dict, token: str):
+    return dictionary[token]
+
+def addToDict(dictionary: dict, token: str):
+    dictionary[token] = list()
+    return dictionary[token]
+
+def addToPostingsList(postingsList: list, docID: int):
+    pass
