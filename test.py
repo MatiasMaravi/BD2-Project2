@@ -1,4 +1,5 @@
 import psutil
+import sys
 import json
 import nltk
 from nltk.stem.snowball import SnowballStemmer
@@ -92,4 +93,33 @@ def addToDict(dictionary: dict, token: str):
     return dictionary[token]
 
 def addToPostingsList(postingsList: list, docID: int):
-    pass
+    if docID not in postingsList:
+        postingsList.append(docID)
+    return postingsList
+
+def doublePostingsList(dictionary: dict, token: str):
+
+
+def full(postingsList: list):
+    #Para saber si usamos solo 20 mb cambiar a la memoria que vamos usar
+    if memoria_usada(tamanhio_array_bytes(postingsList),20):
+        return True
+    else:
+        return False
+
+
+def tamanhio_array_bytes(array):
+    if len(array) == 0:
+        return 0
+    tamanhios_bytes = [sys.getsizeof(i) for i in array]
+    tamanhio_prom = sum(tamanhios_bytes)
+    return tamanhio_prom
+
+def memoria_usada(tamanhio,n):
+    tamanhio_megabytes = tamanhio / (1024*1024)
+    if tamanhio_megabytes > n:
+        return True
+    else:
+        return False
+
+print(memoria_usada(tamanhio_array_bytes([str(i) for i in range(0, 1000000)]),20))
