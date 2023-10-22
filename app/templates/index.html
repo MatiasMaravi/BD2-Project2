@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indice Invertido</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <script src="../static/index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="form-container">
+            <h1>Indice Invertido</h1>
+            <div class="selector">
+                <label for="options">Selecciona un método:</label>
+                <select id="options" onchange="mostrarCampos()">
+                    <option value="own">Own</option>
+                    <option value="postgres">Postgres</option>
+                    <option value="mongodb">MongoDB</option>
+                </select>
+            </div>
+            <div class="form-fields">
+                <div class="consult">
+                    <label for="consult">Consulta: </label>
+                    <input type="text" id="consult_i" name="consult_i" required>
+                </div>
+                <div class="topk">
+                    <label for="topk">Top k: </label>
+                    <input type="text" id="topk" name="topk" required>
+                </div>
+            </div>
+            <button type="button" onclick="mostrarIndice()">Consultar</button>
+        </div>
+        <div id="result-container">
+            <h2>Resultado</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+</body>
+</html>
