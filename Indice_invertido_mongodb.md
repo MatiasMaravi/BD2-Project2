@@ -59,12 +59,102 @@ for (const num of numDocuments) {
   db[collectionName].insertMany(documents);
 }
 ```
+
 Verificamos la colecciones esten pobladas con:
+
 ```
 show collections
 ```
+Consultas sin indices en todas las colecciones:
+
+```
+const startTime = Date.now();
+
+//Donde N es la cantidad de values por coleccion.
+const result = db.miColeccionN.find({ campo1: `valor1_9` });
+
+const endTime = Date.now();
+
+const executionTime = endTime - startTime;
+
+printjson(result);
+print(`Tiempo de ejecución: ${executionTime} ms`);
+```
+
+Coleccion de 1000:
+
+<img width="1210" alt="Captura de pantalla 2023-11-01 a la(s) 10 33 44" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/9af3eba8-7368-4a23-8c5f-e1bcab01238e">
+Tiempo de ejecución es 48 ms.
+
+Coleccion de 2000:
+
+<img width="1204" alt="Captura de pantalla 2023-11-01 a la(s) 10 35 59" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/b789252d-2244-4801-a3be-7781eca7a3bf">
+
+Tiempo de ejecución: 42 ms
+
+Coleccion de 4000:
+
+<img width="1191" alt="Captura de pantalla 2023-11-01 a la(s) 10 37 24" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/62ce56aa-8592-4b03-b22a-ac03777c1896">
+
+Tiempo de ejecución: 48 ms
+
+Coleccion de 8000:
+
+<img width="1204" alt="Captura de pantalla 2023-11-01 a la(s) 10 38 46" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/acba957a-d7bc-4c84-accb-ba6fcdab1535">
+
+Tiempo de ejecución: 48 ms
+
+Coleccion de 16000:
+
+<img width="1423" alt="Captura de pantalla 2023-11-01 a la(s) 10 40 40" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/147316c2-c471-41d1-a0d7-433ebb897dc1">
+
+Tiempo de ejecución: 44 ms
+
+Coleccion de 32000:
+<img width="1420" alt="Captura de pantalla 2023-11-01 a la(s) 10 41 27" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/dcabd2cb-e0f2-4cdc-9a35-ecaee75e1a39">
+
+Tiempo de ejecución: 46 ms
+
+Coleccion de 64000:
+<img width="1426" alt="Captura de pantalla 2023-11-01 a la(s) 10 42 06" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/fee0ec3f-4a41-4826-bd06-45c11aa296a2">
+Tiempo de ejecución: 47 ms
+
+En todas las colecciones en una consulta:
+```
+const startTime = Date.now();
+
+const valorABuscar =  `valor1_900`;
+
+const collectionsToSearch = [
+  'miColeccion1000',
+  'miColeccion2000',
+  'miColeccion4000',
+  'miColeccion8000',
+  'miColeccion16000',
+  'miColeccion32000',
+  'miColeccion64000'
+];
+
+for (const collectionName of collectionsToSearch) {
+  const result = db[collectionName].find({ campo1: valorABuscar });
+  print(`Resultados en ${collectionName}:`);
+  printjson(result);
+}
+
+const endTime = Date.now();
+
+const executionTime = endTime - startTime;
 
 
+printjson(result);
+print(`Tiempo de ejecución: ${executionTime} ms`);
+```
+<img width="1381" alt="Captura de pantalla 2023-11-01 a la(s) 10 43 59" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/cdbe66d4-881c-496f-9295-9bb21d6d7165">
+<img width="1432" alt="Captura de pantalla 2023-11-01 a la(s) 10 44 13" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/2c95faf0-e880-4ff8-a5d8-50c5ba82e7e0">
+<img width="1404" alt="Captura de pantalla 2023-11-01 a la(s) 10 44 28" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/52ebd980-be36-4b74-92b5-090f2e2ea77d">
+<img width="1363" alt="Captura de pantalla 2023-11-01 a la(s) 10 44 51" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/792efc4b-b8aa-4ad3-b7a4-65ecfa773f94">
+<img width="1306" alt="Captura de pantalla 2023-11-01 a la(s) 10 45 02" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/1f7a2260-37da-41bb-b351-985ec6412561">
+Tiempo de ejecución: 154 ms
 
 # Indexacion en MongoDB
 
