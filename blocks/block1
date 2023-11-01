@@ -1,647 +1,415 @@
 {
-  "abaj": {
-    "doc6.txt": 1
+  "acousticness": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "acab": {
-    "doc6.txt": 2
+  "akin": {
+    "004s3t0ONYlzxII9PLgU6z": 4
   },
-  "acompañ": {
-    "doc6.txt": 2
+  "aking": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "acud": {
-    "doc6.txt": 1
+  "ako": {
+    "004s3t0ONYlzxII9PLgU6z": 2
   },
-  "agot": {
-    "doc6.txt": 2
+  "alam": {
+    "004s3t0ONYlzxII9PLgU6z": 2
   },
-  "aguil": {
-    "doc6.txt": 1
+  "aliv": {
+    "00chLpzhgVjxs1zKC9UScL": 3
   },
-  "air": {
-    "doc6.txt": 1
+  "all": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "alegr": {
-    "doc6.txt": 1
+  "and": {
+    "00chLpzhgVjxs1zKC9UScL": 9
   },
-  "alli": {
-    "doc6.txt": 2
+  "ang": {
+    "004s3t0ONYlzxII9PLgU6z": 7
   },
-  "amo": {
-    "doc6.txt": 2
+  "angels": {
+    "00chLpzhgVjxs1zKC9UScL": 3
   },
-  "anill": {
-    "doc6.txt": 5
+  "are": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "anul": {
-    "doc6.txt": 1
+  "as": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "apoder": {
-    "doc6.txt": 1
+  "at": {
+    "004s3t0ONYlzxII9PLgU6z": 1,
+    "00chLpzhgVjxs1zKC9UScL": 5
   },
-  "aprovech": {
-    "doc6.txt": 1
+  "ay": {
+    "004s3t0ONYlzxII9PLgU6z": 5
   },
-  "aragorn": {
-    "doc6.txt": 1
+  "ba": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "arranc": {
-    "doc6.txt": 1
+  "barbi": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "arroj": {
-    "doc6.txt": 1
+  "bawat": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "arwen": {
-    "doc6.txt": 1
+  "be": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "ascend": {
-    "doc6.txt": 1
+  "bench": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "asi": {
-    "doc6.txt": 2
+  "blu": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "asist": {
-    "doc6.txt": 1
+  "bumulong": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "atac": {
-    "doc6.txt": 1
+  "can": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "aventur": {
-    "doc6.txt": 1
+  "car": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "ayud": {
-    "doc6.txt": 2
+  "classic": {
+    "004s3t0ONYlzxII9PLgU6z": 2
   },
-  "año": {
-    "doc6.txt": 1
+  "clos": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "barbol": {
-    "doc6.txt": 1
+  "cradl": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "barc": {
-    "doc6.txt": 1
+  "danc": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "batall": {
-    "doc6.txt": 1
+  "danceability": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "bilb": {
-    "doc6.txt": 3
+  "darating": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "bombadil": {
-    "doc6.txt": 1
+  "dit": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "bord": {
-    "doc6.txt": 2
+  "energy": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "bosqu": {
-    "doc6.txt": 2
+  "feel": {
+    "00chLpzhgVjxs1zKC9UScL": 3
   },
-  "brun": {
-    "doc6.txt": 1
+  "felt": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "busc": {
-    "doc6.txt": 1
+  "fenc": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "cae": {
-    "doc6.txt": 1
+  "four": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "camin": {
-    "doc6.txt": 2
+  "fre": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "cans": {
-    "doc6.txt": 1
+  "gawin": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "carg": {
-    "doc6.txt": 2
+  "half": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "cas": {
-    "doc6.txt": 1
+  "hands": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "cerr": {
-    "doc6.txt": 1
+  "hanggang": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "cird": {
-    "doc6.txt": 1
+  "hangin": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "cirith": {
-    "doc6.txt": 1
+  "hard": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "codici": {
-    "doc6.txt": 1
+  "hey": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "comarc": {
-    "doc6.txt": 4
+  "hindi": {
+    "004s3t0ONYlzxII9PLgU6z": 2
   },
-  "comienz": {
-    "doc6.txt": 2
+  "i": {
+    "00chLpzhgVjxs1zKC9UScL": 9
   },
-  "comit": {
-    "doc6.txt": 1
+  "ika": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "compañ": {
-    "doc6.txt": 1
+  "ikaw": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "conduc": {
-    "doc6.txt": 1
+  "in": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "conoc": {
-    "doc6.txt": 1
+  "instrumentalness": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "consum": {
-    "doc6.txt": 1
+  "isang": {
+    "004s3t0ONYlzxII9PLgU6z": 2
   },
-  "continu": {
-    "doc6.txt": 2
+  "it": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "contraatac": {
-    "doc6.txt": 1
+  "ito": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "convirt": {
-    "doc6.txt": 1
+  "iyong": {
+    "004s3t0ONYlzxII9PLgU6z": 4
   },
-  "coron": {
-    "doc6.txt": 1
+  "jump": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "cot": {
-    "doc6.txt": 1
+  "ka": {
+    "004s3t0ONYlzxII9PLgU6z": 5
   },
-  "criatur": {
-    "doc6.txt": 1
+  "kail": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "cuerp": {
-    "doc6.txt": 1
+  "kay": {
+    "004s3t0ONYlzxII9PLgU6z": 6
   },
-  "cuest": {
-    "doc6.txt": 1
+  "key": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "dars": {
-    "doc6.txt": 1
+  "kiss": {
+    "00chLpzhgVjxs1zKC9UScL": 3
   },
-  "ded": {
-    "doc6.txt": 1
+  "knowing": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "dej": {
-    "doc6.txt": 3
+  "ko": {
+    "004s3t0ONYlzxII9PLgU6z": 3
   },
-  "delagu": {
-    "doc6.txt": 1
+  "kong": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "derrot": {
-    "doc6.txt": 3
+  "kung": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "desconciert": {
-    "doc6.txt": 1
+  "lamig": {
+    "004s3t0ONYlzxII9PLgU6z": 4
   },
-  "deshech": {
-    "doc6.txt": 1
+  "lang": {
+    "004s3t0ONYlzxII9PLgU6z": 3
   },
-  "desped": {
-    "doc6.txt": 1
+  "langit": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "despert": {
-    "doc6.txt": 1
+  "languag": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "despiert": {
-    "doc6.txt": 1
+  "laugh": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "despues": {
-    "doc6.txt": 4
+  "lilingon": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "destin": {
-    "doc6.txt": 2
+  "lips": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "destruyendos": {
-    "doc6.txt": 1
+  "liveness": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "dias": {
-    "doc6.txt": 2
+  "lonely": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "dirig": {
-    "doc6.txt": 2
+  "loudness": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "disfraz": {
-    "doc6.txt": 1
+  "lov": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "distint": {
-    "doc6.txt": 1
-  },
-  "dolor": {
-    "doc6.txt": 1
-  },
-  "dunlendin": {
-    "doc6.txt": 1
-  },
-  "edor": {
-    "doc6.txt": 1
-  },
-  "el": {
-    "doc6.txt": 2
-  },
-  "elfos": {
-    "doc6.txt": 2
-  },
-  "elrond": {
-    "doc6.txt": 3
-  },
-  "emprend": {
-    "doc6.txt": 1
-  },
-  "encontr": {
-    "doc6.txt": 2
-  },
-  "encuentr": {
-    "doc6.txt": 1
-  },
-  "enemig": {
-    "doc6.txt": 1
-  },
-  "entreg": {
-    "doc6.txt": 1
-  },
-  "eom": {
-    "doc6.txt": 1
-  },
-  "eowyn": {
-    "doc6.txt": 1
-  },
-  "escap": {
-    "doc6.txt": 1
-  },
-  "escrib": {
-    "doc6.txt": 1
-  },
-  "esper": {
-    "doc6.txt": 1
-  },
-  "estall": {
-    "doc6.txt": 1
-  },
-  "este": {
-    "doc6.txt": 1
-  },
-  "exanim": {
-    "doc6.txt": 1
-  },
-  "facilit": {
-    "doc6.txt": 1
-  },
-  "faram": {
-    "doc6.txt": 1
-  },
-  "fisic": {
-    "doc6.txt": 1
-  },
-  "flechaz": {
-    "doc6.txt": 1
-  },
-  "frod": {
-    "doc6.txt": 10
-  },
-  "fronter": {
-    "doc6.txt": 1
-  },
-  "funeral": {
-    "doc6.txt": 1
-  },
-  "galadriel": {
-    "doc6.txt": 2
-  },
-  "gandalf": {
-    "doc6.txt": 4
-  },
-  "gollum": {
-    "doc6.txt": 3
-  },
-  "gondor": {
-    "doc6.txt": 1
-  },
-  "griet": {
-    "doc6.txt": 2
-  },
-  "grim": {
-    "doc6.txt": 1
-  },
-  "gris": {
-    "doc6.txt": 1
-  },
-  "guerrer": {
-    "doc6.txt": 1
-  },
-  "gwaih": {
-    "doc6.txt": 1
-  },
-  "hab": {
-    "doc6.txt": 4
-  },
-  "her": {
-    "doc6.txt": 1
-  },
-  "herman": {
-    "doc6.txt": 1
-  },
-  "hij": {
-    "doc6.txt": 1
-  },
-  "hobbiton": {
-    "doc6.txt": 1
-  },
-  "hobbits": {
-    "doc6.txt": 5
-  },
-  "huir": {
-    "doc6.txt": 1
-  },
-  "humill": {
-    "doc6.txt": 1
-  },
-  "impereceder": {
-    "doc6.txt": 1
-  },
-  "incapaz": {
-    "doc6.txt": 1
-  },
-  "inconscient": {
-    "doc6.txt": 1
-  },
-  "incorpor": {
-    "doc6.txt": 1
-  },
-  "inform": {
-    "doc6.txt": 1
-  },
-  "inici": {
-    "doc6.txt": 1
-  },
-  "inutil": {
-    "doc6.txt": 1
-  },
-  "invasor": {
-    "doc6.txt": 1
-  },
-  "invis": {
-    "doc6.txt": 1
-  },
-  "ithili": {
-    "doc6.txt": 1
-  },
-  "junt": {
-    "doc6.txt": 1
-  },
-  "lader": {
-    "doc6.txt": 1
-  },
-  "lav": {
-    "doc6.txt": 1
-  },
-  "lengu": {
-    "doc6.txt": 1
-  },
-  "libr": {
-    "doc6.txt": 1
-  },
-  "llam": {
-    "doc6.txt": 2
-  },
-  "lleg": {
-    "doc6.txt": 3
-  },
-  "logr": {
-    "doc6.txt": 1
-  },
-  "luch": {
-    "doc6.txt": 1
-  },
-  "mag": {
-    "doc6.txt": 1
-  },
-  "mall": {
-    "doc6.txt": 1
+  "lyrics": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
   "man": {
-    "doc6.txt": 1
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "march": {
-    "doc6.txt": 3
+  "mangarap": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "mas": {
-    "doc6.txt": 3
+  "marating": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "mat": {
-    "doc6.txt": 2
+  "mga": {
+    "004s3t0ONYlzxII9PLgU6z": 5
   },
-  "medi": {
-    "doc6.txt": 1
+  "midnight": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "merry": {
-    "doc6.txt": 2
+  "mins": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "mes": {
-    "doc6.txt": 1
+  "mod": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "miembr": {
-    "doc6.txt": 1
+  "mong": {
+    "004s3t0ONYlzxII9PLgU6z": 4
   },
-  "min": {
-    "doc6.txt": 1
+  "muli": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "mit": {
-    "doc6.txt": 1
+  "na": {
+    "004s3t0ONYlzxII9PLgU6z": 9
   },
-  "mithril": {
-    "doc6.txt": 1
+  "nabitaw": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "moment": {
-    "doc6.txt": 1
+  "nakapagbigay": {
+    "004s3t0ONYlzxII9PLgU6z": 4
   },
-  "mont": {
-    "doc6.txt": 1
+  "nang": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "montañ": {
-    "doc6.txt": 1
+  "napalingon": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "mordisc": {
-    "doc6.txt": 1
+  "ngiti": {
+    "004s3t0ONYlzxII9PLgU6z": 4
   },
-  "muert": {
-    "doc6.txt": 2
+  "only": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "mur": {
-    "doc6.txt": 1
+  "pa": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "naur": {
-    "doc6.txt": 1
+  "pangarap": {
+    "004s3t0ONYlzxII9PLgU6z": 7
   },
-  "nazgûl": {
-    "doc6.txt": 1
+  "pansin": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "neg": {
-    "doc6.txt": 2
+  "park": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "negr": {
-    "doc6.txt": 1
+  "past": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "nombr": {
-    "doc6.txt": 1
+  "pinoy": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "obras": {
-    "doc6.txt": 1
+  "rock": {
+    "004s3t0ONYlzxII9PLgU6z": 1,
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "oest": {
-    "doc6.txt": 1
+  "rollin": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "orcos": {
-    "doc6.txt": 3
+  "sa": {
+    "004s3t0ONYlzxII9PLgU6z": 7
   },
-  "orden": {
-    "doc6.txt": 1
+  "said": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "orodruin": {
-    "doc6.txt": 3
+  "san": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "orthanc": {
-    "doc6.txt": 1
+  "sandali": {
+    "004s3t0ONYlzxII9PLgU6z": 2
   },
-  "part": {
-    "doc6.txt": 1
+  "saw": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "pas": {
-    "doc6.txt": 1
+  "say": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "pes": {
-    "doc6.txt": 1
+  "sign": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "pies": {
-    "doc6.txt": 1
+  "singing": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "pippin": {
-    "doc6.txt": 2
+  "sky": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "pon": {
-    "doc6.txt": 1
+  "smil": {
+    "00chLpzhgVjxs1zKC9UScL": 3
   },
-  "previst": {
-    "doc6.txt": 1
+  "so": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "produc": {
-    "doc6.txt": 1
+  "soft": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "puert": {
-    "doc6.txt": 2
+  "speechiness": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "pus": {
-    "doc6.txt": 1
+  "steady": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "reaparec": {
-    "doc6.txt": 1
+  "sun": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "recib": {
-    "doc6.txt": 1
+  "tanong": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "reconstruccion": {
-    "doc6.txt": 1
+  "temp": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "recuper": {
-    "doc6.txt": 2
+  "that": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "reencontr": {
-    "doc6.txt": 1
+  "the": {
+    "00chLpzhgVjxs1zKC9UScL": 8
   },
-  "regres": {
-    "doc6.txt": 1
+  "they": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "rescat": {
-    "doc6.txt": 2
+  "thought": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "rey": {
-    "doc6.txt": 2
+  "tingin": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "rivendel": {
-    "doc6.txt": 3
+  "tinig": {
+    "004s3t0ONYlzxII9PLgU6z": 4
   },
-  "roh": {
-    "doc6.txt": 2
+  "tl": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "roj": {
-    "doc6.txt": 1
+  "toto": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "ropaj": {
-    "doc6.txt": 1
+  "tre": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "rumb": {
-    "doc6.txt": 1
+  "tutugon": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "sam": {
-    "doc6.txt": 9
+  "ulit": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "sammath": {
-    "doc6.txt": 1
+  "under": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   },
-  "saneamient": {
-    "doc6.txt": 1
+  "valenc": {
+    "0017A6SJgTbfQVU2EtsPNo": 1
   },
-  "sarum": {
-    "doc6.txt": 3
+  "was": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "sauron": {
-    "doc6.txt": 1
+  "we": {
+    "00chLpzhgVjxs1zKC9UScL": 4
   },
-  "segu": {
-    "doc6.txt": 1
+  "wind": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "sender": {
-    "doc6.txt": 1
+  "with": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "senescal": {
-    "doc6.txt": 1
+  "without": {
+    "00chLpzhgVjxs1zKC9UScL": 1
   },
-  "serpient": {
-    "doc6.txt": 1
+  "yat": {
+    "004s3t0ONYlzxII9PLgU6z": 1
   },
-  "tard": {
-    "doc6.txt": 2
+  "you": {
+    "00chLpzhgVjxs1zKC9UScL": 3
   },
-  "termin": {
-    "doc6.txt": 1
-  },
-  "tesor": {
-    "doc6.txt": 1
-  },
-  "theod": {
-    "doc6.txt": 1
-  },
-  "tierr": {
-    "doc6.txt": 2
-  },
-  "tirith": {
-    "doc6.txt": 1
-  },
-  "tom": {
-    "doc6.txt": 3
-  },
-  "trep": {
-    "doc6.txt": 1
-  },
-  "trop": {
-    "doc6.txt": 1
-  },
-  "ultim": {
-    "doc6.txt": 1
-  },
-  "ungol": {
-    "doc6.txt": 1
-  },
-  "union": {
-    "doc6.txt": 1
-  },
-  "viaj": {
-    "doc6.txt": 3
-  },
-  "viej": {
-    "doc6.txt": 1
-  },
-  "visit": {
-    "doc6.txt": 1
-  },
-  "volunt": {
-    "doc6.txt": 1
+  "your": {
+    "00chLpzhgVjxs1zKC9UScL": 2
   }
 }
