@@ -9,11 +9,12 @@ import pandas as pd
 
 class BSBI:
 
-    def __init__(self, size_block):
+    def __init__(self, size_block,archivo):
         self.size_block = size_block
         self.block = 0
         self.current_block = {}
         self.blocks = []
+        self.archivo=archivo
 
     def SPIMI(self):
         # Cargamos la stoplist
@@ -22,8 +23,8 @@ class BSBI:
         stemmer = SnowballStemmer("spanish")
 
 
-        with open(os.path.abspath("./spotify_songs.csv")) as f:
-            df = pd.read_csv('spotify_songs.csv')
+        with open(os.path.abspath(self.archivo)) as f:
+            df = pd.read_csv(self.archivo)
 
             i=0
             for line in f:
