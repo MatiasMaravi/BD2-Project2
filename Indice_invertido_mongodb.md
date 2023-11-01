@@ -1,3 +1,71 @@
+# Instalacion de MongoDB en Macos
+
+Homebrew requiere las herramientas de línea de comandos Xcode de Xcode de Apple.
+Requisitos:
+* Instalar xcode
+```
+xcode-select --install
+```
+* Instalar homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+Para descargar la fórmula oficial de Homebrew para MongoDB y las herramientas de base de datos, ejecutando el siguiente comando en su terminal macOS:
+```
+brew tap mongodb/brew
+```
+
+* Actualizar homebrew
+```
+brew update
+```
+
+* Instalar mongodb
+```
+brew install mongodb-community@7.0
+```
+
+Para ejecutar MongoDB realizar lo siguiente
+```
+brew services start mongodb-community@7.0
+```
+y luego iniciamos.
+```
+mongosh
+```
+# Creamos nuestra base de datos
+
+Realizamos el comando:
+
+```
+use BasedeDatosProyect2
+```
+
+Para popular y rellenar de datos nuestra base de datos usaremos un bucle for en dos campos del tipo string en cada uno de ellos con la cantidad pedida:
+
+```
+const numDocuments = [1000, 2000, 4000, 8000, 16000, 32000,64000];
+
+for (const num of numDocuments) {
+  const collectionName = `miColeccion${num}`;
+  db.createCollection(collectionName);
+
+  const documents = [];
+
+  for (let i = 1; i <= num; i++) {
+    documents.push({ campo1: `valor1_${i}`, campo2: `valor2_${i}` });
+  }
+
+  db[collectionName].insertMany(documents);
+}
+```
+Verificamos la colecciones esten pobladas con:
+```
+show collections
+```
+
+
+
 # Indexacion en MongoDB
 
 MongoBD para le recuperacion de informacion, utiliza un indice especializado en campos de tipo texto, a este se le conoce como `indice de texto`.
