@@ -66,7 +66,7 @@ class BSBI:
 
             nombre_carpeta = "blocks"
             # Nombre del archivo dentro de la carpeta
-            nombre_archivo = 'block' + str(self.block)
+            nombre_archivo = 'block' + str(self.block) + '.json'
 
             # Combinar la carpeta y el nombre de archivo para obtener la ruta completa
             ruta_completa = os.path.join(nombre_carpeta, nombre_archivo)
