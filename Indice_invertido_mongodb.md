@@ -193,3 +193,102 @@ El indice invetido en MongoDB, funciona de la siguiente manera:
   ```python
     db.productos.find({ $text: { $search: "pantalon" } });
   ```
+
+## Experimentacion con indices
+Las colecciones que tenemos anteriormente seran indexadas en el campo1, con el indice de texto.
+
+```
+const numDocuments = [1000, 2000, 4000, 8000, 16000, 32000,64000];
+
+for (const num of numDocuments) {
+  const collectionName = `miColeccion${num}`;
+  const indexField =  `campo1`; 
+
+
+  db[collectionName].createIndex({ [indexField]: 'text' });
+
+  print(`Índice de texto creado en ${collectionName} para el campo ${indexField}`);
+}
+```
+<img width="1438" alt="Captura de pantalla 2023-11-01 a la(s) 11 05 52" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/b7531312-5b53-4d82-8d95-8fcc6d20780b">
+
+Consultas en las colecciones con MongoDB.
+
+Coleccion de 1000 valores:
+
+<img width="1432" alt="Captura de pantalla 2023-11-01 a la(s) 11 12 45" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/93877403-5d2c-47bb-8175-fe5125020ddc">
+
+Tiempo de ejecución: 40 ms
+
+Coleccion de 2000 valores:
+
+<img width="1440" alt="Captura de pantalla 2023-11-01 a la(s) 11 13 55" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/aead33dc-ade1-4cf6-968f-b5d7a7d681c0">
+
+Tiempo de ejecución: 39 ms
+
+Coleccion de 4000 valores:
+
+<img width="1440" alt="Captura de pantalla 2023-11-01 a la(s) 11 14 53" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/78db3887-d8f8-4ead-99d7-433733037680">
+Tiempo de ejecución: 40 ms
+
+Coleccion de 8000 valores:
+
+<img width="1428" alt="Captura de pantalla 2023-11-01 a la(s) 11 15 41" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/44a1a396-48b7-4963-b6ad-5badc4bb50b0">
+
+Tiempo de ejecución: 40 ms
+
+Coleccion de 16000 valores:
+
+<img width="1431" alt="Captura de pantalla 2023-11-01 a la(s) 11 17 01" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/1aa25600-98d8-4844-b67f-6feea8b0d96e">
+
+Tiempo de ejecución: 45 ms
+
+Coleccion de 32000 valores:
+
+<img width="1435" alt="Captura de pantalla 2023-11-01 a la(s) 11 17 45" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/cb8135c5-3798-437f-bb1b-e5cad302a897">
+
+Tiempo de ejecución: 42 ms
+
+Coleccion de 64000 valores:
+
+<img width="1438" alt="Captura de pantalla 2023-11-01 a la(s) 11 18 19" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/c348840a-daab-402c-9de1-da4a4e29417c">
+Tiempo de ejecución: 43 ms
+
+En todas las colecciones:
+
+```
+const startTime = Date.now();
+
+const valorABuscar =  `valor1_900`;
+
+const collectionsToSearch = [
+  'miColeccion1000',
+  'miColeccion2000',
+  'miColeccion4000',
+  'miColeccion8000',
+  'miColeccion16000',
+  'miColeccion32000',
+  'miColeccion64000'
+];
+
+for (const collectionName of collectionsToSearch) {
+  const result = db[collectionName].find({ $text: { $search: valorABuscar } });
+  print(`Resultados en ${collectionName}:`);
+  printjson(result);
+}
+
+const endTime = Date.now();
+
+const executionTime = endTime - startTime;
+
+
+printjson(result);
+print(`Tiempo de ejecución: ${executionTime} ms`);
+```
+
+<img width="1430" alt="Captura de pantalla 2023-11-01 a la(s) 11 20 42" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/13e1f4c7-d8ab-4ad9-9a05-a670f1f21066">
+<img width="1435" alt="Captura de pantalla 2023-11-01 a la(s) 11 21 38" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/1440e396-5a36-4e73-9235-28165a8ea7d5">
+<img width="1280" alt="Captura de pantalla 2023-11-01 a la(s) 11 21 53" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/c28c47d2-d030-4e49-bf4e-881390309096">
+<img width="1301" alt="Captura de pantalla 2023-11-01 a la(s) 11 22 13" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/50669143-be7c-4981-96ec-3a2b123caa76">
+<img width="1402" alt="Captura de pantalla 2023-11-01 a la(s) 11 22 28" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/75e4651c-2116-4ea2-b497-21af792744f2">
+Tiempo de ejecución: 96 ms
