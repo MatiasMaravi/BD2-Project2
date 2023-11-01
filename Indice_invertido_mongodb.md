@@ -254,7 +254,7 @@ Coleccion de 64000 valores:
 <img width="1438" alt="Captura de pantalla 2023-11-01 a la(s) 11 18 19" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/c348840a-daab-402c-9de1-da4a4e29417c">
 Tiempo de ejecución: 43 ms
 
-En todas las colecciones:
+## En todas las colecciones con Indices:
 
 ```
 const startTime = Date.now();
