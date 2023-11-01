@@ -158,7 +158,7 @@ Tiempo de ejecución: 154 ms
 
 # Indexacion en MongoDB
 
-MongoBD para le recuperacion de informacion, utiliza un indice especializado en campos de tipo texto, a este se le conoce como `indice de texto`.
+MongoBD para la recuperacion de informacion, utiliza un indice especializado en campos de tipo texto, a este se le conoce como `indice de texto`.
 
 Este indice permite realizar busquedas en campos que sean cadenas o un array de elementos de cadena, actualmente existen tres versiones de este eficiente metodo de indexacion:
 
