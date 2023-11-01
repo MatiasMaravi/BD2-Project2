@@ -1,0 +1,494 @@
+{
+    "acab": {
+        "doc1.txt": 4
+    },
+    "accidental": {
+        "doc1.txt": 1
+    },
+    "acompañ": {
+        "doc1.txt": 3
+    },
+    "acud": {
+        "doc1.txt": 3
+    },
+    "adentr": {
+        "doc1.txt": 1
+    },
+    "alde": {
+        "doc1.txt": 1
+    },
+    "alert": {
+        "doc1.txt": 1
+    },
+    "alli": {
+        "doc1.txt": 2
+    },
+    "amig": {
+        "doc1.txt": 3
+    },
+    "amon": {
+        "doc1.txt": 1
+    },
+    "anduin": {
+        "doc1.txt": 1
+    },
+    "anill": {
+        "doc1.txt": 6
+    },
+    "aragorn": {
+        "doc1.txt": 2
+    },
+    "armas": {
+        "doc1.txt": 1
+    },
+    "arnor": {
+        "doc1.txt": 1
+    },
+    "arrastr": {
+        "doc1.txt": 1
+    },
+    "arrebat": {
+        "doc1.txt": 2
+    },
+    "asfaloth": {
+        "doc1.txt": 1
+    },
+    "atac": {
+        "doc1.txt": 2
+    },
+    "atrap": {
+        "doc1.txt": 1
+    },
+    "ayud": {
+        "doc1.txt": 1
+    },
+    "años": {
+        "doc1.txt": 2
+    },
+    "bilb": {
+        "doc1.txt": 6
+    },
+    "bolson": {
+        "doc1.txt": 3
+    },
+    "bombadil": {
+        "doc1.txt": 2
+    },
+    "bosqu": {
+        "doc1.txt": 1
+    },
+    "bre": {
+        "doc1.txt": 3
+    },
+    "bruin": {
+        "doc1.txt": 1
+    },
+    "busc": {
+        "doc1.txt": 1
+    },
+    "caball": {
+        "doc1.txt": 1
+    },
+    "camin": {
+        "doc1.txt": 1
+    },
+    "camp": {
+        "doc1.txt": 1
+    },
+    "cancion": {
+        "doc1.txt": 1
+    },
+    "cant": {
+        "doc1.txt": 1
+    },
+    "captur": {
+        "doc1.txt": 1
+    },
+    "cas": {
+        "doc1.txt": 2
+    },
+    "celebr": {
+        "doc1.txt": 1
+    },
+    "cerr": {
+        "doc1.txt": 2
+    },
+    "comarc": {
+        "doc1.txt": 2
+    },
+    "combat": {
+        "doc1.txt": 1
+    },
+    "comienz": {
+        "doc1.txt": 1
+    },
+    "convenc": {
+        "doc1.txt": 1
+    },
+    "corrient": {
+        "doc1.txt": 1
+    },
+    "criatur": {
+        "doc1.txt": 1
+    },
+    "cumpleañ": {
+        "doc1.txt": 1
+    },
+    "dandol": {
+        "doc1.txt": 1
+    },
+    "decid": {
+        "doc1.txt": 2
+    },
+    "decision": {
+        "doc1.txt": 1
+    },
+    "defend": {
+        "doc1.txt": 1
+    },
+    "dej": {
+        "doc1.txt": 1
+    },
+    "desaparec": {
+        "doc1.txt": 1
+    },
+    "desastr": {
+        "doc1.txt": 1
+    },
+    "descubiert": {
+        "doc1.txt": 2
+    },
+    "dese": {
+        "doc1.txt": 1
+    },
+    "destin": {
+        "doc1.txt": 1
+    },
+    "dia": {
+        "doc1.txt": 1
+    },
+    "dias": {
+        "doc1.txt": 2
+    },
+    "discurs": {
+        "doc1.txt": 1
+    },
+    "discusion": {
+        "doc1.txt": 1
+    },
+    "dud": {
+        "doc1.txt": 1
+    },
+    "elfo": {
+        "doc1.txt": 1
+    },
+    "elrond": {
+        "doc1.txt": 1
+    },
+    "encontr": {
+        "doc1.txt": 2
+    },
+    "encuentr": {
+        "doc1.txt": 1
+    },
+    "enseñ": {
+        "doc1.txt": 1
+    },
+    "escap": {
+        "doc1.txt": 1
+    },
+    "evit": {
+        "doc1.txt": 1
+    },
+    "fiest": {
+        "doc1.txt": 2
+    },
+    "frod": {
+        "doc1.txt": 8
+    },
+    "gam": {
+        "doc1.txt": 1
+    },
+    "gamyi": {
+        "doc1.txt": 1
+    },
+    "gandalf": {
+        "doc1.txt": 6
+    },
+    "gladi": {
+        "doc1.txt": 1
+    },
+    "glorfindel": {
+        "doc1.txt": 2
+    },
+    "gollum": {
+        "doc1.txt": 1
+    },
+    "graci": {
+        "doc1.txt": 2
+    },
+    "graved": {
+        "doc1.txt": 1
+    },
+    "guard": {
+        "doc1.txt": 1
+    },
+    "hab": {
+        "doc1.txt": 1
+    },
+    "herenci": {
+        "doc1.txt": 1
+    },
+    "hir": {
+        "doc1.txt": 1
+    },
+    "hobbit": {
+        "doc1.txt": 3
+    },
+    "hobbits": {
+        "doc1.txt": 5
+    },
+    "inform": {
+        "doc1.txt": 3
+    },
+    "irse": {
+        "doc1.txt": 1
+    },
+    "isildur": {
+        "doc1.txt": 1
+    },
+    "jardiner": {
+        "doc1.txt": 1
+    },
+    "llam": {
+        "doc1.txt": 2
+    },
+    "lleg": {
+        "doc1.txt": 3
+    },
+    "llev": {
+        "doc1.txt": 1
+    },
+    "logr": {
+        "doc1.txt": 2
+    },
+    "mag": {
+        "doc1.txt": 2
+    },
+    "magic": {
+        "doc1.txt": 1
+    },
+    "merry": {
+        "doc1.txt": 1
+    },
+    "misteri": {
+        "doc1.txt": 1
+    },
+    "mont": {
+        "doc1.txt": 1
+    },
+    "motiv": {
+        "doc1.txt": 1
+    },
+    "nazgûl": {
+        "doc1.txt": 4
+    },
+    "neg": {
+        "doc1.txt": 1
+    },
+    "niebl": {
+        "doc1.txt": 1
+    },
+    "nob": {
+        "doc1.txt": 1
+    },
+    "noch": {
+        "doc1.txt": 1
+    },
+    "notici": {
+        "doc1.txt": 1
+    },
+    "obra": {
+        "doc1.txt": 1
+    },
+    "ocasion": {
+        "doc1.txt": 1
+    },
+    "orden": {
+        "doc1.txt": 1
+    },
+    "oscur": {
+        "doc1.txt": 1
+    },
+    "par": {
+        "doc1.txt": 1
+    },
+    "part": {
+        "doc1.txt": 4
+    },
+    "pas": {
+        "doc1.txt": 1
+    },
+    "paz": {
+        "doc1.txt": 1
+    },
+    "pequeñ": {
+        "doc1.txt": 1
+    },
+    "perd": {
+        "doc1.txt": 2
+    },
+    "persegu": {
+        "doc1.txt": 1
+    },
+    "persig": {
+        "doc1.txt": 1
+    },
+    "personaj": {
+        "doc1.txt": 1
+    },
+    "pippin": {
+        "doc1.txt": 1
+    },
+    "pisador": {
+        "doc1.txt": 1
+    },
+    "plan": {
+        "doc1.txt": 2
+    },
+    "pon": {
+        "doc1.txt": 1
+    },
+    "poney": {
+        "doc1.txt": 1
+    },
+    "pos": {
+        "doc1.txt": 2
+    },
+    "pretext": {
+        "doc1.txt": 1
+    },
+    "principal": {
+        "doc1.txt": 1
+    },
+    "product": {
+        "doc1.txt": 1
+    },
+    "pronunci": {
+        "doc1.txt": 1
+    },
+    "pud": {
+        "doc1.txt": 1
+    },
+    "pus": {
+        "doc1.txt": 1
+    },
+    "quebr": {
+        "doc1.txt": 1
+    },
+    "qued": {
+        "doc1.txt": 2
+    },
+    "regres": {
+        "doc1.txt": 1
+    },
+    "rest": {
+        "doc1.txt": 1
+    },
+    "reun": {
+        "doc1.txt": 1
+    },
+    "rey": {
+        "doc1.txt": 1
+    },
+    "rio": {
+        "doc1.txt": 2
+    },
+    "rivendel": {
+        "doc1.txt": 4
+    },
+    "sab": {
+        "doc1.txt": 1
+    },
+    "sabi": {
+        "doc1.txt": 1
+    },
+    "sal": {
+        "doc1.txt": 1
+    },
+    "salv": {
+        "doc1.txt": 3
+    },
+    "samsagaz": {
+        "doc1.txt": 1
+    },
+    "sauron": {
+        "doc1.txt": 2
+    },
+    "servidor": {
+        "doc1.txt": 1
+    },
+    "señor": {
+        "doc1.txt": 1
+    },
+    "sobrin": {
+        "doc1.txt": 1
+    },
+    "sorprend": {
+        "doc1.txt": 1
+    },
+    "sûl": {
+        "doc1.txt": 1
+    },
+    "termin": {
+        "doc1.txt": 1
+    },
+    "tiend": {
+        "doc1.txt": 1
+    },
+    "tom": {
+        "doc1.txt": 2
+    },
+    "toqu": {
+        "doc1.txt": 1
+    },
+    "tramp": {
+        "doc1.txt": 1
+    },
+    "tranquil": {
+        "doc1.txt": 1
+    },
+    "trat": {
+        "doc1.txt": 1
+    },
+    "traz": {
+        "doc1.txt": 1
+    },
+    "tumul": {
+        "doc1.txt": 1
+    },
+    "tumulari": {
+        "doc1.txt": 2
+    },
+    "ucorn": {
+        "doc1.txt": 1
+    },
+    "unic": {
+        "doc1.txt": 1
+    },
+    "vad": {
+        "doc1.txt": 1
+    },
+    "veint": {
+        "doc1.txt": 1
+    },
+    "viaj": {
+        "doc1.txt": 2
+    },
+    "viej": {
+        "doc1.txt": 2
+    },
+    "viv": {
+        "doc1.txt": 1
+    }
+}

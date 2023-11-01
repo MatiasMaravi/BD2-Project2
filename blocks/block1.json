@@ -1,0 +1,626 @@
+{
+    "abaj": {
+        "doc6.txt": 1
+    },
+    "acab": {
+        "doc6.txt": 2
+    },
+    "acompañ": {
+        "doc6.txt": 2
+    },
+    "acud": {
+        "doc6.txt": 1
+    },
+    "agot": {
+        "doc6.txt": 2
+    },
+    "aguil": {
+        "doc6.txt": 1
+    },
+    "air": {
+        "doc6.txt": 1
+    },
+    "alegr": {
+        "doc6.txt": 1
+    },
+    "alli": {
+        "doc6.txt": 2
+    },
+    "amo": {
+        "doc6.txt": 2
+    },
+    "anill": {
+        "doc6.txt": 5
+    },
+    "anul": {
+        "doc6.txt": 1
+    },
+    "apoder": {
+        "doc6.txt": 1
+    },
+    "aprovech": {
+        "doc6.txt": 1
+    },
+    "aragorn": {
+        "doc6.txt": 1
+    },
+    "arranc": {
+        "doc6.txt": 1
+    },
+    "arroj": {
+        "doc6.txt": 1
+    },
+    "arwen": {
+        "doc6.txt": 1
+    },
+    "ascend": {
+        "doc6.txt": 1
+    },
+    "asist": {
+        "doc6.txt": 1
+    },
+    "atac": {
+        "doc6.txt": 1
+    },
+    "aventur": {
+        "doc6.txt": 1
+    },
+    "ayud": {
+        "doc6.txt": 2
+    },
+    "año": {
+        "doc6.txt": 1
+    },
+    "barbol": {
+        "doc6.txt": 1
+    },
+    "barc": {
+        "doc6.txt": 1
+    },
+    "batall": {
+        "doc6.txt": 1
+    },
+    "bilb": {
+        "doc6.txt": 3
+    },
+    "bombadil": {
+        "doc6.txt": 1
+    },
+    "bord": {
+        "doc6.txt": 2
+    },
+    "bosqu": {
+        "doc6.txt": 2
+    },
+    "brun": {
+        "doc6.txt": 1
+    },
+    "busc": {
+        "doc6.txt": 1
+    },
+    "cae": {
+        "doc6.txt": 1
+    },
+    "camin": {
+        "doc6.txt": 2
+    },
+    "cans": {
+        "doc6.txt": 1
+    },
+    "carg": {
+        "doc6.txt": 2
+    },
+    "cas": {
+        "doc6.txt": 1
+    },
+    "cerr": {
+        "doc6.txt": 1
+    },
+    "cird": {
+        "doc6.txt": 1
+    },
+    "cirith": {
+        "doc6.txt": 1
+    },
+    "codici": {
+        "doc6.txt": 1
+    },
+    "comarc": {
+        "doc6.txt": 4
+    },
+    "comienz": {
+        "doc6.txt": 2
+    },
+    "comit": {
+        "doc6.txt": 1
+    },
+    "compañ": {
+        "doc6.txt": 1
+    },
+    "conduc": {
+        "doc6.txt": 1
+    },
+    "conoc": {
+        "doc6.txt": 1
+    },
+    "consum": {
+        "doc6.txt": 1
+    },
+    "continu": {
+        "doc6.txt": 2
+    },
+    "contraatac": {
+        "doc6.txt": 1
+    },
+    "convirt": {
+        "doc6.txt": 1
+    },
+    "coron": {
+        "doc6.txt": 1
+    },
+    "cot": {
+        "doc6.txt": 1
+    },
+    "criatur": {
+        "doc6.txt": 1
+    },
+    "cuerp": {
+        "doc6.txt": 1
+    },
+    "cuest": {
+        "doc6.txt": 1
+    },
+    "dars": {
+        "doc6.txt": 1
+    },
+    "ded": {
+        "doc6.txt": 1
+    },
+    "dej": {
+        "doc6.txt": 3
+    },
+    "delagu": {
+        "doc6.txt": 1
+    },
+    "derrot": {
+        "doc6.txt": 3
+    },
+    "desconciert": {
+        "doc6.txt": 1
+    },
+    "deshech": {
+        "doc6.txt": 1
+    },
+    "desped": {
+        "doc6.txt": 1
+    },
+    "despert": {
+        "doc6.txt": 1
+    },
+    "despiert": {
+        "doc6.txt": 1
+    },
+    "destin": {
+        "doc6.txt": 2
+    },
+    "destruyendos": {
+        "doc6.txt": 1
+    },
+    "dias": {
+        "doc6.txt": 2
+    },
+    "dirig": {
+        "doc6.txt": 2
+    },
+    "disfraz": {
+        "doc6.txt": 1
+    },
+    "distint": {
+        "doc6.txt": 1
+    },
+    "dolor": {
+        "doc6.txt": 1
+    },
+    "dunlendin": {
+        "doc6.txt": 1
+    },
+    "edor": {
+        "doc6.txt": 1
+    },
+    "elfos": {
+        "doc6.txt": 2
+    },
+    "elrond": {
+        "doc6.txt": 3
+    },
+    "emprend": {
+        "doc6.txt": 1
+    },
+    "encontr": {
+        "doc6.txt": 2
+    },
+    "encuentr": {
+        "doc6.txt": 1
+    },
+    "enemig": {
+        "doc6.txt": 1
+    },
+    "entreg": {
+        "doc6.txt": 1
+    },
+    "eom": {
+        "doc6.txt": 1
+    },
+    "eowyn": {
+        "doc6.txt": 1
+    },
+    "escap": {
+        "doc6.txt": 1
+    },
+    "escrib": {
+        "doc6.txt": 1
+    },
+    "esper": {
+        "doc6.txt": 1
+    },
+    "estall": {
+        "doc6.txt": 1
+    },
+    "exanim": {
+        "doc6.txt": 1
+    },
+    "facilit": {
+        "doc6.txt": 1
+    },
+    "faram": {
+        "doc6.txt": 1
+    },
+    "fisic": {
+        "doc6.txt": 1
+    },
+    "flechaz": {
+        "doc6.txt": 1
+    },
+    "frod": {
+        "doc6.txt": 10
+    },
+    "fronter": {
+        "doc6.txt": 1
+    },
+    "funeral": {
+        "doc6.txt": 1
+    },
+    "galadriel": {
+        "doc6.txt": 2
+    },
+    "gandalf": {
+        "doc6.txt": 4
+    },
+    "gollum": {
+        "doc6.txt": 3
+    },
+    "gondor": {
+        "doc6.txt": 1
+    },
+    "griet": {
+        "doc6.txt": 2
+    },
+    "grim": {
+        "doc6.txt": 1
+    },
+    "gris": {
+        "doc6.txt": 1
+    },
+    "guerrer": {
+        "doc6.txt": 1
+    },
+    "gwaih": {
+        "doc6.txt": 1
+    },
+    "hab": {
+        "doc6.txt": 1
+    },
+    "her": {
+        "doc6.txt": 1
+    },
+    "herman": {
+        "doc6.txt": 1
+    },
+    "hij": {
+        "doc6.txt": 1
+    },
+    "hobbiton": {
+        "doc6.txt": 1
+    },
+    "hobbits": {
+        "doc6.txt": 5
+    },
+    "huir": {
+        "doc6.txt": 1
+    },
+    "humill": {
+        "doc6.txt": 1
+    },
+    "impereceder": {
+        "doc6.txt": 1
+    },
+    "incapaz": {
+        "doc6.txt": 1
+    },
+    "inconscient": {
+        "doc6.txt": 1
+    },
+    "incorpor": {
+        "doc6.txt": 1
+    },
+    "inici": {
+        "doc6.txt": 1
+    },
+    "inutil": {
+        "doc6.txt": 1
+    },
+    "invasor": {
+        "doc6.txt": 1
+    },
+    "invis": {
+        "doc6.txt": 1
+    },
+    "ithili": {
+        "doc6.txt": 1
+    },
+    "junt": {
+        "doc6.txt": 1
+    },
+    "lader": {
+        "doc6.txt": 1
+    },
+    "lav": {
+        "doc6.txt": 1
+    },
+    "lengu": {
+        "doc6.txt": 1
+    },
+    "libr": {
+        "doc6.txt": 1
+    },
+    "llam": {
+        "doc6.txt": 2
+    },
+    "lleg": {
+        "doc6.txt": 3
+    },
+    "logr": {
+        "doc6.txt": 1
+    },
+    "luch": {
+        "doc6.txt": 1
+    },
+    "mag": {
+        "doc6.txt": 1
+    },
+    "mall": {
+        "doc6.txt": 1
+    },
+    "man": {
+        "doc6.txt": 1
+    },
+    "march": {
+        "doc6.txt": 3
+    },
+    "mat": {
+        "doc6.txt": 2
+    },
+    "medi": {
+        "doc6.txt": 1
+    },
+    "merry": {
+        "doc6.txt": 2
+    },
+    "mes": {
+        "doc6.txt": 1
+    },
+    "miembr": {
+        "doc6.txt": 1
+    },
+    "min": {
+        "doc6.txt": 1
+    },
+    "mit": {
+        "doc6.txt": 1
+    },
+    "mithril": {
+        "doc6.txt": 1
+    },
+    "moment": {
+        "doc6.txt": 1
+    },
+    "mont": {
+        "doc6.txt": 1
+    },
+    "montañ": {
+        "doc6.txt": 1
+    },
+    "mordisc": {
+        "doc6.txt": 1
+    },
+    "muert": {
+        "doc6.txt": 2
+    },
+    "mur": {
+        "doc6.txt": 1
+    },
+    "naur": {
+        "doc6.txt": 1
+    },
+    "nazgûl": {
+        "doc6.txt": 1
+    },
+    "neg": {
+        "doc6.txt": 2
+    },
+    "negr": {
+        "doc6.txt": 1
+    },
+    "nombr": {
+        "doc6.txt": 1
+    },
+    "obras": {
+        "doc6.txt": 1
+    },
+    "oest": {
+        "doc6.txt": 1
+    },
+    "orcos": {
+        "doc6.txt": 3
+    },
+    "orden": {
+        "doc6.txt": 1
+    },
+    "orodruin": {
+        "doc6.txt": 3
+    },
+    "orthanc": {
+        "doc6.txt": 1
+    },
+    "part": {
+        "doc6.txt": 1
+    },
+    "pas": {
+        "doc6.txt": 1
+    },
+    "pes": {
+        "doc6.txt": 1
+    },
+    "pies": {
+        "doc6.txt": 1
+    },
+    "pippin": {
+        "doc6.txt": 2
+    },
+    "pon": {
+        "doc6.txt": 1
+    },
+    "previst": {
+        "doc6.txt": 1
+    },
+    "produc": {
+        "doc6.txt": 1
+    },
+    "puert": {
+        "doc6.txt": 2
+    },
+    "pus": {
+        "doc6.txt": 1
+    },
+    "reaparec": {
+        "doc6.txt": 1
+    },
+    "recib": {
+        "doc6.txt": 1
+    },
+    "reconstruccion": {
+        "doc6.txt": 1
+    },
+    "recuper": {
+        "doc6.txt": 2
+    },
+    "reencontr": {
+        "doc6.txt": 1
+    },
+    "regres": {
+        "doc6.txt": 1
+    },
+    "rescat": {
+        "doc6.txt": 2
+    },
+    "rey": {
+        "doc6.txt": 2
+    },
+    "rivendel": {
+        "doc6.txt": 3
+    },
+    "roh": {
+        "doc6.txt": 2
+    },
+    "roj": {
+        "doc6.txt": 1
+    },
+    "ropaj": {
+        "doc6.txt": 1
+    },
+    "rumb": {
+        "doc6.txt": 1
+    },
+    "sam": {
+        "doc6.txt": 9
+    },
+    "sammath": {
+        "doc6.txt": 1
+    },
+    "saneamient": {
+        "doc6.txt": 1
+    },
+    "sarum": {
+        "doc6.txt": 3
+    },
+    "sauron": {
+        "doc6.txt": 1
+    },
+    "segu": {
+        "doc6.txt": 1
+    },
+    "sender": {
+        "doc6.txt": 1
+    },
+    "senescal": {
+        "doc6.txt": 1
+    },
+    "serpient": {
+        "doc6.txt": 1
+    },
+    "tard": {
+        "doc6.txt": 2
+    },
+    "termin": {
+        "doc6.txt": 1
+    },
+    "tesor": {
+        "doc6.txt": 1
+    },
+    "theod": {
+        "doc6.txt": 1
+    },
+    "tierr": {
+        "doc6.txt": 2
+    },
+    "tirith": {
+        "doc6.txt": 1
+    },
+    "tom": {
+        "doc6.txt": 3
+    },
+    "trep": {
+        "doc6.txt": 1
+    },
+    "trop": {
+        "doc6.txt": 1
+    },
+    "ungol": {
+        "doc6.txt": 1
+    },
+    "union": {
+        "doc6.txt": 1
+    },
+    "viaj": {
+        "doc6.txt": 3
+    },
+    "viej": {
+        "doc6.txt": 1
+    },
+    "visit": {
+        "doc6.txt": 1
+    },
+    "volunt": {
+        "doc6.txt": 1
+    }
+}

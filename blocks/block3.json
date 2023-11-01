@@ -1,0 +1,620 @@
+{
+    "abism": {
+        "doc3.txt": 2
+    },
+    "accion": {
+        "doc3.txt": 1
+    },
+    "aconsej": {
+        "doc3.txt": 1
+    },
+    "acontec": {
+        "doc3.txt": 1
+    },
+    "actos": {
+        "doc3.txt": 1
+    },
+    "amig": {
+        "doc3.txt": 1
+    },
+    "aparent": {
+        "doc3.txt": 1
+    },
+    "apres": {
+        "doc3.txt": 1
+    },
+    "apresur": {
+        "doc3.txt": 1
+    },
+    "aprovech": {
+        "doc3.txt": 1
+    },
+    "aragorn": {
+        "doc3.txt": 3
+    },
+    "ardid": {
+        "doc3.txt": 1
+    },
+    "arroj": {
+        "doc3.txt": 1
+    },
+    "asamble": {
+        "doc3.txt": 1
+    },
+    "ataqu": {
+        "doc3.txt": 1
+    },
+    "atrap": {
+        "doc3.txt": 2
+    },
+    "ayud": {
+        "doc3.txt": 2
+    },
+    "bar": {
+        "doc3.txt": 1
+    },
+    "barbol": {
+        "doc3.txt": 2
+    },
+    "batall": {
+        "doc3.txt": 5
+    },
+    "blanc": {
+        "doc3.txt": 3
+    },
+    "borom": {
+        "doc3.txt": 1
+    },
+    "bosqu": {
+        "doc3.txt": 3
+    },
+    "caballer": {
+        "doc3.txt": 1
+    },
+    "camp": {
+        "doc3.txt": 1
+    },
+    "campament": {
+        "doc3.txt": 1
+    },
+    "cansanci": {
+        "doc3.txt": 1
+    },
+    "capital": {
+        "doc3.txt": 1
+    },
+    "capitul": {
+        "doc3.txt": 1
+    },
+    "cas": {
+        "doc3.txt": 1
+    },
+    "cazador": {
+        "doc3.txt": 4
+    },
+    "cel": {
+        "doc3.txt": 1
+    },
+    "ciud": {
+        "doc3.txt": 1
+    },
+    "combin": {
+        "doc3.txt": 1
+    },
+    "comit": {
+        "doc3.txt": 1
+    },
+    "complet": {
+        "doc3.txt": 1
+    },
+    "comunic": {
+        "doc3.txt": 1
+    },
+    "conflu": {
+        "doc3.txt": 1
+    },
+    "congener": {
+        "doc3.txt": 1
+    },
+    "convert": {
+        "doc3.txt": 1
+    },
+    "convoc": {
+        "doc3.txt": 1
+    },
+    "cos": {
+        "doc3.txt": 1
+    },
+    "cuent": {
+        "doc3.txt": 1
+    },
+    "culmin": {
+        "doc3.txt": 1
+    },
+    "curios": {
+        "doc3.txt": 1
+    },
+    "custodi": {
+        "doc3.txt": 1
+    },
+    "darl": {
+        "doc3.txt": 1
+    },
+    "decid": {
+        "doc3.txt": 2
+    },
+    "defend": {
+        "doc3.txt": 1
+    },
+    "defens": {
+        "doc3.txt": 1
+    },
+    "defin": {
+        "doc3.txt": 1
+    },
+    "dej": {
+        "doc3.txt": 2
+    },
+    "derrot": {
+        "doc3.txt": 3
+    },
+    "desafortun": {
+        "doc3.txt": 1
+    },
+    "desayun": {
+        "doc3.txt": 1
+    },
+    "descubr": {
+        "doc3.txt": 2
+    },
+    "destru": {
+        "doc3.txt": 1
+    },
+    "dia": {
+        "doc3.txt": 1
+    },
+    "dialog": {
+        "doc3.txt": 1
+    },
+    "dirig": {
+        "doc3.txt": 2
+    },
+    "disfrut": {
+        "doc3.txt": 1
+    },
+    "divid": {
+        "doc3.txt": 1
+    },
+    "dol": {
+        "doc3.txt": 1
+    },
+    "dorm": {
+        "doc3.txt": 1
+    },
+    "edor": {
+        "doc3.txt": 1
+    },
+    "ejerc": {
+        "doc3.txt": 1
+    },
+    "ejercit": {
+        "doc3.txt": 1
+    },
+    "encerr": {
+        "doc3.txt": 1
+    },
+    "encuentr": {
+        "doc3.txt": 2
+    },
+    "ende": {
+        "doc3.txt": 1
+    },
+    "ent": {
+        "doc3.txt": 2
+    },
+    "enter": {
+        "doc3.txt": 1
+    },
+    "ents": {
+        "doc3.txt": 1
+    },
+    "eom": {
+        "doc3.txt": 2
+    },
+    "eor": {
+        "doc3.txt": 1
+    },
+    "escap": {
+        "doc3.txt": 2
+    },
+    "escombr": {
+        "doc3.txt": 1
+    },
+    "estrategi": {
+        "doc3.txt": 2
+    },
+    "experient": {
+        "doc3.txt": 1
+    },
+    "exterior": {
+        "doc3.txt": 1
+    },
+    "fangorn": {
+        "doc3.txt": 3
+    },
+    "fatig": {
+        "doc3.txt": 1
+    },
+    "final": {
+        "doc3.txt": 1
+    },
+    "fold": {
+        "doc3.txt": 1
+    },
+    "frent": {
+        "doc3.txt": 1
+    },
+    "frod": {
+        "doc3.txt": 1
+    },
+    "fuerz": {
+        "doc3.txt": 1
+    },
+    "gal": {
+        "doc3.txt": 1
+    },
+    "gandalf": {
+        "doc3.txt": 10
+    },
+    "gimli": {
+        "doc3.txt": 2
+    },
+    "gondor": {
+        "doc3.txt": 2
+    },
+    "grim": {
+        "doc3.txt": 2
+    },
+    "guard": {
+        "doc3.txt": 2
+    },
+    "habr": {
+        "doc3.txt": 1
+    },
+    "haran": {
+        "doc3.txt": 1
+    },
+    "helm": {
+        "doc3.txt": 2
+    },
+    "histori": {
+        "doc3.txt": 1
+    },
+    "hobbit": {
+        "doc3.txt": 1
+    },
+    "hobbits": {
+        "doc3.txt": 4
+    },
+    "horribl": {
+        "doc3.txt": 1
+    },
+    "huell": {
+        "doc3.txt": 1
+    },
+    "huid": {
+        "doc3.txt": 1
+    },
+    "iii": {
+        "doc3.txt": 1
+    },
+    "influenci": {
+        "doc3.txt": 1
+    },
+    "inform": {
+        "doc3.txt": 1
+    },
+    "inminent": {
+        "doc3.txt": 1
+    },
+    "integr": {
+        "doc3.txt": 1
+    },
+    "intencion": {
+        "doc3.txt": 2
+    },
+    "interior": {
+        "doc3.txt": 1
+    },
+    "intern": {
+        "doc3.txt": 1
+    },
+    "intrig": {
+        "doc3.txt": 1
+    },
+    "involuntari": {
+        "doc3.txt": 1
+    },
+    "isengard": {
+        "doc3.txt": 4
+    },
+    "legol": {
+        "doc3.txt": 2
+    },
+    "liber": {
+        "doc3.txt": 1
+    },
+    "libr": {
+        "doc3.txt": 1
+    },
+    "lind": {
+        "doc3.txt": 1
+    },
+    "lleg": {
+        "doc3.txt": 2
+    },
+    "llev": {
+        "doc3.txt": 1
+    },
+    "mag": {
+        "doc3.txt": 6
+    },
+    "malign": {
+        "doc3.txt": 1
+    },
+    "man": {
+        "doc3.txt": 3
+    },
+    "manten": {
+        "doc3.txt": 1
+    },
+    "mariscal": {
+        "doc3.txt": 1
+    },
+    "medi": {
+        "doc3.txt": 1
+    },
+    "meduseld": {
+        "doc3.txt": 1
+    },
+    "merry": {
+        "doc3.txt": 4
+    },
+    "min": {
+        "doc3.txt": 1
+    },
+    "mir": {
+        "doc3.txt": 2
+    },
+    "muer": {
+        "doc3.txt": 1
+    },
+    "mund": {
+        "doc3.txt": 1
+    },
+    "narracion": {
+        "doc3.txt": 1
+    },
+    "nieg": {
+        "doc3.txt": 1
+    },
+    "notici": {
+        "doc3.txt": 1
+    },
+    "objet": {
+        "doc3.txt": 3
+    },
+    "oblig": {
+        "doc3.txt": 1
+    },
+    "oest": {
+        "doc3.txt": 2
+    },
+    "oponent": {
+        "doc3.txt": 1
+    },
+    "oportun": {
+        "doc3.txt": 2
+    },
+    "orcos": {
+        "doc3.txt": 2
+    },
+    "orthanc": {
+        "doc3.txt": 3
+    },
+    "oscur": {
+        "doc3.txt": 1
+    },
+    "palant": {
+        "doc3.txt": 1
+    },
+    "part": {
+        "doc3.txt": 2
+    },
+    "parth": {
+        "doc3.txt": 1
+    },
+    "peligr": {
+        "doc3.txt": 1
+    },
+    "pens": {
+        "doc3.txt": 1
+    },
+    "perec": {
+        "doc3.txt": 1
+    },
+    "peripeci": {
+        "doc3.txt": 1
+    },
+    "persecu": {
+        "doc3.txt": 1
+    },
+    "persegu": {
+        "doc3.txt": 1
+    },
+    "pippin": {
+        "doc3.txt": 7
+    },
+    "pon": {
+        "doc3.txt": 1
+    },
+    "precipit": {
+        "doc3.txt": 1
+    },
+    "prefij": {
+        "doc3.txt": 1
+    },
+    "prep": {
+        "doc3.txt": 1
+    },
+    "prepar": {
+        "doc3.txt": 1
+    },
+    "previ": {
+        "doc3.txt": 1
+    },
+    "produc": {
+        "doc3.txt": 1
+    },
+    "proteg": {
+        "doc3.txt": 1
+    },
+    "puert": {
+        "doc3.txt": 1
+    },
+    "puest": {
+        "doc3.txt": 1
+    },
+    "qued": {
+        "doc3.txt": 1
+    },
+    "quit": {
+        "doc3.txt": 1
+    },
+    "recib": {
+        "doc3.txt": 1
+    },
+    "reencontr": {
+        "doc3.txt": 1
+    },
+    "reencuentr": {
+        "doc3.txt": 1
+    },
+    "refugi": {
+        "doc3.txt": 1
+    },
+    "rein": {
+        "doc3.txt": 2
+    },
+    "relat": {
+        "doc3.txt": 1
+    },
+    "repleg": {
+        "doc3.txt": 1
+    },
+    "replieg": {
+        "doc3.txt": 1
+    },
+    "repon": {
+        "doc3.txt": 1
+    },
+    "represent": {
+        "doc3.txt": 1
+    },
+    "rescat": {
+        "doc3.txt": 2
+    },
+    "retract": {
+        "doc3.txt": 1
+    },
+    "revel": {
+        "doc3.txt": 1
+    },
+    "rey": {
+        "doc3.txt": 1
+    },
+    "roh": {
+        "doc3.txt": 3
+    },
+    "rohirrim": {
+        "doc3.txt": 3
+    },
+    "rop": {
+        "doc3.txt": 1
+    },
+    "salv": {
+        "doc3.txt": 1
+    },
+    "sam": {
+        "doc3.txt": 1
+    },
+    "sarum": {
+        "doc3.txt": 5
+    },
+    "sauron": {
+        "doc3.txt": 3
+    },
+    "segu": {
+        "doc3.txt": 1
+    },
+    "sent": {
+        "doc3.txt": 1
+    },
+    "separ": {
+        "doc3.txt": 1
+    },
+    "señal": {
+        "doc3.txt": 1
+    },
+    "señor": {
+        "doc3.txt": 1
+    },
+    "sirvient": {
+        "doc3.txt": 2
+    },
+    "sorpres": {
+        "doc3.txt": 1
+    },
+    "sufr": {
+        "doc3.txt": 1
+    },
+    "tard": {
+        "doc3.txt": 1
+    },
+    "territori": {
+        "doc3.txt": 1
+    },
+    "theod": {
+        "doc3.txt": 2
+    },
+    "tirith": {
+        "doc3.txt": 1
+    },
+    "tom": {
+        "doc3.txt": 1
+    },
+    "torr": {
+        "doc3.txt": 1
+    },
+    "tortur": {
+        "doc3.txt": 1
+    },
+    "trat": {
+        "doc3.txt": 1
+    },
+    "treinten": {
+        "doc3.txt": 1
+    },
+    "ucorn": {
+        "doc3.txt": 1
+    },
+    "venc": {
+        "doc3.txt": 1
+    },
+    "vision": {
+        "doc3.txt": 1
+    },
+    "viv": {
+        "doc3.txt": 1
+    }
+}

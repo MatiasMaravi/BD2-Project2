@@ -17,12 +17,12 @@ class BSBI:
 
     def SPIMI(self):
         # Cargamos la stoplist
-        with open(os.path.join('Indice_invertido', 'stoplist.txt'), encoding='latin1', ) as file:
+        with open(os.path.join('Indice_invertido', 'stoplist.txt'), encoding='utf-8', ) as file:
                 stoplist = [line.rstrip().lower() for line in file]
         stemmer = SnowballStemmer("spanish")
 
         for file in self.files:
-            with open(os.path.join('doc', file)) as f:
+            with open(os.path.join('doc', file),encoding='utf-8') as f:
                 tf = {}
                 for line in f:
                     tokens = [stemmer.stem(word.lower()) for word in nltk.word_tokenize(line) if word.isalpha() and word.lower() not in stoplist]
@@ -71,17 +71,6 @@ class BSBI:
             if not os.path.exists(nombre_carpeta):
                 os.makedirs(nombre_carpeta)
 
-            with open(ruta_completa, 'w') as f:
-                json.dump(self.current_block, f)          
+            with open(ruta_completa, 'w',encoding="utf-8") as f:
+                json.dump(self.current_block, f,ensure_ascii=False, indent=4)
 
-
-
-
-
-                    
-
-
-
-
-
-        

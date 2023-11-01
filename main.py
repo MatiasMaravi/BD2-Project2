@@ -5,3 +5,5 @@ from SPIMI import BSBI
 
 Indice=BSBI(size_block=20480,archivo="spotify_songs.csv")
 Indice.SPIMI()
+flist = os.listdir("blocks")
+Indice.merged_blocks(flist)
