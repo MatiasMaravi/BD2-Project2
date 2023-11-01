@@ -9,12 +9,11 @@ import pandas as pd
 
 class BSBI:
 
-    def __init__(self, size_block, files):
+    def __init__(self, size_block):
         self.size_block = size_block
         self.block = 0
         self.current_block = {}
         self.blocks = []
-        self.files = files
 
     def SPIMI(self):
         # Cargamos la stoplist
