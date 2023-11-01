@@ -160,7 +160,17 @@ Tiempo de ejecución: 154 ms
 
 MongoBD para le recuperacion de informacion, utiliza un indice especializado en campos de tipo texto, a este se le conoce como `indice de texto`.
 
-Este indice para la recuperacion eficiente de informacion, utiliza una tecnica llamada `inverted index` o `indice invertido`, que consiste en un diccionario que mapea palabras a documentos, a la que asigna pesos que representan la importancia de la palabra en el documento.
+Este indice permite realizar busquedas en campos que sean cadenas o un array de elementos de cadena, actualmente existen tres versiones de este eficiente metodo de indexacion:
+
+## Idioma por defecto
+El idioma por defecto a usar es el ingles, este selecciona y determina las reglas que se utilizan para analizar las raices de las palabras (sufijo-tallo) y define las palabras de parada que se filtran. Por ejemplo, en inglés, las raíces sufijales incluyen -ing y -ed, y las palabras de parada incluyen the y a. 
+
+## Sustitución de idioma
+Especifique un nombre de campo diferente para sustituir el campo de idioma.
+
+## Pesos de campo
+Este metodo utiliza una tecnica llamada `inverted index` o `indice invertido`, MongoDB multiplica el número de coincidencias por el peso y suma los resultados. MongoDB utiliza esta suma para calcular la puntuación del documento. Seleccione un campo de la lista, especifique su peso en la casilla y haga clic en Añadir campo. El peso de campo por defecto es 1.(Esta es la version predeterminada)
+
 
 ## Indice invertido
 
