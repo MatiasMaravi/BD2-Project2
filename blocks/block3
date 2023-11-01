@@ -1,0 +1,473 @@
+{
+  "acab": {
+    "doc4.txt": 2
+  },
+  "afortun": {
+    "doc4.txt": 1
+  },
+  "alert": {
+    "doc4.txt": 1
+  },
+  "amenaz": {
+    "doc4.txt": 1
+  },
+  "amo": {
+    "doc4.txt": 3
+  },
+  "anill": {
+    "doc4.txt": 3
+  },
+  "apag": {
+    "doc4.txt": 1
+  },
+  "aparec": {
+    "doc4.txt": 1
+  },
+  "aparent": {
+    "doc4.txt": 1
+  },
+  "arañ": {
+    "doc4.txt": 4
+  },
+  "argument": {
+    "doc4.txt": 1
+  },
+  "ascend": {
+    "doc4.txt": 1
+  },
+  "asemej": {
+    "doc4.txt": 1
+  },
+  "asi": {
+    "doc4.txt": 1
+  },
+  "atac": {
+    "doc4.txt": 1
+  },
+  "atrap": {
+    "doc4.txt": 1
+  },
+  "atraves": {
+    "doc4.txt": 1
+  },
+  "bruj": {
+    "doc4.txt": 1
+  },
+  "busc": {
+    "doc4.txt": 1
+  },
+  "camin": {
+    "doc4.txt": 4
+  },
+  "cantid": {
+    "doc4.txt": 1
+  },
+  "capitan": {
+    "doc4.txt": 1
+  },
+  "captur": {
+    "doc4.txt": 1
+  },
+  "cienag": {
+    "doc4.txt": 1
+  },
+  "cirith": {
+    "doc4.txt": 3
+  },
+  "com": {
+    "doc4.txt": 1
+  },
+  "coment": {
+    "doc4.txt": 1
+  },
+  "comienz": {
+    "doc4.txt": 1
+  },
+  "compañ": {
+    "doc4.txt": 1
+  },
+  "consej": {
+    "doc4.txt": 1
+  },
+  "consigu": {
+    "doc4.txt": 1
+  },
+  "continu": {
+    "doc4.txt": 2
+  },
+  "contradiccion": {
+    "doc4.txt": 1
+  },
+  "convincent": {
+    "doc4.txt": 1
+  },
+  "criatur": {
+    "doc4.txt": 2
+  },
+  "cuerp": {
+    "doc4.txt": 1
+  },
+  "custodi": {
+    "doc4.txt": 2
+  },
+  "debat": {
+    "doc4.txt": 1
+  },
+  "decid": {
+    "doc4.txt": 2
+  },
+  "defraud": {
+    "doc4.txt": 1
+  },
+  "dej": {
+    "doc4.txt": 1
+  },
+  "desaparec": {
+    "doc4.txt": 2
+  },
+  "desat": {
+    "doc4.txt": 1
+  },
+  "descend": {
+    "doc4.txt": 1
+  },
+  "descu": {
+    "doc4.txt": 1
+  },
+  "descubiert": {
+    "doc4.txt": 1
+  },
+  "descubr": {
+    "doc4.txt": 2
+  },
+  "desfilader": {
+    "doc4.txt": 1
+  },
+  "dias": {
+    "doc4.txt": 1
+  },
+  "el": {
+    "doc4.txt": 2
+  },
+  "emprend": {
+    "doc4.txt": 2
+  },
+  "emyn": {
+    "doc4.txt": 2
+  },
+  "encuentr": {
+    "doc4.txt": 1
+  },
+  "enemig": {
+    "doc4.txt": 1
+  },
+  "enorm": {
+    "doc4.txt": 1
+  },
+  "entra": {
+    "doc4.txt": 1
+  },
+  "entran": {
+    "doc4.txt": 1
+  },
+  "entrar": {
+    "doc4.txt": 1
+  },
+  "escaler": {
+    "doc4.txt": 1
+  },
+  "escap": {
+    "doc4.txt": 1
+  },
+  "escaramuz": {
+    "doc4.txt": 1
+  },
+  "esta": {
+    "doc4.txt": 1
+  },
+  "existent": {
+    "doc4.txt": 1
+  },
+  "faram": {
+    "doc4.txt": 2
+  },
+  "final": {
+    "doc4.txt": 1
+  },
+  "frod": {
+    "doc4.txt": 7
+  },
+  "fueg": {
+    "doc4.txt": 1
+  },
+  "gigant": {
+    "doc4.txt": 1
+  },
+  "gollum": {
+    "doc4.txt": 5
+  },
+  "graci": {
+    "doc4.txt": 1
+  },
+  "grup": {
+    "doc4.txt": 1
+  },
+  "gui": {
+    "doc4.txt": 1
+  },
+  "hab": {
+    "doc4.txt": 4
+  },
+  "har": {
+    "doc4.txt": 1
+  },
+  "hobbit": {
+    "doc4.txt": 1
+  },
+  "hobbits": {
+    "doc4.txt": 2
+  },
+  "huir": {
+    "doc4.txt": 1
+  },
+  "hurtadill": {
+    "doc4.txt": 1
+  },
+  "imposibilit": {
+    "doc4.txt": 1
+  },
+  "inconscient": {
+    "doc4.txt": 1
+  },
+  "inert": {
+    "doc4.txt": 1
+  },
+  "inmoviliz": {
+    "doc4.txt": 1
+  },
+  "intervencion": {
+    "doc4.txt": 1
+  },
+  "ithili": {
+    "doc4.txt": 1
+  },
+  "just": {
+    "doc4.txt": 1
+  },
+  "ley": {
+    "doc4.txt": 1
+  },
+  "libr": {
+    "doc4.txt": 2
+  },
+  "lleg": {
+    "doc4.txt": 3
+  },
+  "llev": {
+    "doc4.txt": 1
+  },
+  "luch": {
+    "doc4.txt": 1
+  },
+  "malher": {
+    "doc4.txt": 1
+  },
+  "march": {
+    "doc4.txt": 3
+  },
+  "metr": {
+    "doc4.txt": 1
+  },
+  "min": {
+    "doc4.txt": 1
+  },
+  "mision": {
+    "doc4.txt": 1
+  },
+  "montarac": {
+    "doc4.txt": 2
+  },
+  "mordor": {
+    "doc4.txt": 4
+  },
+  "morgai": {
+    "doc4.txt": 1
+  },
+  "morgul": {
+    "doc4.txt": 1
+  },
+  "mori": {
+    "doc4.txt": 1
+  },
+  "motiv": {
+    "doc4.txt": 1
+  },
+  "muert": {
+    "doc4.txt": 4
+  },
+  "muil": {
+    "doc4.txt": 2
+  },
+  "negr": {
+    "doc4.txt": 1
+  },
+  "objet": {
+    "doc4.txt": 1
+  },
+  "oblig": {
+    "doc4.txt": 1
+  },
+  "obsesion": {
+    "doc4.txt": 1
+  },
+  "ocult": {
+    "doc4.txt": 1
+  },
+  "ocurr": {
+    "doc4.txt": 1
+  },
+  "ojos": {
+    "doc4.txt": 1
+  },
+  "orcos": {
+    "doc4.txt": 1
+  },
+  "oye": {
+    "doc4.txt": 1
+  },
+  "part": {
+    "doc4.txt": 1
+  },
+  "pas": {
+    "doc4.txt": 1
+  },
+  "permit": {
+    "doc4.txt": 1
+  },
+  "personal": {
+    "doc4.txt": 1
+  },
+  "pic": {
+    "doc4.txt": 1
+  },
+  "plan": {
+    "doc4.txt": 1
+  },
+  "pon": {
+    "doc4.txt": 1
+  },
+  "prepar": {
+    "doc4.txt": 1
+  },
+  "presenci": {
+    "doc4.txt": 1
+  },
+  "puert": {
+    "doc4.txt": 1
+  },
+  "que": {
+    "doc4.txt": 1
+  },
+  "recorr": {
+    "doc4.txt": 1
+  },
+  "rect": {
+    "doc4.txt": 1
+  },
+  "rein": {
+    "doc4.txt": 1
+  },
+  "rescat": {
+    "doc4.txt": 1
+  },
+  "rest": {
+    "doc4.txt": 1
+  },
+  "rey": {
+    "doc4.txt": 1
+  },
+  "sal": {
+    "doc4.txt": 3
+  },
+  "sam": {
+    "doc4.txt": 6
+  },
+  "sauron": {
+    "doc4.txt": 1
+  },
+  "separ": {
+    "doc4.txt": 1
+  },
+  "si": {
+    "doc4.txt": 1
+  },
+  "sient": {
+    "doc4.txt": 1
+  },
+  "sigu": {
+    "doc4.txt": 1
+  },
+  "supon": {
+    "doc4.txt": 1
+  },
+  "tambien": {
+    "doc4.txt": 1
+  },
+  "terren": {
+    "doc4.txt": 1
+  },
+  "tirith": {
+    "doc4.txt": 1
+  },
+  "tom": {
+    "doc4.txt": 2
+  },
+  "torech": {
+    "doc4.txt": 1
+  },
+  "torr": {
+    "doc4.txt": 1
+  },
+  "traicion": {
+    "doc4.txt": 2
+  },
+  "trop": {
+    "doc4.txt": 2
+  },
+  "ungol": {
+    "doc4.txt": 4
+  },
+  "unic": {
+    "doc4.txt": 1
+  },
+  "usad": {
+    "doc4.txt": 1
+  },
+  "vag": {
+    "doc4.txt": 1
+  },
+  "vall": {
+    "doc4.txt": 1
+  },
+  "ve": {
+    "doc4.txt": 1
+  },
+  "venen": {
+    "doc4.txt": 1
+  },
+  "viaj": {
+    "doc4.txt": 1
+  },
+  "viajer": {
+    "doc4.txt": 2
+  },
+  "vigil": {
+    "doc4.txt": 1
+  },
+  "vuelv": {
+    "doc4.txt": 2
+  },
+  "yend": {
+    "doc4.txt": 1
+  }
+}

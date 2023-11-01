@@ -1,0 +1,806 @@
+{
+  "abiert": {
+    "doc5.txt": 1
+  },
+  "acab": {
+    "doc5.txt": 1
+  },
+  "acamp": {
+    "doc5.txt": 1
+  },
+  "acompañ": {
+    "doc5.txt": 2
+  },
+  "acud": {
+    "doc5.txt": 1
+  },
+  "alert": {
+    "doc5.txt": 1
+  },
+  "alli": {
+    "doc5.txt": 2
+  },
+  "altern": {
+    "doc5.txt": 1
+  },
+  "anduin": {
+    "doc5.txt": 1
+  },
+  "apoy": {
+    "doc5.txt": 1
+  },
+  "apresur": {
+    "doc5.txt": 1
+  },
+  "aragorn": {
+    "doc5.txt": 3
+  },
+  "ariet": {
+    "doc5.txt": 1
+  },
+  "asi": {
+    "doc5.txt": 1
+  },
+  "asust": {
+    "doc5.txt": 1
+  },
+  "atac": {
+    "doc5.txt": 1
+  },
+  "ataqu": {
+    "doc5.txt": 3
+  },
+  "atencion": {
+    "doc5.txt": 1
+  },
+  "ayud": {
+    "doc5.txt": 3
+  },
+  "baj": {
+    "doc5.txt": 1
+  },
+  "barc": {
+    "doc5.txt": 1
+  },
+  "batall": {
+    "doc5.txt": 6
+  },
+  "batidor": {
+    "doc5.txt": 1
+  },
+  "borom": {
+    "doc5.txt": 1
+  },
+  "bosqu": {
+    "doc5.txt": 2
+  },
+  "braz": {
+    "doc5.txt": 1
+  },
+  "bruj": {
+    "doc5.txt": 7
+  },
+  "busc": {
+    "doc5.txt": 1
+  },
+  "cabalg": {
+    "doc5.txt": 1
+  },
+  "cabalgat": {
+    "doc5.txt": 1
+  },
+  "caball": {
+    "doc5.txt": 2
+  },
+  "camin": {
+    "doc5.txt": 3
+  },
+  "camp": {
+    "doc5.txt": 2
+  },
+  "capitan": {
+    "doc5.txt": 1
+  },
+  "car": {
+    "doc5.txt": 2
+  },
+  "cas": {
+    "doc5.txt": 2
+  },
+  "cayend": {
+    "doc5.txt": 1
+  },
+  "cen": {
+    "doc5.txt": 1
+  },
+  "cient": {
+    "doc5.txt": 1
+  },
+  "circul": {
+    "doc5.txt": 1
+  },
+  "ciud": {
+    "doc5.txt": 6
+  },
+  "comenz": {
+    "doc5.txt": 1
+  },
+  "comienz": {
+    "doc5.txt": 2
+  },
+  "compañ": {
+    "doc5.txt": 1
+  },
+  "condicion": {
+    "doc5.txt": 1
+  },
+  "conoc": {
+    "doc5.txt": 1
+  },
+  "consej": {
+    "doc5.txt": 1
+  },
+  "convoc": {
+    "doc5.txt": 1
+  },
+  "corsari": {
+    "doc5.txt": 3
+  },
+  "crinblanc": {
+    "doc5.txt": 1
+  },
+  "cubr": {
+    "doc5.txt": 1
+  },
+  "cuerp": {
+    "doc5.txt": 1
+  },
+  "cumpl": {
+    "doc5.txt": 2
+  },
+  "deb": {
+    "doc5.txt": 1
+  },
+  "decid": {
+    "doc5.txt": 3
+  },
+  "demand": {
+    "doc5.txt": 1
+  },
+  "denethor": {
+    "doc5.txt": 7
+  },
+  "dernhelm": {
+    "doc5.txt": 2
+  },
+  "derrib": {
+    "doc5.txt": 1
+  },
+  "descarg": {
+    "doc5.txt": 1
+  },
+  "desvi": {
+    "doc5.txt": 1
+  },
+  "deten": {
+    "doc5.txt": 3
+  },
+  "deud": {
+    "doc5.txt": 1
+  },
+  "dia": {
+    "doc5.txt": 2
+  },
+  "dias": {
+    "doc5.txt": 1
+  },
+  "din": {
+    "doc5.txt": 2
+  },
+  "dirig": {
+    "doc5.txt": 2
+  },
+  "dispon": {
+    "doc5.txt": 2
+  },
+  "dispus": {
+    "doc5.txt": 2
+  },
+  "druad": {
+    "doc5.txt": 1
+  },
+  "druedain": {
+    "doc5.txt": 1
+  },
+  "dunad": {
+    "doc5.txt": 1
+  },
+  "echor": {
+    "doc5.txt": 3
+  },
+  "edor": {
+    "doc5.txt": 1
+  },
+  "ejercit": {
+    "doc5.txt": 7
+  },
+  "el": {
+    "doc5.txt": 3
+  },
+  "ellad": {
+    "doc5.txt": 1
+  },
+  "elroh": {
+    "doc5.txt": 1
+  },
+  "emisari": {
+    "doc5.txt": 1
+  },
+  "encontr": {
+    "doc5.txt": 1
+  },
+  "encuentr": {
+    "doc5.txt": 2
+  },
+  "enemig": {
+    "doc5.txt": 2
+  },
+  "enfrent": {
+    "doc5.txt": 1
+  },
+  "enloquec": {
+    "doc5.txt": 2
+  },
+  "entra": {
+    "doc5.txt": 1
+  },
+  "entrar": {
+    "doc5.txt": 1
+  },
+  "envi": {
+    "doc5.txt": 3
+  },
+  "eom": {
+    "doc5.txt": 1
+  },
+  "eowyn": {
+    "doc5.txt": 2
+  },
+  "escen": {
+    "doc5.txt": 1
+  },
+  "espad": {
+    "doc5.txt": 2
+  },
+  "esper": {
+    "doc5.txt": 1
+  },
+  "espes": {
+    "doc5.txt": 2
+  },
+  "estad": {
+    "doc5.txt": 1
+  },
+  "estoc": {
+    "doc5.txt": 1
+  },
+  "estorb": {
+    "doc5.txt": 1
+  },
+  "estos": {
+    "doc5.txt": 1
+  },
+  "faram": {
+    "doc5.txt": 3
+  },
+  "finaliz": {
+    "doc5.txt": 1
+  },
+  "flech": {
+    "doc5.txt": 1
+  },
+  "flot": {
+    "doc5.txt": 1
+  },
+  "fracas": {
+    "doc5.txt": 1
+  },
+  "frod": {
+    "doc5.txt": 2
+  },
+  "fuer": {
+    "doc5.txt": 1
+  },
+  "fuerz": {
+    "doc5.txt": 1
+  },
+  "funerari": {
+    "doc5.txt": 1
+  },
+  "gal": {
+    "doc5.txt": 1
+  },
+  "galadriel": {
+    "doc5.txt": 1
+  },
+  "gandalf": {
+    "doc5.txt": 7
+  },
+  "gigantesc": {
+    "doc5.txt": 1
+  },
+  "gimli": {
+    "doc5.txt": 2
+  },
+  "golp": {
+    "doc5.txt": 1
+  },
+  "gondor": {
+    "doc5.txt": 4
+  },
+  "graci": {
+    "doc5.txt": 1
+  },
+  "gratitud": {
+    "doc5.txt": 1
+  },
+  "gravement": {
+    "doc5.txt": 1
+  },
+  "grond": {
+    "doc5.txt": 1
+  },
+  "grup": {
+    "doc5.txt": 1
+  },
+  "hab": {
+    "doc5.txt": 2
+  },
+  "habit": {
+    "doc5.txt": 1
+  },
+  "halbar": {
+    "doc5.txt": 1
+  },
+  "halit": {
+    "doc5.txt": 1
+  },
+  "harlond": {
+    "doc5.txt": 1
+  },
+  "her": {
+    "doc5.txt": 1
+  },
+  "herman": {
+    "doc5.txt": 1
+  },
+  "hij": {
+    "doc5.txt": 2
+  },
+  "hirgon": {
+    "doc5.txt": 1
+  },
+  "hombr": {
+    "doc5.txt": 2
+  },
+  "hor": {
+    "doc5.txt": 1
+  },
+  "huy": {
+    "doc5.txt": 1
+  },
+  "ide": {
+    "doc5.txt": 1
+  },
+  "ident": {
+    "doc5.txt": 1
+  },
+  "impos": {
+    "doc5.txt": 1
+  },
+  "inclu": {
+    "doc5.txt": 1
+  },
+  "inform": {
+    "doc5.txt": 1
+  },
+  "inici": {
+    "doc5.txt": 1
+  },
+  "intencion": {
+    "doc5.txt": 1
+  },
+  "interpon": {
+    "doc5.txt": 1
+  },
+  "isen": {
+    "doc5.txt": 1
+  },
+  "isildur": {
+    "doc5.txt": 1
+  },
+  "jef": {
+    "doc5.txt": 1
+  },
+  "jinet": {
+    "doc5.txt": 3
+  },
+  "jurament": {
+    "doc5.txt": 1
+  },
+  "just": {
+    "doc5.txt": 1
+  },
+  "lancer": {
+    "doc5.txt": 1
+  },
+  "lanz": {
+    "doc5.txt": 2
+  },
+  "legol": {
+    "doc5.txt": 2
+  },
+  "liber": {
+    "doc5.txt": 1
+  },
+  "libr": {
+    "doc5.txt": 1
+  },
+  "llam": {
+    "doc5.txt": 2
+  },
+  "lleg": {
+    "doc5.txt": 5
+  },
+  "llev": {
+    "doc5.txt": 1
+  },
+  "locur": {
+    "doc5.txt": 2
+  },
+  "logr": {
+    "doc5.txt": 1
+  },
+  "lom": {
+    "doc5.txt": 1
+  },
+  "luch": {
+    "doc5.txt": 3
+  },
+  "luz": {
+    "doc5.txt": 1
+  },
+  "maldicion": {
+    "doc5.txt": 1
+  },
+  "malher": {
+    "doc5.txt": 1
+  },
+  "mas": {
+    "doc5.txt": 2
+  },
+  "merry": {
+    "doc5.txt": 3
+  },
+  "mil": {
+    "doc5.txt": 1
+  },
+  "mill": {
+    "doc5.txt": 1
+  },
+  "min": {
+    "doc5.txt": 6
+  },
+  "mision": {
+    "doc5.txt": 3
+  },
+  "mont": {
+    "doc5.txt": 1
+  },
+  "montarac": {
+    "doc5.txt": 1
+  },
+  "mordor": {
+    "doc5.txt": 2
+  },
+  "moribund": {
+    "doc5.txt": 1
+  },
+  "mortuori": {
+    "doc5.txt": 1
+  },
+  "mostr": {
+    "doc5.txt": 1
+  },
+  "moviliz": {
+    "doc5.txt": 1
+  },
+  "muer": {
+    "doc5.txt": 2
+  },
+  "muert": {
+    "doc5.txt": 3
+  },
+  "nazgûl": {
+    "doc5.txt": 4
+  },
+  "neces": {
+    "doc5.txt": 1
+  },
+  "neg": {
+    "doc5.txt": 1
+  },
+  "negr": {
+    "doc5.txt": 3
+  },
+  "nort": {
+    "doc5.txt": 1
+  },
+  "nub": {
+    "doc5.txt": 1
+  },
+  "oblig": {
+    "doc5.txt": 2
+  },
+  "observ": {
+    "doc5.txt": 1
+  },
+  "obstant": {
+    "doc5.txt": 1
+  },
+  "ocult": {
+    "doc5.txt": 2
+  },
+  "ocurr": {
+    "doc5.txt": 1
+  },
+  "ofrec": {
+    "doc5.txt": 1
+  },
+  "orcos": {
+    "doc5.txt": 2
+  },
+  "pag": {
+    "doc5.txt": 1
+  },
+  "part": {
+    "doc5.txt": 2
+  },
+  "parth": {
+    "doc5.txt": 1
+  },
+  "pelarg": {
+    "doc5.txt": 1
+  },
+  "pelennor": {
+    "doc5.txt": 1
+  },
+  "penetr": {
+    "doc5.txt": 1
+  },
+  "pippin": {
+    "doc5.txt": 5
+  },
+  "pir": {
+    "doc5.txt": 2
+  },
+  "presenci": {
+    "doc5.txt": 1
+  },
+  "present": {
+    "doc5.txt": 1
+  },
+  "problem": {
+    "doc5.txt": 1
+  },
+  "puert": {
+    "doc5.txt": 3
+  },
+  "puest": {
+    "doc5.txt": 1
+  },
+  "qued": {
+    "doc5.txt": 1
+  },
+  "quem": {
+    "doc5.txt": 1
+  },
+  "quint": {
+    "doc5.txt": 1
+  },
+  "ramm": {
+    "doc5.txt": 3
+  },
+  "rath": {
+    "doc5.txt": 2
+  },
+  "raz": {
+    "doc5.txt": 1
+  },
+  "recib": {
+    "doc5.txt": 1
+  },
+  "region": {
+    "doc5.txt": 1
+  },
+  "regres": {
+    "doc5.txt": 1
+  },
+  "remat": {
+    "doc5.txt": 1
+  },
+  "rescat": {
+    "doc5.txt": 1
+  },
+  "resistent": {
+    "doc5.txt": 1
+  },
+  "retir": {
+    "doc5.txt": 1
+  },
+  "retroced": {
+    "doc5.txt": 1
+  },
+  "reun": {
+    "doc5.txt": 1
+  },
+  "revel": {
+    "doc5.txt": 1
+  },
+  "rey": {
+    "doc5.txt": 12
+  },
+  "rio": {
+    "doc5.txt": 1
+  },
+  "roh": {
+    "doc5.txt": 3
+  },
+  "rohirrim": {
+    "doc5.txt": 2
+  },
+  "roj": {
+    "doc5.txt": 1
+  },
+  "romp": {
+    "doc5.txt": 1
+  },
+  "ropaj": {
+    "doc5.txt": 1
+  },
+  "sagrari": {
+    "doc5.txt": 2
+  },
+  "sal": {
+    "doc5.txt": 2
+  },
+  "sauron": {
+    "doc5.txt": 2
+  },
+  "segun": {
+    "doc5.txt": 1
+  },
+  "sender": {
+    "doc5.txt": 2
+  },
+  "senescal": {
+    "doc5.txt": 4
+  },
+  "ser": {
+    "doc5.txt": 1
+  },
+  "servici": {
+    "doc5.txt": 2
+  },
+  "sext": {
+    "doc5.txt": 2
+  },
+  "señal": {
+    "doc5.txt": 1
+  },
+  "sintom": {
+    "doc5.txt": 1
+  },
+  "siti": {
+    "doc5.txt": 3
+  },
+  "sobrin": {
+    "doc5.txt": 1
+  },
+  "sol": {
+    "doc5.txt": 1
+  },
+  "sombr": {
+    "doc5.txt": 1
+  },
+  "sombragr": {
+    "doc5.txt": 1
+  },
+  "sorprend": {
+    "doc5.txt": 1
+  },
+  "suces": {
+    "doc5.txt": 1
+  },
+  "sum": {
+    "doc5.txt": 1
+  },
+  "supondr": {
+    "doc5.txt": 1
+  },
+  "sur": {
+    "doc5.txt": 3
+  },
+  "tamañ": {
+    "doc5.txt": 1
+  },
+  "tambien": {
+    "doc5.txt": 1
+  },
+  "tendon": {
+    "doc5.txt": 1
+  },
+  "termin": {
+    "doc5.txt": 2
+  },
+  "theod": {
+    "doc5.txt": 5
+  },
+  "tirith": {
+    "doc5.txt": 6
+  },
+  "tom": {
+    "doc5.txt": 6
+  },
+  "tra": {
+    "doc5.txt": 1
+  },
+  "trab": {
+    "doc5.txt": 1
+  },
+  "transmit": {
+    "doc5.txt": 1
+  },
+  "trat": {
+    "doc5.txt": 1
+  },
+  "trop": {
+    "doc5.txt": 2
+  },
+  "umbar": {
+    "doc5.txt": 1
+  },
+  "vad": {
+    "doc5.txt": 1
+  },
+  "veloz": {
+    "doc5.txt": 1
+  },
+  "ven": {
+    "doc5.txt": 1
+  },
+  "viaj": {
+    "doc5.txt": 1
+  },
+  "victori": {
+    "doc5.txt": 1
+  },
+  "vio": {
+    "doc5.txt": 1
+  },
+  "visit": {
+    "doc5.txt": 1
+  },
+  "volte": {
+    "doc5.txt": 1
+  },
+  "vuelt": {
+    "doc5.txt": 1
+  },
+  "vuelv": {
+    "doc5.txt": 1
+  },
+  "yelm": {
+    "doc5.txt": 1
+  }
+}

@@ -34,11 +34,20 @@ class BSBI:
                     for token in tokens:
                         tf[token][file] += 1
 
-                    self.current_block.update(tf)
+                    # Añadimos los tf al bloque actual
+                    for token in tf:
+                        if token in self.current_block:
+                            for doc in tf[token]:
+                                self.current_block[token][doc] += tf[token][doc]
+                        else:
+                            self.current_block[token] = tf[token]        
+
+
                     self.current_block = dict(sorted(self.current_block.items()))        
                     
                 # Si el tamaño del bloque es igual al tamaño de bloque que se ha definido, se guarda el bloque en la lista de bloques
                 if sys.getsizeof(self.current_block) >= self.size_block:
+                    print(file)
                     self.block += 1
                     self.save_block()
                     self.current_block = {}
