@@ -40,3 +40,12 @@ Ejecutar el siguiente comando en la terminal:
 python3 main.py
 ```
 Después de ejecutar el comando se creará el archivo index.json que tiene el indice global ordenado de las canciones de spotify junto a su peso "tf". También se creará una carpeta "docs" con el índice global distribuido equitativamente en bloques.
+
+## Experimento
+|   | PostgreSQL |
+| ------------- | ------------- |
+| N = 1000  | 14.778 ms  |
+| N = 2000  | 15.129 ms  | 
+| N = 4000  | 15.072 ms  | 
+| N = 8000  | 14.142 ms  | 
+| N = 16000  | 27.289 ms  | 
