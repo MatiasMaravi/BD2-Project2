@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+import os
+import json
+from SPIMI import BSBI
+
+# Construimos el indice
+
+Indice=BSBI(size_block=20480,archivo="spotify_songs.csv")
+Indice.SPIMI()
+merged_index = Indice.init_merge()
+Indice.delete_blocks()
+# Guarda el índice invertido fusionado en un archivo JSON
+with open("index.json", "w") as f:
+    json.dump(merged_index, f, indent=4, ensure_ascii=False)
+
+print("Índice invertido fusionado guardado en index.json")
+Indice.equilibrar_blocks("index.json")
+=======
 from src.classes.InvertIndex import InvertIndex
 
 textos = ["books/libro1.txt","books/libro2.txt","books/libro3.txt","books/libro4.txt","books/libro5.txt","books/libro6.txt"]
@@ -17,3 +35,4 @@ Tras adentrarse en el Bosque Viejo con el fin de evitar los caminos, los hobbits
 Una vez en Bree, los hobbits acuden a la posada «El Póney Pisador» donde Frodo había quedado con Gandalf. Accidentalmente, el hobbit se pone el Anillo y alerta así a los Nazgûl, los servidores de Sauron que le persiguen para arrebatárselo. Gracias a un amigo de Gandalf, llamado Aragorn, y al hobbit Nob, logran salvarse cuando los Nazgûl atacan la posada esa noche. Al día siguiente, acompañados por Aragorn, los hobbits parten hacia Rivendel. En su parada en Amon Sûl, los Nazgûl les atacan de nuevo, esta vez hiriendo a Frodo de gravedad. Tras combatirles, logran escapar y llegar cerca del vado de Bruinen, donde se encuentran con Glorfindel, un elfo de la casa de Elrond, que les acompaña hasta Rivendel. De nuevo perseguidos, Glorfindel ordena a su caballo Asfaloth que se adelante llevando a Frodo montado y, al llegar al río, los Nazgûl son arrastrados por su corriente gracias al poder de Rivendel.""",6)
 
 print(valores)
+>>>>>>> main
