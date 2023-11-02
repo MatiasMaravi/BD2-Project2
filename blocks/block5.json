@@ -1,587 +1,2842 @@
 {
-    "abism": {
-        "doc2.txt": 1
-    },
-    "acebed": {
-        "doc2.txt": 1
-    },
-    "acerc": {
-        "doc2.txt": 1
-    },
-    "acompañ": {
-        "doc2.txt": 2
-    },
-    "acontec": {
-        "doc2.txt": 1
-    },
-    "acud": {
-        "doc2.txt": 1
-    },
-    "agu": {
-        "doc2.txt": 1
-    },
-    "alcanz": {
-        "doc2.txt": 1
-    },
-    "alli": {
-        "doc2.txt": 5
-    },
-    "amig": {
-        "doc2.txt": 1
-    },
-    "amo": {
-        "doc2.txt": 1
-    },
-    "amon": {
-        "doc2.txt": 1
-    },
-    "anduin": {
-        "doc2.txt": 1
-    },
-    "anill": {
-        "doc2.txt": 6
-    },
-    "aniquil": {
-        "doc2.txt": 1
-    },
-    "antigu": {
-        "doc2.txt": 1
-    },
-    "aparec": {
-        "doc2.txt": 2
-    },
-    "apart": {
-        "doc2.txt": 1
-    },
-    "apen": {
-        "doc2.txt": 1
-    },
-    "aragorn": {
-        "doc2.txt": 3
-    },
-    "arrastr": {
-        "doc2.txt": 1
-    },
-    "arroj": {
-        "doc2.txt": 1
-    },
-    "asent": {
-        "doc2.txt": 1
-    },
-    "atac": {
-        "doc2.txt": 2
-    },
-    "atraves": {
-        "doc2.txt": 1
-    },
-    "balin": {
-        "doc2.txt": 1
-    },
-    "balrog": {
-        "doc2.txt": 2
-    },
-    "barc": {
-        "doc2.txt": 2
-    },
-    "borom": {
-        "doc2.txt": 5
-    },
-    "bosqu": {
-        "doc2.txt": 3
-    },
-    "busc": {
-        "doc2.txt": 1
-    },
-    "cai": {
-        "doc2.txt": 1
-    },
-    "cam": {
-        "doc2.txt": 1
-    },
-    "camin": {
-        "doc2.txt": 2
-    },
-    "captur": {
-        "doc2.txt": 1
-    },
-    "caradhr": {
-        "doc2.txt": 1
-    },
-    "celeborn": {
-        "doc2.txt": 1
-    },
-    "celebr": {
-        "doc2.txt": 1
-    },
-    "cercan": {
-        "doc2.txt": 1
-    },
-    "ciud": {
-        "doc2.txt": 1
-    },
-    "clim": {
-        "doc2.txt": 1
-    },
-    "cobij": {
-        "doc2.txt": 1
-    },
-    "cog": {
-        "doc2.txt": 1
-    },
-    "comenz": {
-        "doc2.txt": 1
-    },
-    "comun": {
-        "doc2.txt": 8
-    },
-    "concili": {
-        "doc2.txt": 2
-    },
-    "condujeron": {
-        "doc2.txt": 1
-    },
-    "consej": {
-        "doc2.txt": 1
-    },
-    "consigu": {
-        "doc2.txt": 1
-    },
-    "cont": {
-        "doc2.txt": 2
-    },
-    "convenc": {
-        "doc2.txt": 1
-    },
-    "cre": {
-        "doc2.txt": 1
-    },
-    "cruz": {
-        "doc2.txt": 2
-    },
-    "cuant": {
-        "doc2.txt": 1
-    },
-    "curacion": {
-        "doc2.txt": 1
-    },
-    "curs": {
-        "doc2.txt": 1
-    },
-    "deb": {
-        "doc2.txt": 1
-    },
-    "decid": {
-        "doc2.txt": 3
-    },
-    "defens": {
-        "doc2.txt": 1
-    },
-    "derrot": {
-        "doc2.txt": 1
-    },
-    "des": {
-        "doc2.txt": 1
-    },
-    "descans": {
-        "doc2.txt": 1
-    },
-    "despert": {
-        "doc2.txt": 1
-    },
-    "destru": {
-        "doc2.txt": 1
-    },
-    "destruyer": {
-        "doc2.txt": 1
-    },
-    "dias": {
-        "doc2.txt": 1
-    },
-    "distint": {
-        "doc2.txt": 1
-    },
-    "dûm": {
-        "doc2.txt": 1
-    },
-    "elfic": {
-        "doc2.txt": 1
-    },
-    "elfo": {
-        "doc2.txt": 1
-    },
-    "elfos": {
-        "doc2.txt": 2
-    },
-    "elrond": {
-        "doc2.txt": 2
-    },
-    "enan": {
-        "doc2.txt": 2
-    },
-    "encarg": {
-        "doc2.txt": 1
-    },
-    "encerr": {
-        "doc2.txt": 1
-    },
-    "encontr": {
-        "doc2.txt": 3
-    },
-    "enemig": {
-        "doc2.txt": 1
-    },
-    "enfrent": {
-        "doc2.txt": 1
-    },
-    "eregion": {
-        "doc2.txt": 1
-    },
-    "escap": {
-        "doc2.txt": 1
-    },
-    "escond": {
-        "doc2.txt": 1
-    },
-    "escuch": {
-        "doc2.txt": 1
-    },
-    "esquiv": {
-        "doc2.txt": 1
-    },
-    "estar": {
-        "doc2.txt": 1
-    },
-    "form": {
-        "doc2.txt": 1
-    },
-    "frod": {
-        "doc2.txt": 6
-    },
-    "fueg": {
-        "doc2.txt": 1
-    },
-    "gal": {
-        "doc2.txt": 1
-    },
-    "galadriel": {
-        "doc2.txt": 1
-    },
-    "gandalf": {
-        "doc2.txt": 6
-    },
-    "geb": {
-        "doc2.txt": 1
-    },
-    "gimli": {
-        "doc2.txt": 1
-    },
-    "gondor": {
-        "doc2.txt": 1
-    },
-    "guardian": {
-        "doc2.txt": 1
-    },
-    "hald": {
-        "doc2.txt": 1
-    },
-    "hen": {
-        "doc2.txt": 1
-    },
-    "hereder": {
-        "doc2.txt": 1
-    },
-    "herman": {
-        "doc2.txt": 1
-    },
-    "hobbit": {
-        "doc2.txt": 1
-    },
-    "hobbits": {
-        "doc2.txt": 1
-    },
-    "huir": {
-        "doc2.txt": 1
-    },
-    "inic": {
-        "doc2.txt": 1
-    },
-    "intent": {
-        "doc2.txt": 1
-    },
-    "invit": {
-        "doc2.txt": 1
-    },
-    "isengard": {
-        "doc2.txt": 3
-    },
-    "khaz": {
-        "doc2.txt": 1
-    },
-    "krak": {
-        "doc2.txt": 1
-    },
-    "lag": {
-        "doc2.txt": 1
-    },
-    "latig": {
-        "doc2.txt": 1
-    },
-    "legol": {
-        "doc2.txt": 1
-    },
-    "libr": {
-        "doc2.txt": 1
-    },
-    "llam": {
-        "doc2.txt": 2
-    },
-    "lleg": {
-        "doc2.txt": 6
-    },
-    "llev": {
-        "doc2.txt": 4
-    },
-    "lob": {
-        "doc2.txt": 1
-    },
-    "logr": {
-        "doc2.txt": 3
-    },
-    "lothlori": {
-        "doc2.txt": 1
-    },
-    "mag": {
-        "doc2.txt": 1
-    },
-    "mal": {
-        "doc2.txt": 1
-    },
-    "mazarbul": {
-        "doc2.txt": 1
-    },
-    "medi": {
-        "doc2.txt": 1
-    },
-    "merry": {
-        "doc2.txt": 2
-    },
-    "mes": {
-        "doc2.txt": 2
-    },
-    "miembr": {
-        "doc2.txt": 1
-    },
-    "min": {
-        "doc2.txt": 4
-    },
-    "monstru": {
-        "doc2.txt": 1
-    },
-    "montañ": {
-        "doc2.txt": 3
-    },
-    "mordor": {
-        "doc2.txt": 1
-    },
-    "mori": {
-        "doc2.txt": 3
-    },
-    "muert": {
-        "doc2.txt": 2
-    },
-    "narr": {
-        "doc2.txt": 1
-    },
-    "nazgûl": {
-        "doc2.txt": 1
-    },
-    "negat": {
-        "doc2.txt": 1
-    },
-    "negr": {
-        "doc2.txt": 1
-    },
-    "nubl": {
-        "doc2.txt": 1
-    },
-    "numer": {
-        "doc2.txt": 1
-    },
-    "oblig": {
-        "doc2.txt": 1
-    },
-    "ocurr": {
-        "doc2.txt": 3
-    },
-    "oest": {
-        "doc2.txt": 1
-    },
-    "ofrec": {
-        "doc2.txt": 2
-    },
-    "oirs": {
-        "doc2.txt": 1
-    },
-    "orcos": {
-        "doc2.txt": 3
-    },
-    "orden": {
-        "doc2.txt": 1
-    },
-    "orill": {
-        "doc2.txt": 2
-    },
-    "orodruin": {
-        "doc2.txt": 1
-    },
-    "parec": {
-        "doc2.txt": 1
-    },
-    "part": {
-        "doc2.txt": 2
-    },
-    "parth": {
-        "doc2.txt": 1
-    },
-    "pas": {
-        "doc2.txt": 3
-    },
-    "ped": {
-        "doc2.txt": 1
-    },
-    "peligr": {
-        "doc2.txt": 1
-    },
-    "pies": {
-        "doc2.txt": 1
-    },
-    "pippin": {
-        "doc2.txt": 2
-    },
-    "poder": {
-        "doc2.txt": 1
-    },
-    "prad": {
-        "doc2.txt": 1
-    },
-    "pres": {
-        "doc2.txt": 1
-    },
-    "princip": {
-        "doc2.txt": 1
-    },
-    "proteg": {
-        "doc2.txt": 1
-    },
-    "puebl": {
-        "doc2.txt": 2
-    },
-    "puent": {
-        "doc2.txt": 2
-    },
-    "puert": {
-        "doc2.txt": 2
+    "pued": {
+        "01IQ4aQgOf0Kkq3a273hmO": 1,
+        "02LnwwnaanFpM5dZNArPBb": 4
+    },
+    "pull": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "01Qb6dN5suQNu87VJ1mIpf": 4,
+        "02jcEwywffn3Tsb48fXmlW": 1,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "pulling": {
+        "00vHOSgvVfyLzhlTZIJo1m": 2
+    },
+    "pulpit": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "puls": {
+        "02803el8p3mKqcJzJ3Agpp": 1,
+        "02CygBCQOIyEuhNZqHHcNx": 1
+    },
+    "pumping": {
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "01LODLnhlfNphZ366BqKc0": 2,
+        "02jdttpwvUBvKdzHkoL644": 2
+    },
+    "punch": {
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "punishment": {
+        "02mJtllR8CoskckLlrirNV": 2
+    },
+    "pupil": {
+        "00i2HU7TEzzftShjRrDSEF": 2
+    },
+    "purely": {
+        "01wavOnjFBNgdMWBFYIAP4": 1
+    },
+    "purs": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 1
     },
     "pus": {
-        "doc2.txt": 1
+        "00i2HU7TEzzftShjRrDSEF": 4,
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "push": {
+        "02M6vucOvmRfMxTXDUwRXu": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "pushing": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "pussy": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "put": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 5,
+        "01iyINEYgPQ7ThMZuHUsqS": 1,
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02H05NlKnwFQREf0qu89AL": 2,
+        "02MjAy2BTPTdqO19O5VtHO": 32,
+        "02bTIMbUm8Zgt0cVAiexE4": 1,
+        "02gIQlGYI0KVK87Uo9Ekjj": 2,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "putain": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "puttin": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "putting": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "q": {
+        "00QyLmjxaSEE8qIZQjBXBj": 1
+    },
+    "qlf": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "quand": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1,
+        "00hdjyXt6MohKnCyDmhxOL": 7,
+        "02138lFv3Bzncr6ScNbLAF": 5
+    },
+    "quart": {
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "quattr": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "que": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 2,
+        "00UpV14MDfk4CvrMbFvqji": 2,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "02BDSCfu9jBYvJ8LkUVttD": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 2
+    },
+    "qued": {
+        "00OKDIsSQbx8rd5Al7fKNw": 3,
+        "02LnwwnaanFpM5dZNArPBb": 2,
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "queens": {
+        "00GxbkrW4m1Tac5xySEJ4M": 4
+    },
+    "quej": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "quell": {
+        "00hdjyXt6MohKnCyDmhxOL": 8
+    },
+    "quelli": {
+        "00hdjyXt6MohKnCyDmhxOL": 1,
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "quem": {
+        "01IQ4aQgOf0Kkq3a273hmO": 1
     },
     "quer": {
-        "doc2.txt": 1
+        "00ITtxUozN0vifE2uYvtqn": 1,
+        "01q4ccXbvPlCwZ1fPiFaeM": 2
+    },
+    "queri": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 2
+    },
+    "quest": {
+        "00hdjyXt6MohKnCyDmhxOL": 3
+    },
+    "questi": {
+        "02138lFv3Bzncr6ScNbLAF": 2
+    },
+    "question": {
+        "01wavOnjFBNgdMWBFYIAP4": 2,
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "qui": {
+        "00hdjyXt6MohKnCyDmhxOL": 6
+    },
+    "quick": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00lNx0OcTJrS3MKHcB80HY": 1
+    },
+    "quickdraw": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "quier": {
+        "00OKDIsSQbx8rd5Al7fKNw": 3,
+        "00S35gEf40z03JTJgvQMqi": 1,
+        "00i2HU7TEzzftShjRrDSEF": 3,
+        "01IQ4aQgOf0Kkq3a273hmO": 1,
+        "01q4ccXbvPlCwZ1fPiFaeM": 2,
+        "02LnwwnaanFpM5dZNArPBb": 14,
+        "02kdNcUqZRgXwQiYr92gZW": 2,
+        "02lvTeAFIIsOd0wVNoRkQ5": 3
+    },
+    "quis": {
+        "00OKDIsSQbx8rd5Al7fKNw": 2,
+        "02LnwwnaanFpM5dZNArPBb": 2,
+        "02kdNcUqZRgXwQiYr92gZW": 1,
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
     },
     "quit": {
-        "doc2.txt": 1
+        "01DSvNTUsVROjnSF5j3UbD": 5,
+        "01IQ4aQgOf0Kkq3a273hmO": 2,
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
     },
-    "rechaz": {
-        "doc2.txt": 1
+    "quizas": {
+        "00OKDIsSQbx8rd5Al7fKNw": 1
     },
-    "reflexion": {
-        "doc2.txt": 1
+    "quot": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "r": {
+        "00FROhC5g4iJdax5US8jRr": 1,
+        "00GfGwzlSB8DoA0cDP2Eit": 2,
+        "00Gu3RMpDW2vO9PjlMVFDL": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00YeYHw6zhoy1y7EPTgIkj": 1,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 2,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "00hdjyXt6MohKnCyDmhxOL": 1,
+        "00lNx0OcTJrS3MKHcB80HY": 1,
+        "00nvL9u5K8jEJ6TSxGdtPK": 1,
+        "00ppj2gGs8oxhGnTdejkzD": 1,
+        "014J7jX1wSv0manSdRnveo": 1,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "01vv2AjxgP4uUyb8waYO5Y": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02GwPAncasVL82yC7y2hmN": 1,
+        "02kdNcUqZRgXwQiYr92gZW": 1,
+        "02tvc9CFnTyHuSRlGeNv9w": 1
+    },
+    "ra": {
+        "02jcEwywffn3Tsb48fXmlW": 2
+    },
+    "rac": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "racist": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "racks": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "racol": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "radi": {
+        "00NAQYOP4AmWR549nnYJZu": 1,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00SmB7n85SKROGjybsyq5i": 1,
+        "01Bw3xiZ5PQfn0btMWICaQ": 1,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "raemon": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "rag": {
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "rain": {
+        "00QyLmjxaSEE8qIZQjBXBj": 4,
+        "00vHOSgvVfyLzhlTZIJo1m": 2
+    },
+    "rainm": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "rais": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "02H05NlKnwFQREf0qu89AL": 17
+    },
+    "raj": {
+        "02kdNcUqZRgXwQiYr92gZW": 1
+    },
+    "ralph": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1
+    },
+    "ramb": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "ran": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00ReeHCY0FQUyuAUyPJdnk": 3
+    },
+    "rang": {
+        "029QP3fFtLaW9B9RKr8DAg": 3
+    },
+    "rankia": {
+        "01DSvNTUsVROjnSF5j3UbD": 1
+    },
+    "rap": {
+        "00Ia46AgCNfnXjzgH8PIKH": 2,
+        "00PLtXXER1XcTRZvs3LioS": 2,
+        "00PXizG9xlUNINeqADlh96": 1,
+        "00ReeHCY0FQUyuAUyPJdnk": 2,
+        "00Ro1lnV3V6i87aY4t8Q43": 1,
+        "00qOE7OjRl0BpYiCiweZB2": 1,
+        "01LODLnhlfNphZ366BqKc0": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01QhVHvkGqzO861Kl3GhfX": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 2,
+        "01iyINEYgPQ7ThMZuHUsqS": 3,
+        "01q4ccXbvPlCwZ1fPiFaeM": 1,
+        "020mPSviVz90DTlyfxofDJ": 1,
+        "02138lFv3Bzncr6ScNbLAF": 1,
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02H05NlKnwFQREf0qu89AL": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "rar": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "raris": {
+        "01M4Wng6jF5uoNEHLl2OIn": 5
+    },
+    "rassur": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "rat": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "ratat": {
+        "00HIh9mVUQQAycsQiciWsh": 4
+    },
+    "ratchet": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1
+    },
+    "rath": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "01vv2AjxgP4uUyb8waYO5Y": 1
+    },
+    "rattl": {
+        "023OVLNzXhX0j7CxswUt6D": 13
+    },
+    "rav": {
+        "00lNx0OcTJrS3MKHcB80HY": 1
+    },
+    "raw": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "rawhid": {
+        "00lNx0OcTJrS3MKHcB80HY": 3
+    },
+    "razon": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "razzamatazz": {
+        "00LfFm08VWeZwB0Zlm24AT": 1
+    },
+    "reaccion": {
+        "00OKDIsSQbx8rd5Al7fKNw": 1
+    },
+    "reach": {
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02tvc9CFnTyHuSRlGeNv9w": 4
+    },
+    "reaching": {
+        "02M6vucOvmRfMxTXDUwRXu": 3,
+        "02q7qbOYbE89NMFEtOklcc": 1
+    },
+    "read": {
+        "02AT1Z0nscuElXMWBEzEKu": 1
+    },
+    "reads": {
+        "02DurCgOvDdX0uKEjqcl3W": 2
+    },
+    "ready": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 2,
+        "00PXizG9xlUNINeqADlh96": 11,
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "00X2yv2vrtritPt2CZnUTZ": 4,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 4,
+        "01auWCuHXubb8KPZ0IXF4S": 2,
+        "02rbSCTm2smTIZ6d8im2NP": 1
+    },
+    "real": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ia46AgCNfnXjzgH8PIKH": 2,
+        "00i2HU7TEzzftShjRrDSEF": 2,
+        "00lNx0OcTJrS3MKHcB80HY": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "reality": {
+        "02mJtllR8CoskckLlrirNV": 4
+    },
+    "realiz": {
+        "00nvL9u5K8jEJ6TSxGdtPK": 1
+    },
+    "really": {
+        "00emjlCv9azBN0fzuuyLqy": 5,
+        "01Qb6dN5suQNu87VJ1mIpf": 5,
+        "01kmEgrTZAGvJNicVB7laT": 12,
+        "01vv2AjxgP4uUyb8waYO5Y": 1,
+        "027VSEVC8RRjUXLEJAzhH6": 1,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 3,
+        "02DurCgOvDdX0uKEjqcl3W": 10,
+        "02eF5vF3ASltFpWHDVWkdQ": 8
+    },
+    "realm": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "reap": {
+        "01Lr5YepbgjXAWR9iOEyH1": 1
+    },
+    "rear": {
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "reason": {
+        "00FROhC5g4iJdax5US8jRr": 1,
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "reat": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "rebelion": {
+        "00S35gEf40z03JTJgvQMqi": 1
+    },
+    "receiv": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "reclam": {
+        "01XFgRZfZI7oBagNf1Loml": 4
+    },
+    "recoj": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "recompens": {
+        "00ITtxUozN0vifE2uYvtqn": 2
+    },
+    "record": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "records": {
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 1
+    },
+    "recuerd": {
+        "02LnwwnaanFpM5dZNArPBb": 2,
+        "02lvTeAFIIsOd0wVNoRkQ5": 2
+    },
+    "recuperart": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "red": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3
+    },
+    "redemption": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "rees": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1
+    },
+    "refuerz": {
+        "01DSvNTUsVROjnSF5j3UbD": 1
+    },
+    "reg": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "regain": {
+        "01vv2AjxgP4uUyb8waYO5Y": 1
+    },
+    "reggaeton": {
+        "01DSvNTUsVROjnSF5j3UbD": 1
+    },
+    "reggeaton": {
+        "00qOE7OjRl0BpYiCiweZB2": 1
     },
     "regres": {
-        "doc2.txt": 1
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "regul": {
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "rej": {
+        "02kdNcUqZRgXwQiYr92gZW": 1
+    },
+    "rel": {
+        "00ppj2gGs8oxhGnTdejkzD": 4,
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "relationships": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1
+    },
+    "relax": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "relookesl": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "remains": {
+        "01wavOnjFBNgdMWBFYIAP4": 2
+    },
+    "remast": {
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "01Qb6dN5suQNu87VJ1mIpf": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "remaster": {
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "01IQ4aQgOf0Kkq3a273hmO": 2,
+        "02BDSCfu9jBYvJ8LkUVttD": 1,
+        "02GwPAncasVL82yC7y2hmN": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "rememb": {
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02H05NlKnwFQREf0qu89AL": 1,
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "remind": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "remix": {
+        "00Z0GIRi0l7WqQnQJCo5S2": 3,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "012mGdSYIBEmERuScm2iOl": 1,
+        "014V6u9VubefjaPPl1QkTJ": 2,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "02DurCgOvDdX0uKEjqcl3W": 2,
+        "02pf9lLM8Nb8l4u4ts1GWb": 2
+    },
+    "remov": {
+        "01LODLnhlfNphZ366BqKc0": 2
+    },
+    "rent": {
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1
+    },
+    "rentr": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "rep": {
+        "02H05NlKnwFQREf0qu89AL": 2
+    },
+    "repart": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "repeat": {
+        "00vHOSgvVfyLzhlTZIJo1m": 6
+    },
+    "repent": {
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "repitam": {
+        "00ITtxUozN0vifE2uYvtqn": 1
+    },
+    "reppin": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3
     },
     "represent": {
-        "doc2.txt": 1
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "representing": {
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "reputation": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "requisit": {
+        "00ITtxUozN0vifE2uYvtqn": 1
+    },
+    "resid": {
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "resistanc": {
+        "00LfFm08VWeZwB0Zlm24AT": 1
+    },
+    "respet": {
+        "00S35gEf40z03JTJgvQMqi": 1
+    },
+    "respond": {
+        "01auWCuHXubb8KPZ0IXF4S": 2
     },
     "rest": {
-        "doc2.txt": 1
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00hdjyXt6MohKnCyDmhxOL": 2,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "02uRToy7bttYcKCO3vIStA": 1
     },
-    "retuv": {
-        "doc2.txt": 1
+    "restless": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "retaliation": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "retoñ": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "return": {
+        "01Lr5YepbgjXAWR9iOEyH1": 4
+    },
+    "returns": {
+        "01Lr5YepbgjXAWR9iOEyH1": 1
+    },
+    "rev": {
+        "00UpV14MDfk4CvrMbFvqji": 1,
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "reveal": {
+        "01R0Xdwje645C6xFCnMRvm": 1
     },
     "revel": {
-        "doc2.txt": 1
+        "00S35gEf40z03JTJgvQMqi": 1
     },
-    "rio": {
-        "doc2.txt": 3
+    "reverend": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1
     },
-    "rivendel": {
-        "doc2.txt": 1
+    "revient": {
+        "00S35gEf40z03JTJgvQMqi": 1
     },
-    "roh": {
-        "doc2.txt": 1
+    "revival": {
+        "02gV5Zc9ctbZxD1uTNIok5": 1
+    },
+    "revolution": {
+        "00p85inzGeXRXgqDVn7Ftq": 1
+    },
+    "rex": {
+        "02uRToy7bttYcKCO3vIStA": 1
+    },
+    "reykon": {
+        "00ITtxUozN0vifE2uYvtqn": 8
+    },
+    "reyn": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "rez": {
+        "02kdNcUqZRgXwQiYr92gZW": 1
+    },
+    "rhin": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "rhyme": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "rhymes": {
+        "02DoXNeIVYvONhTk1fGQrz": 2
+    },
+    "rhythm": {
+        "02DoXNeIVYvONhTk1fGQrz": 4
+    },
+    "ribs": {
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "ric": {
+        "00ITtxUozN0vifE2uYvtqn": 1,
+        "00i2HU7TEzzftShjRrDSEF": 2,
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "rican": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "ricky": {
+        "00i2HU7TEzzftShjRrDSEF": 1
+    },
+    "rid": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00ReeHCY0FQUyuAUyPJdnk": 33,
+        "00lNx0OcTJrS3MKHcB80HY": 3,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "027VSEVC8RRjUXLEJAzhH6": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 6
+    },
+    "ridend": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "ridg": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "ridin": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "riding": {
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "rien": {
+        "00UpV14MDfk4CvrMbFvqji": 2
+    },
+    "rifacci": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "rigby": {
+        "00Gu3RMpDW2vO9PjlMVFDL": 1
+    },
+    "right": {
+        "00GfGwzlSB8DoA0cDP2Eit": 2,
+        "00Gu3RMpDW2vO9PjlMVFDL": 1,
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00lNx0OcTJrS3MKHcB80HY": 1,
+        "014V6u9VubefjaPPl1QkTJ": 3,
+        "01FBBpA6WBl3arX7pxTFwO": 1,
+        "01Lr5YepbgjXAWR9iOEyH1": 2,
+        "01iyINEYgPQ7ThMZuHUsqS": 1,
+        "023OVLNzXhX0j7CxswUt6D": 4,
+        "027h5P3kCyktHv9dpHUBBS": 19,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02AT1Z0nscuElXMWBEzEKu": 3,
+        "02DurCgOvDdX0uKEjqcl3W": 2,
+        "02H05NlKnwFQREf0qu89AL": 3,
+        "02PiwfcW4LuKxhDi3JfH01": 3,
+        "02eF5vF3ASltFpWHDVWkdQ": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1,
+        "02jdttpwvUBvKdzHkoL644": 2,
+        "02tvc9CFnTyHuSRlGeNv9w": 1,
+        "02uRToy7bttYcKCO3vIStA": 1
+    },
+    "rimanend": {
+        "00hdjyXt6MohKnCyDmhxOL": 2
+    },
+    "rims": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "rin": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "ring": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "rings": {
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "riot": {
+        "00LfFm08VWeZwB0Zlm24AT": 1
+    },
+    "ripens": {
+        "02138lFv3Bzncr6ScNbLAF": 3
+    },
+    "ris": {
+        "01Lr5YepbgjXAWR9iOEyH1": 1
+    },
+    "risveglian": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "ritm": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "ritorn": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "ritorni": {
+        "00hdjyXt6MohKnCyDmhxOL": 2
+    },
+    "riv": {
+        "01bWQ4TPGmsP6FS64nF4R9": 4
+    },
+    "rnb": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00qOE7OjRl0BpYiCiweZB2": 1,
+        "02tvc9CFnTyHuSRlGeNv9w": 1
+    },
+    "roach": {
+        "02mJtllR8CoskckLlrirNV": 2
+    },
+    "road": {
+        "011gUcrvLDn2gEApOdOhVe": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2
+    },
+    "roads": {
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1
+    },
+    "roar": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "00emjlCv9azBN0fzuuyLqy": 1
+    },
+    "robot": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 2
+    },
+    "rocc": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "rock": {
+        "004s3t0ONYlzxII9PLgU6z": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 3,
+        "00X2yv2vrtritPt2CZnUTZ": 2,
+        "00chLpzhgVjxs1zKC9UScL": 2,
+        "00vHOSgvVfyLzhlTZIJo1m": 2,
+        "01Lr5YepbgjXAWR9iOEyH1": 2,
+        "01Qb6dN5suQNu87VJ1mIpf": 1,
+        "01R0Xdwje645C6xFCnMRvm": 1,
+        "01TzbTwZ9Mce9mOeBpH03i": 7,
+        "023OVLNzXhX0j7CxswUt6D": 1,
+        "027VSEVC8RRjUXLEJAzhH6": 1,
+        "02BDSCfu9jBYvJ8LkUVttD": 3,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02M6vucOvmRfMxTXDUwRXu": 1,
+        "02MjAy2BTPTdqO19O5VtHO": 4,
+        "02eF5vF3ASltFpWHDVWkdQ": 2,
+        "02gIQlGYI0KVK87Uo9Ekjj": 1,
+        "02gV5Zc9ctbZxD1uTNIok5": 1,
+        "02mJtllR8CoskckLlrirNV": 1
+    },
+    "rockets": {
+        "00p85inzGeXRXgqDVn7Ftq": 3
+    },
+    "rockin": {
+        "00QyLmjxaSEE8qIZQjBXBj": 4,
+        "00lNx0OcTJrS3MKHcB80HY": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 1
+    },
+    "rocking": {
+        "00QyLmjxaSEE8qIZQjBXBj": 8
+    },
+    "rocks": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "rod": {
+        "01DSvNTUsVROjnSF5j3UbD": 1
+    },
+    "roj": {
+        "01DSvNTUsVROjnSF5j3UbD": 1,
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "roll": {
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00p85inzGeXRXgqDVn7Ftq": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "028JxheELfIvvY4zBXuMjw": 3
+    },
+    "rollin": {
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "02MjAy2BTPTdqO19O5VtHO": 20
+    },
+    "rolling": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "rolls": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3
+    },
+    "romanization": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "romari": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "rome": {
+        "00ITtxUozN0vifE2uYvtqn": 1
+    },
+    "romp": {
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "ron": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1
+    },
+    "room": {
+        "00GxbkrW4m1Tac5xySEJ4M": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "root": {
+        "02DoXNeIVYvONhTk1fGQrz": 2
+    },
+    "rop": {
+        "01DSvNTUsVROjnSF5j3UbD": 5
+    },
+    "ros": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "rosic": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "rough": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "roughest": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "round": {
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "rout": {
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "rov": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "rovers": {
+        "01M4Wng6jF5uoNEHLl2OIn": 6
+    },
+    "royal": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "rrrrah": {
+        "00qOE7OjRl0BpYiCiweZB2": 1
+    },
+    "rubb": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "ruin": {
+        "01FBBpA6WBl3arX7pxTFwO": 1
+    },
+    "rul": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00p85inzGeXRXgqDVn7Ftq": 3
+    },
+    "rumours": {
+        "00FROhC5g4iJdax5US8jRr": 1
+    },
+    "run": {
+        "00GxbkrW4m1Tac5xySEJ4M": 2,
+        "012mGdSYIBEmERuScm2iOl": 1,
+        "01wavOnjFBNgdMWBFYIAP4": 1,
+        "020wG4EHTwBy5h2rbpxqvK": 1,
+        "02CygBCQOIyEuhNZqHHcNx": 2,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02K5IV55wIgNNARk3UA95E": 2
+    },
+    "runners": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "runnin": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 1
+    },
+    "running": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00i0O74dXdaKKdCrqHnfXm": 3,
+        "01iyINEYgPQ7ThMZuHUsqS": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 16,
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "runs": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "02DoXNeIVYvONhTk1fGQrz": 1
+    },
+    "runway": {
+        "02AT1Z0nscuElXMWBEzEKu": 1
+    },
+    "rush": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "02lGHA7bFFplYLihnUWTx8": 1
+    },
+    "s": {
+        "00LfFm08VWeZwB0Zlm24AT": 1
+    },
+    "sa": {
+        "004s3t0ONYlzxII9PLgU6z": 7,
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "sab": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "sabor": {
+        "00S35gEf40z03JTJgvQMqi": 1
+    },
+    "sabrin": {
+        "00p85inzGeXRXgqDVn7Ftq": 1
+    },
+    "sac": {
+        "01IQ4aQgOf0Kkq3a273hmO": 1,
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "sacandot": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "sacart": {
+        "00qOE7OjRl0BpYiCiweZB2": 1
+    },
+    "sack": {
+        "00lNx0OcTJrS3MKHcB80HY": 1
+    },
+    "sacrific": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "sad": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Z0GIRi0l7WqQnQJCo5S2": 1,
+        "01LODLnhlfNphZ366BqKc0": 1,
+        "01QhVHvkGqzO861Kl3GhfX": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "sadness": {
+        "02mJtllR8CoskckLlrirNV": 2
+    },
+    "saegyeonoheun": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "saeppalg": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "saf": {
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02bTIMbUm8Zgt0cVAiexE4": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "sai": {
+        "02138lFv3Bzncr6ScNbLAF": 2
+    },
+    "said": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "014V6u9VubefjaPPl1QkTJ": 2,
+        "01vv2AjxgP4uUyb8waYO5Y": 4,
+        "023OVLNzXhX0j7CxswUt6D": 4,
+        "02H05NlKnwFQREf0qu89AL": 1,
+        "02K5IV55wIgNNARk3UA95E": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 5,
+        "02eF5vF3ASltFpWHDVWkdQ": 1,
+        "02pf9lLM8Nb8l4u4ts1GWb": 5
+    },
+    "saints": {
+        "01Lr5YepbgjXAWR9iOEyH1": 3
+    },
+    "sak": {
+        "014J7jX1wSv0manSdRnveo": 2
+    },
+    "saks": {
+        "00PLtXXER1XcTRZvs3LioS": 1
     },
     "sal": {
-        "doc2.txt": 1
+        "00ITtxUozN0vifE2uYvtqn": 5,
+        "00hdjyXt6MohKnCyDmhxOL": 6,
+        "00qOE7OjRl0BpYiCiweZB2": 1,
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "salivation": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "salmyeosi": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "salom": {
+        "00S35gEf40z03JTJgvQMqi": 1
+    },
+    "salt": {
+        "01DSvNTUsVROjnSF5j3UbD": 1,
+        "01LODLnhlfNphZ366BqKc0": 2
+    },
+    "salud": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 2
+    },
+    "salvaj": {
+        "00i2HU7TEzzftShjRrDSEF": 2
     },
     "sam": {
-        "doc2.txt": 3
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ia46AgCNfnXjzgH8PIKH": 6,
+        "00ReeHCY0FQUyuAUyPJdnk": 12,
+        "012mGdSYIBEmERuScm2iOl": 1,
+        "01R0Xdwje645C6xFCnMRvm": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 2,
+        "01vv2AjxgP4uUyb8waYO5Y": 2,
+        "01wavOnjFBNgdMWBFYIAP4": 2,
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "02H05NlKnwFQREf0qu89AL": 1
     },
-    "sarn": {
-        "doc2.txt": 1
+    "san": {
+        "004s3t0ONYlzxII9PLgU6z": 1
     },
-    "sarum": {
-        "doc2.txt": 3
+    "sand": {
+        "00vHOSgvVfyLzhlTZIJo1m": 1
     },
-    "sauron": {
-        "doc2.txt": 2
+    "sandali": {
+        "004s3t0ONYlzxII9PLgU6z": 2
+    },
+    "sandy": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "sang": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "sangr": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "sanity": {
+        "01vv2AjxgP4uUyb8waYO5Y": 1
+    },
+    "sant": {
+        "014J7jX1wSv0manSdRnveo": 21
+    },
+    "satisfaction": {
+        "01R0Xdwje645C6xFCnMRvm": 2
+    },
+    "satisfy": {
+        "00GfGwzlSB8DoA0cDP2Eit": 3
+    },
+    "saturday": {
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "sav": {
+        "00UpV14MDfk4CvrMbFvqji": 1,
+        "023OVLNzXhX0j7CxswUt6D": 4,
+        "02bTIMbUm8Zgt0cVAiexE4": 1,
+        "02uRToy7bttYcKCO3vIStA": 2
+    },
+    "savag": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1
+    },
+    "saw": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "02K5IV55wIgNNARk3UA95E": 2,
+        "02jcEwywffn3Tsb48fXmlW": 2
+    },
+    "say": {
+        "004s3t0ONYlzxII9PLgU6z": 1,
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00NAQYOP4AmWR549nnYJZu": 2,
+        "00ReeHCY0FQUyuAUyPJdnk": 9,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00UpV14MDfk4CvrMbFvqji": 2,
+        "00WIXhVVhswHuS6dlkScuw": 2,
+        "00emjlCv9azBN0fzuuyLqy": 4,
+        "00lNx0OcTJrS3MKHcB80HY": 1,
+        "00ppj2gGs8oxhGnTdejkzD": 1,
+        "014V6u9VubefjaPPl1QkTJ": 1,
+        "01LODLnhlfNphZ366BqKc0": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01TzbTwZ9Mce9mOeBpH03i": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 7,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 2,
+        "020wG4EHTwBy5h2rbpxqvK": 15,
+        "023OVLNzXhX0j7CxswUt6D": 6,
+        "027VSEVC8RRjUXLEJAzhH6": 10,
+        "027h5P3kCyktHv9dpHUBBS": 2,
+        "02AT1Z0nscuElXMWBEzEKu": 77,
+        "02DoXNeIVYvONhTk1fGQrz": 4,
+        "02M6vucOvmRfMxTXDUwRXu": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1,
+        "02gIQlGYI0KVK87Uo9Ekjj": 2,
+        "02gV5Zc9ctbZxD1uTNIok5": 2,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "sayin": {
+        "00Ro1lnV3V6i87aY4t8Q43": 4,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 2
+    },
+    "saying": {
+        "01vv2AjxgP4uUyb8waYO5Y": 3,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "saymynam": {
+        "00PXizG9xlUNINeqADlh96": 1
+    },
+    "says": {
+        "027VSEVC8RRjUXLEJAzhH6": 1,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "scar": {
+        "00FROhC5g4iJdax5US8jRr": 1,
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "scarlet": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "scars": {
+        "01Lr5YepbgjXAWR9iOEyH1": 1
+    },
+    "scem": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "scen": {
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "schemin": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 2
+    },
+    "schol": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "school": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "02H05NlKnwFQREf0qu89AL": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "scientific": {
+        "01wavOnjFBNgdMWBFYIAP4": 2
+    },
+    "scop": {
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "scopar": {
+        "02138lFv3Bzncr6ScNbLAF": 2
+    },
+    "scorrer": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "scott": {
+        "014V6u9VubefjaPPl1QkTJ": 1
+    },
+    "scrambl": {
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1
+    },
+    "scrap": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "scream": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "02803el8p3mKqcJzJ3Agpp": 2
+    },
+    "screamin": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1
+    },
+    "screaming": {
+        "01TzbTwZ9Mce9mOeBpH03i": 8,
+        "023OVLNzXhX0j7CxswUt6D": 4
+    },
+    "screens": {
+        "00lNx0OcTJrS3MKHcB80HY": 3
+    },
+    "screw": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "scritt": {
+        "00hdjyXt6MohKnCyDmhxOL": 2
+    },
+    "scuol": {
+        "02138lFv3Bzncr6ScNbLAF": 6
+    },
+    "scurry": {
+        "00emjlCv9azBN0fzuuyLqy": 1
+    },
+    "scusi": {
+        "00hdjyXt6MohKnCyDmhxOL": 2
+    },
+    "se": {
+        "00ITtxUozN0vifE2uYvtqn": 1,
+        "00OKDIsSQbx8rd5Al7fKNw": 5,
+        "01q4ccXbvPlCwZ1fPiFaeM": 1,
+        "02LnwwnaanFpM5dZNArPBb": 4,
+        "02kdNcUqZRgXwQiYr92gZW": 1
+    },
+    "sec": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "secc": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "seccatur": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "second": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00hdjyXt6MohKnCyDmhxOL": 2,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "secondhand": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2
+    },
+    "secret": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "01wavOnjFBNgdMWBFYIAP4": 1
+    },
+    "secrets": {
+        "00nvL9u5K8jEJ6TSxGdtPK": 13
+    },
+    "seduc": {
+        "01Lr5YepbgjXAWR9iOEyH1": 1
+    },
+    "see": {
+        "00GfGwzlSB8DoA0cDP2Eit": 2,
+        "00Ia46AgCNfnXjzgH8PIKH": 8,
+        "00LfFm08VWeZwB0Zlm24AT": 2,
+        "00NAQYOP4AmWR549nnYJZu": 7,
+        "00ReeHCY0FQUyuAUyPJdnk": 12,
+        "00Ro1lnV3V6i87aY4t8Q43": 4,
+        "00X2yv2vrtritPt2CZnUTZ": 4,
+        "00Z0GIRi0l7WqQnQJCo5S2": 1,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00emjlCv9azBN0fzuuyLqy": 2,
+        "00i0O74dXdaKKdCrqHnfXm": 3,
+        "00nvL9u5K8jEJ6TSxGdtPK": 2,
+        "014V6u9VubefjaPPl1QkTJ": 6,
+        "01Lr5YepbgjXAWR9iOEyH1": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01Qb6dN5suQNu87VJ1mIpf": 2,
+        "01R0Xdwje645C6xFCnMRvm": 3,
+        "01TzbTwZ9Mce9mOeBpH03i": 4,
+        "01iyINEYgPQ7ThMZuHUsqS": 2,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "01vv2AjxgP4uUyb8waYO5Y": 1,
+        "01wavOnjFBNgdMWBFYIAP4": 3,
+        "029QP3fFtLaW9B9RKr8DAg": 3,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02DurCgOvDdX0uKEjqcl3W": 9,
+        "02H05NlKnwFQREf0qu89AL": 1,
+        "02MjAy2BTPTdqO19O5VtHO": 4,
+        "02PiwfcW4LuKxhDi3JfH01": 2,
+        "02SUyCzxfqllXeEUqVNMVv": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 4,
+        "02gIQlGYI0KVK87Uo9Ekjj": 7,
+        "02gV5Zc9ctbZxD1uTNIok5": 2,
+        "02q7qbOYbE89NMFEtOklcc": 8,
+        "02tvc9CFnTyHuSRlGeNv9w": 1,
+        "02uRToy7bttYcKCO3vIStA": 2
+    },
+    "seeds": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "seein": {
+        "02PiwfcW4LuKxhDi3JfH01": 1
+    },
+    "seeing": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "seek": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "seem": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "01vv2AjxgP4uUyb8waYO5Y": 1
+    },
+    "seems": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "seen": {
+        "00X2yv2vrtritPt2CZnUTZ": 6,
+        "012mGdSYIBEmERuScm2iOl": 6,
+        "01TzbTwZ9Mce9mOeBpH03i": 2,
+        "02AT1Z0nscuElXMWBEzEKu": 2,
+        "02BDSCfu9jBYvJ8LkUVttD": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "sees": {
+        "014J7jX1wSv0manSdRnveo": 1
     },
     "segu": {
-        "doc2.txt": 2
+        "00hdjyXt6MohKnCyDmhxOL": 1
     },
-    "senescal": {
-        "doc2.txt": 1
+    "seguir": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
     },
-    "señor": {
-        "doc2.txt": 2
+    "seguit": {
+        "02138lFv3Bzncr6ScNbLAF": 1
     },
-    "sigu": {
-        "doc2.txt": 3
+    "sei": {
+        "00hdjyXt6MohKnCyDmhxOL": 5,
+        "02138lFv3Bzncr6ScNbLAF": 2
     },
-    "tambor": {
-        "doc2.txt": 1
+    "seiscient": {
+        "00S35gEf40z03JTJgvQMqi": 1
     },
-    "tard": {
-        "doc2.txt": 1
+    "seiz": {
+        "02DurCgOvDdX0uKEjqcl3W": 1
     },
-    "tem": {
-        "doc2.txt": 1
+    "sel": {
+        "00WIXhVVhswHuS6dlkScuw": 1
     },
-    "tierr": {
-        "doc2.txt": 1
+    "selection": {
+        "027h5P3kCyktHv9dpHUBBS": 1
     },
-    "tirith": {
-        "doc2.txt": 1
+    "self": {
+        "01vv2AjxgP4uUyb8waYO5Y": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
     },
-    "traicion": {
-        "doc2.txt": 1
+    "sell": {
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 2,
+        "02PiwfcW4LuKxhDi3JfH01": 1
     },
-    "trat": {
-        "doc2.txt": 2
+    "sellin": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 4,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
     },
-    "tumb": {
-        "doc2.txt": 1
+    "selling": {
+        "02bTIMbUm8Zgt0cVAiexE4": 2
     },
-    "usad": {
-        "doc2.txt": 1
+    "sellout": {
+        "00LfFm08VWeZwB0Zlm24AT": 1
     },
-    "viaj": {
-        "doc2.txt": 1
+    "seman": {
+        "00i2HU7TEzzftShjRrDSEF": 2,
+        "00ITtxUozN0vifE2uYvtqn": 1
     },
-    "vio": {
-        "doc2.txt": 1
+    "sembr": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
     },
-    "vuelt": {
-        "doc2.txt": 1
+    "sempr": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "send": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "sendin": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "sending": {
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "sens": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "020wG4EHTwBy5h2rbpxqvK": 1,
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "sensazion": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "sent": {
+        "00HIh9mVUQQAycsQiciWsh": 4,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00i2HU7TEzzftShjRrDSEF": 2,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1
+    },
+    "sentent": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "sentiment": {
+        "00hdjyXt6MohKnCyDmhxOL": 2
+    },
+    "sentind": {
+        "01XFgRZfZI7oBagNf1Loml": 3
+    },
+    "sep": {
+        "00ITtxUozN0vifE2uYvtqn": 1
+    },
+    "ser": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "serenat": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "serious": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "01Qb6dN5suQNu87VJ1mIpf": 4
+    },
+    "sertanej": {
+        "01XFgRZfZI7oBagNf1Loml": 1
+    },
+    "servin": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "servon": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "sesang": {
+        "00WIXhVVhswHuS6dlkScuw": 2
+    },
+    "set": {
+        "00i0O74dXdaKKdCrqHnfXm": 1,
+        "01R0Xdwje645C6xFCnMRvm": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02jdttpwvUBvKdzHkoL644": 1,
+        "02lGHA7bFFplYLihnUWTx8": 1
+    },
+    "setting": {
+        "00lNx0OcTJrS3MKHcB80HY": 1
+    },
+    "seu": {
+        "01XFgRZfZI7oBagNf1Loml": 3
+    },
+    "sev": {
+        "011gUcrvLDn2gEApOdOhVe": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1,
+        "02MjAy2BTPTdqO19O5VtHO": 24
+    },
+    "sevyn": {
+        "00vHOSgvVfyLzhlTZIJo1m": 1
+    },
+    "sew": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "sfer": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "sfigh": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "sgamavan": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "shad": {
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "01BXNQilWpOZxGLU9c12Iy": 1,
+        "01kmEgrTZAGvJNicVB7laT": 2,
+        "02pf9lLM8Nb8l4u4ts1GWb": 1
+    },
+    "shadow": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "02803el8p3mKqcJzJ3Agpp": 2,
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "shak": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00p85inzGeXRXgqDVn7Ftq": 3,
+        "020mPSviVz90DTlyfxofDJ": 27,
+        "023OVLNzXhX0j7CxswUt6D": 2
+    },
+    "shaking": {
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "shall": {
+        "01Lr5YepbgjXAWR9iOEyH1": 2
+    },
+    "sham": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "shap": {
+        "00NAQYOP4AmWR549nnYJZu": 1,
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "shar": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "shawty": {
+        "02PiwfcW4LuKxhDi3JfH01": 1
+    },
+    "she": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 8,
+        "00lNx0OcTJrS3MKHcB80HY": 3,
+        "014V6u9VubefjaPPl1QkTJ": 2,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01Qb6dN5suQNu87VJ1mIpf": 4,
+        "01bWQ4TPGmsP6FS64nF4R9": 1,
+        "01iyINEYgPQ7ThMZuHUsqS": 5,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 2,
+        "027VSEVC8RRjUXLEJAzhH6": 4,
+        "027h5P3kCyktHv9dpHUBBS": 14,
+        "029QP3fFtLaW9B9RKr8DAg": 6,
+        "02DoXNeIVYvONhTk1fGQrz": 10,
+        "02DurCgOvDdX0uKEjqcl3W": 12,
+        "02MjAy2BTPTdqO19O5VtHO": 4,
+        "02bTIMbUm8Zgt0cVAiexE4": 2,
+        "02q7qbOYbE89NMFEtOklcc": 1
+    },
+    "shed": {
+        "01Lr5YepbgjXAWR9iOEyH1": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "sheitan": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "shelby": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "shelf": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "shield": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "shift": {
+        "00lNx0OcTJrS3MKHcB80HY": 4
+    },
+    "shin": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00Z0GIRi0l7WqQnQJCo5S2": 7,
+        "00p85inzGeXRXgqDVn7Ftq": 1,
+        "02gIQlGYI0KVK87Uo9Ekjj": 2
+    },
+    "shining": {
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "ship": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "shirt": {
+        "02H05NlKnwFQREf0qu89AL": 8,
+        "02bTIMbUm8Zgt0cVAiexE4": 1,
+        "02gIQlGYI0KVK87Uo9Ekjj": 2
+    },
+    "shit": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 2,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02K5IV55wIgNNARk3UA95E": 6,
+        "02PiwfcW4LuKxhDi3JfH01": 3,
+        "02bTIMbUm8Zgt0cVAiexE4": 2
+    },
+    "shits": {
+        "01QhVHvkGqzO861Kl3GhfX": 1
+    },
+    "shiv": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "sho": {
+        "00X2yv2vrtritPt2CZnUTZ": 4,
+        "02gIQlGYI0KVK87Uo9Ekjj": 2
+    },
+    "shock": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "shoot": {
+        "00PLtXXER1XcTRZvs3LioS": 2,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00p85inzGeXRXgqDVn7Ftq": 3,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "shooters": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "shootin": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01QhVHvkGqzO861Kl3GhfX": 2
+    },
+    "shop": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "shopping": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "shor": {
+        "00emjlCv9azBN0fzuuyLqy": 1
+    },
+    "shorty": {
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "shory": {
+        "00HIh9mVUQQAycsQiciWsh": 1
+    },
+    "shot": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00ReeHCY0FQUyuAUyPJdnk": 9,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "shots": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "should": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "01Lr5YepbgjXAWR9iOEyH1": 1,
+        "01TzbTwZ9Mce9mOeBpH03i": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "02BDSCfu9jBYvJ8LkUVttD": 8,
+        "02GwPAncasVL82yC7y2hmN": 2
+    },
+    "shoulders": {
+        "00FROhC5g4iJdax5US8jRr": 3,
+        "02MjAy2BTPTdqO19O5VtHO": 16
+    },
+    "shout": {
+        "02803el8p3mKqcJzJ3Agpp": 2
+    },
+    "shov": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "show": {
+        "00GfGwzlSB8DoA0cDP2Eit": 3,
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 3,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 2,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02pf9lLM8Nb8l4u4ts1GWb": 1,
+        "02uRToy7bttYcKCO3vIStA": 1
+    },
+    "shows": {
+        "02GwPAncasVL82yC7y2hmN": 4
+    },
+    "shut": {
+        "01M4Wng6jF5uoNEHLl2OIn": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "01iyINEYgPQ7ThMZuHUsqS": 1,
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "siam": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "sick": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "02K5IV55wIgNNARk3UA95E": 4
+    },
+    "sicur": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "sid": {
+        "00FROhC5g4iJdax5US8jRr": 2,
+        "011gUcrvLDn2gEApOdOhVe": 1,
+        "02803el8p3mKqcJzJ3Agpp": 2,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02H05NlKnwFQREf0qu89AL": 1,
+        "02MjAy2BTPTdqO19O5VtHO": 112,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "sideways": {
+        "02MjAy2BTPTdqO19O5VtHO": 16
+    },
+    "sient": {
+        "00HIh9mVUQQAycsQiciWsh": 4,
+        "00ITtxUozN0vifE2uYvtqn": 1,
+        "00OKDIsSQbx8rd5Al7fKNw": 3,
+        "01DSvNTUsVROjnSF5j3UbD": 1,
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "sientat": {
+        "00qOE7OjRl0BpYiCiweZB2": 1
+    },
+    "sier": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "sig": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 2
+    },
+    "siganeul": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "sigani": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "sighs": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "sight": {
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "02tvc9CFnTyHuSRlGeNv9w": 4
+    },
+    "sign": {
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "02DurCgOvDdX0uKEjqcl3W": 1
+    },
+    "signal": {
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "signs": {
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "silly": {
+        "02AT1Z0nscuElXMWBEzEKu": 1
+    },
+    "silv": {
+        "00p85inzGeXRXgqDVn7Ftq": 1
+    },
+    "simpl": {
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "simply": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00emjlCv9azBN0fzuuyLqy": 1
+    },
+    "sinc": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "012mGdSYIBEmERuScm2iOl": 2,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02BDSCfu9jBYvJ8LkUVttD": 2,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "sing": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00Z0GIRi0l7WqQnQJCo5S2": 3,
+        "00ppj2gGs8oxhGnTdejkzD": 1,
+        "01wavOnjFBNgdMWBFYIAP4": 2
+    },
+    "singing": {
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "023OVLNzXhX0j7CxswUt6D": 2
+    },
+    "singl": {
+        "00FROhC5g4iJdax5US8jRr": 2,
+        "00f9VGHfQhAHMCQ2bSjg3D": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 3,
+        "011gUcrvLDn2gEApOdOhVe": 1,
+        "01BXNQilWpOZxGLU9c12Iy": 1,
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02gV5Zc9ctbZxD1uTNIok5": 1
+    },
+    "sings": {
+        "00SmB7n85SKROGjybsyq5i": 2,
+        "02DoXNeIVYvONhTk1fGQrz": 2
+    },
+    "sinn": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "sinners": {
+        "01Lr5YepbgjXAWR9iOEyH1": 3
+    },
+    "sipeun": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "sipeungeol": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "sippin": {
+        "00X2yv2vrtritPt2CZnUTZ": 4
+    },
+    "sir": {
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "02H05NlKnwFQREf0qu89AL": 8
+    },
+    "sissy": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "sist": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "sisters": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "sit": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "02uRToy7bttYcKCO3vIStA": 1
+    },
+    "sits": {
+        "027VSEVC8RRjUXLEJAzhH6": 1
+    },
+    "sittin": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3
+    },
+    "sitting": {
+        "00i0O74dXdaKKdCrqHnfXm": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "situation": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "six": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "01LODLnhlfNphZ366BqKc0": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "02H05NlKnwFQREf0qu89AL": 2,
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "sixt": {
+        "02uRToy7bttYcKCO3vIStA": 1
+    },
+    "sk": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "skatin": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "skating": {
+        "01iyINEYgPQ7ThMZuHUsqS": 3,
+        "02DoXNeIVYvONhTk1fGQrz": 2
+    },
+    "ski": {
+        "02BDSCfu9jBYvJ8LkUVttD": 1,
+        "02q7qbOYbE89NMFEtOklcc": 3
+    },
+    "skill": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "skin": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "01Lr5YepbgjXAWR9iOEyH1": 1,
+        "01kmEgrTZAGvJNicVB7laT": 4,
+        "02tvc9CFnTyHuSRlGeNv9w": 1
+    },
+    "skip": {
+        "00vHOSgvVfyLzhlTZIJo1m": 1
+    },
+    "skips": {
+        "01kmEgrTZAGvJNicVB7laT": 2
+    },
+    "skool": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "skrizzly": {
+        "023OVLNzXhX0j7CxswUt6D": 1
+    },
+    "skrrt": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "skull": {
+        "00i0O74dXdaKKdCrqHnfXm": 1
+    },
+    "sky": {
+        "00Gu3RMpDW2vO9PjlMVFDL": 1,
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "014V6u9VubefjaPPl1QkTJ": 1,
+        "02803el8p3mKqcJzJ3Agpp": 1,
+        "02rbSCTm2smTIZ6d8im2NP": 1
+    },
+    "slab": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "slamming": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "slang": {
+        "02138lFv3Bzncr6ScNbLAF": 2
+    },
+    "slap": {
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "slapp": {
+        "02AT1Z0nscuElXMWBEzEKu": 1
+    },
+    "sleazy": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "sleep": {
+        "00nvL9u5K8jEJ6TSxGdtPK": 6,
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02M6vucOvmRfMxTXDUwRXu": 1,
+        "02eF5vF3ASltFpWHDVWkdQ": 1,
+        "02uRToy7bttYcKCO3vIStA": 1
+    },
+    "sleeping": {
+        "00WIXhVVhswHuS6dlkScuw": 2,
+        "014J7jX1wSv0manSdRnveo": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "sleev": {
+        "01wavOnjFBNgdMWBFYIAP4": 2
+    },
+    "slick": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 2
+    },
+    "slim": {
+        "00X2yv2vrtritPt2CZnUTZ": 2
+    },
+    "slip": {
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "023OVLNzXhX0j7CxswUt6D": 2
+    },
+    "slippin": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "slipping": {
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "slow": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "01kmEgrTZAGvJNicVB7laT": 2,
+        "01wavOnjFBNgdMWBFYIAP4": 3,
+        "02lGHA7bFFplYLihnUWTx8": 1
+    },
+    "slowly": {
+        "02CygBCQOIyEuhNZqHHcNx": 1
+    },
+    "slump": {
+        "01M4Wng6jF5uoNEHLl2OIn": 3
+    },
+    "slung": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2
+    },
+    "smack": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "02MjAy2BTPTdqO19O5VtHO": 104
+    },
+    "smallest": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "smearin": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "smil": {
+        "00chLpzhgVjxs1zKC9UScL": 3,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 2,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "02GwPAncasVL82yC7y2hmN": 2,
+        "02pf9lLM8Nb8l4u4ts1GWb": 18
+    },
+    "smirk": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "smiths": {
+        "01Qb6dN5suQNu87VJ1mIpf": 1
+    },
+    "smok": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00Z0GIRi0l7WqQnQJCo5S2": 1,
+        "02PiwfcW4LuKxhDi3JfH01": 2,
+        "02bTIMbUm8Zgt0cVAiexE4": 2
+    },
+    "smokin": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00lNx0OcTJrS3MKHcB80HY": 1,
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "snap": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "snatch": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "snitch": {
+        "02PiwfcW4LuKxhDi3JfH01": 1
+    },
+    "snooz": {
+        "01QhVHvkGqzO861Kl3GhfX": 1
+    },
+    "snow": {
+        "00Z0GIRi0l7WqQnQJCo5S2": 1
+    },
+    "so": {
+        "00GfGwzlSB8DoA0cDP2Eit": 4,
+        "00Gu3RMpDW2vO9PjlMVFDL": 4,
+        "00Ia46AgCNfnXjzgH8PIKH": 3,
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00NAQYOP4AmWR549nnYJZu": 1,
+        "00PLtXXER1XcTRZvs3LioS": 5,
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "00ReeHCY0FQUyuAUyPJdnk": 12,
+        "00Ro1lnV3V6i87aY4t8Q43": 8,
+        "00UpV14MDfk4CvrMbFvqji": 2,
+        "00X2yv2vrtritPt2CZnUTZ": 6,
+        "00Z0GIRi0l7WqQnQJCo5S2": 9,
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 4,
+        "00emjlCv9azBN0fzuuyLqy": 3,
+        "00hdjyXt6MohKnCyDmhxOL": 7,
+        "00lNx0OcTJrS3MKHcB80HY": 35,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "011gUcrvLDn2gEApOdOhVe": 3,
+        "014J7jX1wSv0manSdRnveo": 1,
+        "014V6u9VubefjaPPl1QkTJ": 5,
+        "01FBBpA6WBl3arX7pxTFwO": 1,
+        "01LODLnhlfNphZ366BqKc0": 6,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01QhVHvkGqzO861Kl3GhfX": 2,
+        "01R0Xdwje645C6xFCnMRvm": 4,
+        "01TzbTwZ9Mce9mOeBpH03i": 6,
+        "01XFgRZfZI7oBagNf1Loml": 7,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "01iyINEYgPQ7ThMZuHUsqS": 1,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 3,
+        "01vv2AjxgP4uUyb8waYO5Y": 2,
+        "020wG4EHTwBy5h2rbpxqvK": 1,
+        "023OVLNzXhX0j7CxswUt6D": 2,
+        "027h5P3kCyktHv9dpHUBBS": 2,
+        "029QP3fFtLaW9B9RKr8DAg": 3,
+        "02AT1Z0nscuElXMWBEzEKu": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02DurCgOvDdX0uKEjqcl3W": 2,
+        "02K5IV55wIgNNARk3UA95E": 4,
+        "02M6vucOvmRfMxTXDUwRXu": 3,
+        "02MjAy2BTPTdqO19O5VtHO": 4,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 4,
+        "02jcEwywffn3Tsb48fXmlW": 1,
+        "02jdttpwvUBvKdzHkoL644": 12,
+        "02lGHA7bFFplYLihnUWTx8": 1,
+        "02mJtllR8CoskckLlrirNV": 4,
+        "02pf9lLM8Nb8l4u4ts1GWb": 4
+    },
+    "sob": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "sobrietà": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "socied": {
+        "01DSvNTUsVROjnSF5j3UbD": 2
+    },
+    "society": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "sod": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1
+    },
+    "sof": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "soft": {
+        "00chLpzhgVjxs1zKC9UScL": 2
+    },
+    "softly": {
+        "01TzbTwZ9Mce9mOeBpH03i": 2
+    },
+    "sogni": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "soh": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "soil": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "soir": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "sol": {
+        "00hdjyXt6MohKnCyDmhxOL": 3,
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "sold": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2
+    },
+    "soldi": {
+        "00FROhC5g4iJdax5US8jRr": 8,
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "02138lFv3Bzncr6ScNbLAF": 2
+    },
+    "soled": {
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "solemn": {
+        "01wavOnjFBNgdMWBFYIAP4": 1
+    },
+    "solit": {
+        "01IQ4aQgOf0Kkq3a273hmO": 1,
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "solution": {
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "solv": {
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "som": {
+        "00GfGwzlSB8DoA0cDP2Eit": 3,
+        "00Ia46AgCNfnXjzgH8PIKH": 4,
+        "00LfFm08VWeZwB0Zlm24AT": 3,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00ReeHCY0FQUyuAUyPJdnk": 6,
+        "00X2yv2vrtritPt2CZnUTZ": 2,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "00lNx0OcTJrS3MKHcB80HY": 2,
+        "00ppj2gGs8oxhGnTdejkzD": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 2,
+        "01M4Wng6jF5uoNEHLl2OIn": 7,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "01iyINEYgPQ7ThMZuHUsqS": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 3,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02PiwfcW4LuKxhDi3JfH01": 3,
+        "02bTIMbUm8Zgt0cVAiexE4": 2,
+        "02gV5Zc9ctbZxD1uTNIok5": 1,
+        "02q7qbOYbE89NMFEtOklcc": 1
+    },
+    "somebody": {
+        "00GfGwzlSB8DoA0cDP2Eit": 2,
+        "014V6u9VubefjaPPl1QkTJ": 1,
+        "023OVLNzXhX0j7CxswUt6D": 2,
+        "02bTIMbUm8Zgt0cVAiexE4": 2
+    },
+    "someday": {
+        "00QyLmjxaSEE8qIZQjBXBj": 6
+    },
+    "somehow": {
+        "00SmB7n85SKROGjybsyq5i": 2
+    },
+    "someon": {
+        "011gUcrvLDn2gEApOdOhVe": 3,
+        "01FBBpA6WBl3arX7pxTFwO": 3,
+        "01wavOnjFBNgdMWBFYIAP4": 14,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02gV5Zc9ctbZxD1uTNIok5": 1
+    },
+    "somethin": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "020wG4EHTwBy5h2rbpxqvK": 1
+    },
+    "something": {
+        "00FROhC5g4iJdax5US8jRr": 1,
+        "00X2yv2vrtritPt2CZnUTZ": 2,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "011gUcrvLDn2gEApOdOhVe": 2,
+        "01LODLnhlfNphZ366BqKc0": 4,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 2,
+        "023OVLNzXhX0j7CxswUt6D": 2,
+        "027VSEVC8RRjUXLEJAzhH6": 1,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02H05NlKnwFQREf0qu89AL": 2
+    },
+    "sometim": {
+        "01FBBpA6WBl3arX7pxTFwO": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 2,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "somewher": {
+        "00SmB7n85SKROGjybsyq5i": 2,
+        "02CygBCQOIyEuhNZqHHcNx": 1,
+        "02lGHA7bFFplYLihnUWTx8": 1,
+        "02mJtllR8CoskckLlrirNV": 2
+    },
+    "son": {
+        "00hdjyXt6MohKnCyDmhxOL": 1,
+        "00i2HU7TEzzftShjRrDSEF": 2,
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "soneul": {
+        "00WIXhVVhswHuS6dlkScuw": 2
+    },
+    "song": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Z0GIRi0l7WqQnQJCo5S2": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 4,
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "songtekst": {
+        "01BXNQilWpOZxGLU9c12Iy": 1
+    },
+    "sont": {
+        "00YeYHw6zhoy1y7EPTgIkj": 1
+    },
+    "soon": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "sophisticat": {
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "soplet": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "sorris": {
+        "01XFgRZfZI7oBagNf1Loml": 1
+    },
+    "sorrow": {
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "01wavOnjFBNgdMWBFYIAP4": 1,
+        "02GwPAncasVL82yC7y2hmN": 3
+    },
+    "sorry": {
+        "00Gu3RMpDW2vO9PjlMVFDL": 1,
+        "020wG4EHTwBy5h2rbpxqvK": 12,
+        "023OVLNzXhX0j7CxswUt6D": 2,
+        "02K5IV55wIgNNARk3UA95E": 2,
+        "02jcEwywffn3Tsb48fXmlW": 2
+    },
+    "sors": {
+        "00YeYHw6zhoy1y7EPTgIkj": 2
+    },
+    "sos": {
+        "01M4Wng6jF5uoNEHLl2OIn": 18
+    },
+    "sou": {
+        "01XFgRZfZI7oBagNf1Loml": 7
+    },
+    "soul": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02tvc9CFnTyHuSRlGeNv9w": 1
+    },
+    "soulmat": {
+        "02rbSCTm2smTIZ6d8im2NP": 1
+    },
+    "sound": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 4,
+        "00UpV14MDfk4CvrMbFvqji": 2,
+        "00Z0GIRi0l7WqQnQJCo5S2": 2,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "011gUcrvLDn2gEApOdOhVe": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02q7qbOYbE89NMFEtOklcc": 3
+    },
+    "sounds": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "south": {
+        "02H05NlKnwFQREf0qu89AL": 2
+    },
+    "southern": {
+        "00Ro1lnV3V6i87aY4t8Q43": 1,
+        "02H05NlKnwFQREf0qu89AL": 2,
+        "02bTIMbUm8Zgt0cVAiexE4": 2
+    },
+    "southpaw": {
+        "01auWCuHXubb8KPZ0IXF4S": 2
+    },
+    "soñ": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "spaac": {
+        "00vHOSgvVfyLzhlTZIJo1m": 1
+    },
+    "spam": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "spark": {
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "sparks": {
+        "00i0O74dXdaKKdCrqHnfXm": 1
+    },
+    "spe": {
+        "00X2yv2vrtritPt2CZnUTZ": 2,
+        "00p85inzGeXRXgqDVn7Ftq": 1
+    },
+    "speak": {
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "02q7qbOYbE89NMFEtOklcc": 1
+    },
+    "special": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "speechiness": {
+        "0017A6SJgTbfQVU2EtsPNo": 1
+    },
+    "spell": {
+        "00emjlCv9azBN0fzuuyLqy": 1
+    },
+    "spend": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "01vv2AjxgP4uUyb8waYO5Y": 1,
+        "02138lFv3Bzncr6ScNbLAF": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "spends": {
+        "00Gu3RMpDW2vO9PjlMVFDL": 1
+    },
+    "spent": {
+        "02AT1Z0nscuElXMWBEzEKu": 1
+    },
+    "spi": {
+        "01wavOnjFBNgdMWBFYIAP4": 1
+    },
+    "spiagg": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "spic": {
+        "00X2yv2vrtritPt2CZnUTZ": 4
+    },
+    "spin": {
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02H05NlKnwFQREf0qu89AL": 8,
+        "02MjAy2BTPTdqO19O5VtHO": 4
+    },
+    "spinnin": {
+        "00GxbkrW4m1Tac5xySEJ4M": 1,
+        "02MjAy2BTPTdqO19O5VtHO": 60
+    },
+    "spinning": {
+        "014V6u9VubefjaPPl1QkTJ": 1
+    },
+    "spirit": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00ReeHCY0FQUyuAUyPJdnk": 3
+    },
+    "spirits": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "spit": {
+        "00Gu3RMpDW2vO9PjlMVFDL": 1,
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "spogli": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "spoilt": {
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "sponsor": {
+        "01R0Xdwje645C6xFCnMRvm": 1
+    },
+    "spoon": {
+        "02803el8p3mKqcJzJ3Agpp": 2
+    },
+    "spregiudicat": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "spyderm": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1
+    },
+    "squ": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3
+    },
+    "srta": {
+        "01IQ4aQgOf0Kkq3a273hmO": 2
+    },
+    "ssh": {
+        "01q4ccXbvPlCwZ1fPiFaeM": 1
+    },
+    "ssundaztood": {
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "sta": {
+        "01BXNQilWpOZxGLU9c12Iy": 1
+    },
+    "stack": {
+        "00NAQYOP4AmWR549nnYJZu": 1
+    },
+    "stagger": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "stairway": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "stand": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "00Z0GIRi0l7WqQnQJCo5S2": 1,
+        "00p85inzGeXRXgqDVn7Ftq": 36,
+        "023OVLNzXhX0j7CxswUt6D": 2,
+        "02803el8p3mKqcJzJ3Agpp": 8,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02MjAy2BTPTdqO19O5VtHO": 4
+    },
+    "standing": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "014V6u9VubefjaPPl1QkTJ": 2
+    },
+    "stann": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "star": {
+        "00lNx0OcTJrS3MKHcB80HY": 4,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "staring": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "starlight": {
+        "00emjlCv9azBN0fzuuyLqy": 1
+    },
+    "stars": {
+        "00GxbkrW4m1Tac5xySEJ4M": 2,
+        "00QyLmjxaSEE8qIZQjBXBj": 20,
+        "02DurCgOvDdX0uKEjqcl3W": 2,
+        "02K5IV55wIgNNARk3UA95E": 1,
+        "02q7qbOYbE89NMFEtOklcc": 1
+    },
+    "start": {
+        "00Ia46AgCNfnXjzgH8PIKH": 2,
+        "00QyLmjxaSEE8qIZQjBXBj": 2,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00UpV14MDfk4CvrMbFvqji": 2,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 2,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "00p85inzGeXRXgqDVn7Ftq": 1,
+        "02SUyCzxfqllXeEUqVNMVv": 5,
+        "02jdttpwvUBvKdzHkoL644": 18,
+        "02lGHA7bFFplYLihnUWTx8": 1
+    },
+    "starts": {
+        "00Gu3RMpDW2vO9PjlMVFDL": 2,
+        "01wavOnjFBNgdMWBFYIAP4": 2,
+        "02DoXNeIVYvONhTk1fGQrz": 2
+    },
+    "starv": {
+        "029QP3fFtLaW9B9RKr8DAg": 3
+    },
+    "stat": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00hdjyXt6MohKnCyDmhxOL": 1,
+        "02138lFv3Bzncr6ScNbLAF": 1,
+        "02DoXNeIVYvONhTk1fGQrz": 2
+    },
+    "statement": {
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "statesvill": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "static": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "status": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "stay": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00GxbkrW4m1Tac5xySEJ4M": 4,
+        "00Ia46AgCNfnXjzgH8PIKH": 2,
+        "00emjlCv9azBN0fzuuyLqy": 3,
+        "01LODLnhlfNphZ366BqKc0": 1,
+        "01TzbTwZ9Mce9mOeBpH03i": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "01vv2AjxgP4uUyb8waYO5Y": 5,
+        "027VSEVC8RRjUXLEJAzhH6": 2,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 3,
+        "02bTIMbUm8Zgt0cVAiexE4": 2,
+        "02uRToy7bttYcKCO3vIStA": 1
+    },
+    "stayin": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "steady": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01QhVHvkGqzO861Kl3GhfX": 4
+    },
+    "steal": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1
+    },
+    "steel": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "steerin": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "step": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00NAQYOP4AmWR549nnYJZu": 4,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "028JxheELfIvvY4zBXuMjw": 1,
+        "02CygBCQOIyEuhNZqHHcNx": 3,
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "steps": {
+        "02M6vucOvmRfMxTXDUwRXu": 1
+    },
+    "stewart": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "stiam": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "stick": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "stickells": {
+        "00LfFm08VWeZwB0Zlm24AT": 1
+    },
+    "sticky": {
+        "00lNx0OcTJrS3MKHcB80HY": 1
+    },
+    "stilett": {
+        "014V6u9VubefjaPPl1QkTJ": 1
+    },
+    "still": {
+        "00FROhC5g4iJdax5US8jRr": 1,
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "014V6u9VubefjaPPl1QkTJ": 2,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "01iyINEYgPQ7ThMZuHUsqS": 5,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "01wavOnjFBNgdMWBFYIAP4": 4,
+        "028JxheELfIvvY4zBXuMjw": 2,
+        "02PiwfcW4LuKxhDi3JfH01": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 2,
+        "02eF5vF3ASltFpWHDVWkdQ": 1,
+        "02lGHA7bFFplYLihnUWTx8": 1
+    },
+    "stimulat": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1
+    },
+    "stink": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "stirring": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "stitching": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "sto": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "stol": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "stomach": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "stomp": {
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "028JxheELfIvvY4zBXuMjw": 2
+    },
+    "stood": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1
+    },
+    "stop": {
+        "00FROhC5g4iJdax5US8jRr": 2,
+        "00GxbkrW4m1Tac5xySEJ4M": 8,
+        "00QyLmjxaSEE8qIZQjBXBj": 6,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "00p85inzGeXRXgqDVn7Ftq": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 11,
+        "01LODLnhlfNphZ366BqKc0": 2,
+        "01M4Wng6jF5uoNEHLl2OIn": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 4,
+        "01wavOnjFBNgdMWBFYIAP4": 2,
+        "028JxheELfIvvY4zBXuMjw": 2
+    },
+    "stopp": {
+        "01wavOnjFBNgdMWBFYIAP4": 1
+    },
+    "stor": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2
+    },
+    "storm": {
+        "00emjlCv9azBN0fzuuyLqy": 1
+    },
+    "story": {
+        "02GwPAncasVL82yC7y2hmN": 2
+    },
+    "stov": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3
+    },
+    "straight": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "00Ro1lnV3V6i87aY4t8Q43": 2,
+        "01Lr5YepbgjXAWR9iOEyH1": 1,
+        "01wavOnjFBNgdMWBFYIAP4": 1,
+        "02CygBCQOIyEuhNZqHHcNx": 2,
+        "02PiwfcW4LuKxhDi3JfH01": 2
+    },
+    "strang": {
+        "00cqd6ZsSkLZqGMlQCR0Zo": 1,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "strangers": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1
+    },
+    "strangeways": {
+        "01Qb6dN5suQNu87VJ1mIpf": 1
+    },
+    "strangl": {
+        "01Qb6dN5suQNu87VJ1mIpf": 1
+    },
+    "strapp": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "stray": {
+        "02K5IV55wIgNNARk3UA95E": 8
+    },
+    "streak": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "streams": {
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "street": {
+        "00SmB7n85SKROGjybsyq5i": 2,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "streets": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "02CygBCQOIyEuhNZqHHcNx": 1,
+        "02bTIMbUm8Zgt0cVAiexE4": 2
+    },
+    "strength": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "02q7qbOYbE89NMFEtOklcc": 1
+    },
+    "stress": {
+        "00PLtXXER1XcTRZvs3LioS": 1
+    },
+    "stretch": {
+        "02eF5vF3ASltFpWHDVWkdQ": 1
+    },
+    "strewn": {
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "strictly": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "strik": {
+        "00ReeHCY0FQUyuAUyPJdnk": 9
+    },
+    "string": {
+        "00QyLmjxaSEE8qIZQjBXBj": 2
+    },
+    "strip": {
+        "02138lFv3Bzncr6ScNbLAF": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "strok": {
+        "028JxheELfIvvY4zBXuMjw": 1
+    },
+    "strong": {
+        "00GfGwzlSB8DoA0cDP2Eit": 1,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1,
+        "027h5P3kCyktHv9dpHUBBS": 1
+    },
+    "strongest": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "struggl": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1,
+        "01nV5tQ4pCpKIIJ3AVxKdv": 1
+    },
+    "stuck": {
+        "00ReeHCY0FQUyuAUyPJdnk": 3,
+        "01auWCuHXubb8KPZ0IXF4S": 1,
+        "029QP3fFtLaW9B9RKr8DAg": 1
+    },
+    "stumbl": {
+        "00FROhC5g4iJdax5US8jRr": 1
+    },
+    "stunn": {
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "stup": {
+        "00PLtXXER1XcTRZvs3LioS": 1,
+        "00f9VGHfQhAHMCQ2bSjg3D": 6,
+        "014V6u9VubefjaPPl1QkTJ": 1,
+        "02H05NlKnwFQREf0qu89AL": 1
+    },
+    "style": {
+        "00LfFm08VWeZwB0Zlm24AT": 1,
+        "00NAQYOP4AmWR549nnYJZu": 3,
+        "027h5P3kCyktHv9dpHUBBS": 1,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "stylish": {
+        "01iyINEYgPQ7ThMZuHUsqS": 1
+    },
+    "suav": {
+        "01BXNQilWpOZxGLU9c12Iy": 32
+    },
+    "subject": {
+        "01auWCuHXubb8KPZ0IXF4S": 1
+    },
+    "such": {
+        "00FROhC5g4iJdax5US8jRr": 1,
+        "00emjlCv9azBN0fzuuyLqy": 1,
+        "02BDSCfu9jBYvJ8LkUVttD": 1,
+        "02eF5vF3ASltFpWHDVWkdQ": 1,
+        "02tvc9CFnTyHuSRlGeNv9w": 1
+    },
+    "suck": {
+        "02lGHA7bFFplYLihnUWTx8": 1
+    },
+    "suckers": {
+        "00Ro1lnV3V6i87aY4t8Q43": 6
+    },
+    "sucking": {
+        "02bTIMbUm8Zgt0cVAiexE4": 1
+    },
+    "sud": {
+        "00WIXhVVhswHuS6dlkScuw": 1,
+        "00i2HU7TEzzftShjRrDSEF": 2
+    },
+    "sudor": {
+        "00i2HU7TEzzftShjRrDSEF": 2
+    },
+    "suel": {
+        "01IQ4aQgOf0Kkq3a273hmO": 2
+    },
+    "suen": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "sufocav": {
+        "01XFgRZfZI7oBagNf1Loml": 2
+    },
+    "sufr": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "sufri": {
+        "02lvTeAFIIsOd0wVNoRkQ5": 1
+    },
+    "sufrimient": {
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "sug": {
+        "00lNx0OcTJrS3MKHcB80HY": 38
+    },
+    "suggest": {
+        "00Ro1lnV3V6i87aY4t8Q43": 2
+    },
+    "suis": {
+        "00YeYHw6zhoy1y7EPTgIkj": 2
+    },
+    "suit": {
+        "02PiwfcW4LuKxhDi3JfH01": 1
+    },
+    "sul": {
+        "00hdjyXt6MohKnCyDmhxOL": 1
+    },
+    "sull": {
+        "02138lFv3Bzncr6ScNbLAF": 1
+    },
+    "summ": {
+        "00vHOSgvVfyLzhlTZIJo1m": 2,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "sun": {
+        "00Z0GIRi0l7WqQnQJCo5S2": 1,
+        "00chLpzhgVjxs1zKC9UScL": 1,
+        "00vHOSgvVfyLzhlTZIJo1m": 1,
+        "02CygBCQOIyEuhNZqHHcNx": 2,
+        "02DoXNeIVYvONhTk1fGQrz": 2,
+        "02K5IV55wIgNNARk3UA95E": 1
+    },
+    "sunday": {
+        "02AT1Z0nscuElXMWBEzEKu": 1
+    },
+    "sungandeul": {
+        "00WIXhVVhswHuS6dlkScuw": 1
+    },
+    "sunlight": {
+        "02K5IV55wIgNNARk3UA95E": 1
+    },
+    "sunny": {
+        "01vv2AjxgP4uUyb8waYO5Y": 1
+    },
+    "sunsets": {
+        "02BDSCfu9jBYvJ8LkUVttD": 4,
+        "02jcEwywffn3Tsb48fXmlW": 1
+    },
+    "superart": {
+        "02LnwwnaanFpM5dZNArPBb": 2
+    },
+    "superfly": {
+        "00lNx0OcTJrS3MKHcB80HY": 1
+    },
+    "supernatural": {
+        "023OVLNzXhX0j7CxswUt6D": 1
+    },
+    "superst": {
+        "02H05NlKnwFQREf0qu89AL": 1,
+        "02jdttpwvUBvKdzHkoL644": 1
+    },
+    "supp": {
+        "00Ia46AgCNfnXjzgH8PIKH": 1,
+        "02gV5Zc9ctbZxD1uTNIok5": 1
     }
 }
