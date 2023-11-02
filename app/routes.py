@@ -1,19 +1,39 @@
 from flask import render_template, request, jsonify
 from app import app
-from main import mostrar
+from main import mostrar,get_db,run_query
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
+
+
 @app.route('/mostrar_indice', methods=['POST'])
 def calcular_distancia_route():
-    city1 = request.form.get('city1')
 
-    city2 = request.form.get('city2')
-    country2 = request.form.get('country2')
-    metodo = request.form.get('metodo')
+    consulta = request.form.get('consult_i')
+    topk = request.form.get('topk')
 
-    distancia = mostrar()
+    # Asegúrate de que los valores estén en el formato adecuado (pueden requerir conversión)
+    consulta_str = str(consulta)
+    topk_int = int(topk)
 
-    return jsonify({'distancia': distancia})
+    # Construye la consulta SQL con los valores de consulta y topk
+    sql_query = f'''
+        SELECT track_name, ts_rank(content_idx, to_tsquery('english', '{consulta_str}')) as rank
+        FROM spotify_songs, to_tsquery('english', '{consulta_str}') query
+        WHERE content_idx @@ query
+        ORDER BY rank DESC
+        LIMIT {topk_int};
+    '''
+
+    resultados, tiempo_ejecucion = run_query(sql_query)
+
+    # print("Resultados de la consulta:", resultados)
+    print("Tiempo de ejecución:", tiempo_ejecucion, "segundos")
+
+    #distancia = mostrar()
+
+    return jsonify({'Tiempo de ejecucion': tiempo_ejecucion})
+
+
