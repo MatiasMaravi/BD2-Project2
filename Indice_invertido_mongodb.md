@@ -41,120 +41,47 @@ Realizamos el comando:
 use BasedeDatosProyect2
 ```
 
-Para popular y rellenar de datos nuestra base de datos usaremos un bucle for en dos campos del tipo string en cada uno de ellos con la cantidad pedida:
+Creamos nuestra coleccion:
 
 ```
-const numDocuments = [1000, 2000, 4000, 8000, 16000, 32000,64000];
-
-for (const num of numDocuments) {
-  const collectionName = `miColeccion${num}`;
-  db.createCollection(collectionName);
-
-  const documents = [];
-
-  for (let i = 1; i <= num; i++) {
-    documents.push({ campo1: `valor1_${i}`, campo2: `valor2_${i}` });
-  }
-
-  db[collectionName].insertMany(documents);
-}
+db.createCollection("spotify_songs")
 ```
-
-Verificamos la colecciones esten pobladas con:
+Insertamos los valores a nuestra coleccion con la siguiente idea de inserccion sera realizada ya que mongodb es un abase de datos no relacional.
 
 ```
-show collections
+db.spotify_songs.insert({
+    track_id: "some_track_id",
+    track_name: "Some Track Name",
+    track_artist: "Some Artist",
+    lyrics: "Lyrics go here",
+    track_popularity: 0.0,
+    track_album_id: "some_album_id",
+    track_album_name: "Some Album Name",
+    track_album_release_date: "Release Date",
+    playlist_name: "Some Playlist Name",
+    playlist_id: "some_playlist_id",
+    playlist_genre: "Genre",
+    playlist_subgenre: "Subgenre",
+    danceability: 0.0,
+    energy: 0.0,
+    key: 0.0,
+    loudness: 0.0,
+    mode: 0.0,
+    speechiness: 0.0,
+    acousticness: 0.0,
+    instrumentalness: 0.0,
+    liveness: 0.0,
+    valence: 0.0,
+    tempo: 0.0,
+    duration_ms: 0.0,
+    language: "Language"
+})
 ```
-Consultas sin indices en todas las colecciones:
+Para popular y llenar nuestra base de datos y coleccion con la informacion del csv haremos lo siguiente con el comando:
 
 ```
-const startTime = Date.now();
-
-//Donde N es la cantidad de values por coleccion.
-const result = db.miColeccionN.find({ campo1: `valor1_9` });
-
-const endTime = Date.now();
-
-const executionTime = endTime - startTime;
-
-printjson(result);
-print(`Tiempo de ejecución: ${executionTime} ms`);
+mongoimport --db BasedeDatosProyect2 --collection spotify_songs --type csv --headerline --file /ruta_al_archivo/spotify_songs.csv
 ```
-
-Coleccion de 1000:
-
-<img width="1210" alt="Captura de pantalla 2023-11-01 a la(s) 10 33 44" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/9af3eba8-7368-4a23-8c5f-e1bcab01238e">
-Tiempo de ejecución es 48 ms.
-
-Coleccion de 2000:
-
-<img width="1204" alt="Captura de pantalla 2023-11-01 a la(s) 10 35 59" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/b789252d-2244-4801-a3be-7781eca7a3bf">
-
-Tiempo de ejecución: 42 ms
-
-Coleccion de 4000:
-
-<img width="1191" alt="Captura de pantalla 2023-11-01 a la(s) 10 37 24" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/62ce56aa-8592-4b03-b22a-ac03777c1896">
-
-Tiempo de ejecución: 48 ms
-
-Coleccion de 8000:
-
-<img width="1204" alt="Captura de pantalla 2023-11-01 a la(s) 10 38 46" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/acba957a-d7bc-4c84-accb-ba6fcdab1535">
-
-Tiempo de ejecución: 48 ms
-
-Coleccion de 16000:
-
-<img width="1423" alt="Captura de pantalla 2023-11-01 a la(s) 10 40 40" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/147316c2-c471-41d1-a0d7-433ebb897dc1">
-
-Tiempo de ejecución: 44 ms
-
-Coleccion de 32000:
-<img width="1420" alt="Captura de pantalla 2023-11-01 a la(s) 10 41 27" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/dcabd2cb-e0f2-4cdc-9a35-ecaee75e1a39">
-
-Tiempo de ejecución: 46 ms
-
-Coleccion de 64000:
-<img width="1426" alt="Captura de pantalla 2023-11-01 a la(s) 10 42 06" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/fee0ec3f-4a41-4826-bd06-45c11aa296a2">
-Tiempo de ejecución: 47 ms
-
-En todas las colecciones en una consulta:
-```
-const startTime = Date.now();
-
-const valorABuscar =  `valor1_900`;
-
-const collectionsToSearch = [
-  'miColeccion1000',
-  'miColeccion2000',
-  'miColeccion4000',
-  'miColeccion8000',
-  'miColeccion16000',
-  'miColeccion32000',
-  'miColeccion64000'
-];
-
-for (const collectionName of collectionsToSearch) {
-  const result = db[collectionName].find({ campo1: valorABuscar });
-  print(`Resultados en ${collectionName}:`);
-  printjson(result);
-}
-
-const endTime = Date.now();
-
-const executionTime = endTime - startTime;
-
-
-printjson(result);
-print(`Tiempo de ejecución: ${executionTime} ms`);
-```
-<img width="1381" alt="Captura de pantalla 2023-11-01 a la(s) 10 43 59" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/cdbe66d4-881c-496f-9295-9bb21d6d7165">
-<img width="1432" alt="Captura de pantalla 2023-11-01 a la(s) 10 44 13" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/2c95faf0-e880-4ff8-a5d8-50c5ba82e7e0">
-<img width="1404" alt="Captura de pantalla 2023-11-01 a la(s) 10 44 28" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/52ebd980-be36-4b74-92b5-090f2e2ea77d">
-<img width="1363" alt="Captura de pantalla 2023-11-01 a la(s) 10 44 51" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/792efc4b-b8aa-4ad3-b7a4-65ecfa773f94">
-<img width="1306" alt="Captura de pantalla 2023-11-01 a la(s) 10 45 02" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/1f7a2260-37da-41bb-b351-985ec6412561">
-Tiempo de ejecución: 154 ms
 
 # Indexacion en MongoDB
 
@@ -194,101 +121,105 @@ El indice invetido en MongoDB, funciona de la siguiente manera:
     db.productos.find({ $text: { $search: "pantalon" } });
   ```
 
-## Experimentacion con indices
-Las colecciones que tenemos anteriormente seran indexadas en el campo1, con el indice de texto.
+En nuestra base dedatos actualizamos la coleccion spotify_songs de cada inserccion con el comando:
 
 ```
-const numDocuments = [1000, 2000, 4000, 8000, 16000, 32000,64000];
-
-for (const num of numDocuments) {
-  const collectionName = `miColeccion${num}`;
-  const indexField =  `campo1`; 
-
-
-  db[collectionName].createIndex({ [indexField]: 'text' });
-
-  print(`Índice de texto creado en ${collectionName} para el campo ${indexField}`);
-}
+db.spotify_songs.updateMany({}, { $set: { content_idx: '' } })
 ```
-<img width="1438" alt="Captura de pantalla 2023-11-01 a la(s) 11 05 52" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/b7531312-5b53-4d82-8d95-8fcc6d20780b">
-
-Consultas en las colecciones con MongoDB.
-
-Coleccion de 1000 valores:
-
-<img width="1432" alt="Captura de pantalla 2023-11-01 a la(s) 11 12 45" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/93877403-5d2c-47bb-8175-fe5125020ddc">
-
-Tiempo de ejecución: 40 ms
-
-Coleccion de 2000 valores:
-
-<img width="1440" alt="Captura de pantalla 2023-11-01 a la(s) 11 13 55" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/aead33dc-ade1-4cf6-968f-b5d7a7d681c0">
-
-Tiempo de ejecución: 39 ms
-
-Coleccion de 4000 valores:
-
-<img width="1440" alt="Captura de pantalla 2023-11-01 a la(s) 11 14 53" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/78db3887-d8f8-4ead-99d7-433733037680">
-Tiempo de ejecución: 40 ms
-
-Coleccion de 8000 valores:
-
-<img width="1428" alt="Captura de pantalla 2023-11-01 a la(s) 11 15 41" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/44a1a396-48b7-4963-b6ad-5badc4bb50b0">
-
-Tiempo de ejecución: 40 ms
-
-Coleccion de 16000 valores:
-
-<img width="1431" alt="Captura de pantalla 2023-11-01 a la(s) 11 17 01" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/1aa25600-98d8-4844-b67f-6feea8b0d96e">
-
-Tiempo de ejecución: 45 ms
-
-Coleccion de 32000 valores:
-
-<img width="1435" alt="Captura de pantalla 2023-11-01 a la(s) 11 17 45" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/cb8135c5-3798-437f-bb1b-e5cad302a897">
-
-Tiempo de ejecución: 42 ms
-
-Coleccion de 64000 valores:
-
-<img width="1438" alt="Captura de pantalla 2023-11-01 a la(s) 11 18 19" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/c348840a-daab-402c-9de1-da4a4e29417c">
-Tiempo de ejecución: 43 ms
-
-## En todas las colecciones con Indices:
-
+Haremos un update a los valores insertados que tenian inicialmente valores nulos, pero ahora con lo que se indica:
 ```
-const startTime = Date.now();
-
-const valorABuscar =  `valor1_900`;
-
-const collectionsToSearch = [
-  'miColeccion1000',
-  'miColeccion2000',
-  'miColeccion4000',
-  'miColeccion8000',
-  'miColeccion16000',
-  'miColeccion32000',
-  'miColeccion64000'
-];
-
-for (const collectionName of collectionsToSearch) {
-  const result = db[collectionName].find({ $text: { $search: valorABuscar } });
-  print(`Resultados en ${collectionName}:`);
-  printjson(result);
-}
-
-const endTime = Date.now();
-
-const executionTime = endTime - startTime;
-
-
-printjson(result);
-print(`Tiempo de ejecución: ${executionTime} ms`);
+db.spotify_songs.find().forEach(function(doc) {
+    const content_idx = [doc.track_name, doc.track_artist, doc.lyrics, doc.track_album_name, doc.track_album_release_date, doc.playlist_name, doc.playlist_genre, doc.playlist_subgenre, doc.language].filter(Boolean).join(' ');
+    db.spotify_songs.update({ _id: doc._id }, { $set: { content_idx: content_idx } });
+});
 ```
 
-<img width="1430" alt="Captura de pantalla 2023-11-01 a la(s) 11 20 42" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/13e1f4c7-d8ab-4ad9-9a05-a670f1f21066">
-<img width="1435" alt="Captura de pantalla 2023-11-01 a la(s) 11 21 38" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/1440e396-5a36-4e73-9235-28165a8ea7d5">
-<img width="1280" alt="Captura de pantalla 2023-11-01 a la(s) 11 21 53" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/c28c47d2-d030-4e49-bf4e-881390309096">
-<img width="1301" alt="Captura de pantalla 2023-11-01 a la(s) 11 22 13" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/50669143-be7c-4981-96ec-3a2b123caa76">
-<img width="1402" alt="Captura de pantalla 2023-11-01 a la(s) 11 22 28" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/75e4651c-2116-4ea2-b497-21af792744f2">
-Tiempo de ejecución: 96 ms
+Creamos el indice de en el value agregado:
+```
+db.spotify_songs.createIndex({ content_idx: 'text' }, { default_language: 'en', language_override: 'en' })
+```
+
+Verificamos que el indice fue creado
+```
+db.spotify_songs.getIndexes()
+```
+
+Consultas:
+
+```
+db.spotify_songs.find(
+   { $text: { $search: "Holy" } },
+   { score: { $meta: "textScore" }, track_name: 1 }
+).sort({ score: { $meta: "textScore" } }).limit(10)
+
+
+db.spotify_songs.find(
+   { $text: { $search: "Paranoid" } },
+   { score: { $meta: "textScore" }, track_name: 1, track_artist: 1 }
+).sort({ score: { $meta: "textScore" } }).limit(1000)
+
+```
+
+Controlando el tiempo en consultas:
+
+
+```
+var startTime = new Date();
+
+db.spotify_songs.find(
+   { $text: { $search: "Paranoid" } },
+   { score: { $meta: "textScore" }, track_name: 1, track_artist: 1 }
+).sort({ score: { $meta: "textScore" } }).limit(64000)
+
+var endTime = new Date();
+
+var executionTime = endTime - startTime;
+
+print("Tiempo de ejecución: " + executionTime + " ms");
+
+```
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 43 24" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/615359ad-5100-4f09-9be9-d18fb4011afd">
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 43 56" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/d82728cb-6cd2-4436-b800-736adad89a75">
+
+**Con N=1000, Tiempo de ejecución es 63 ms.**
+
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 45 02" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/ed85741e-75fd-4233-810a-b9b6e683ea55">
+
+<img width="1436" alt="Captura de pantalla 2023-11-04 a la(s) 00 45 34" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/1e94e16b-7a10-4d84-8bc2-139bbb2c5dd3">
+
+**Con N=2000, Tiempo de ejecución es 62 ms.**
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 50 52" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/14e228cc-5c3b-4655-8174-1e0f181b71ce">
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 51 06" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/2a94cce2-bd16-4a9d-a442-5c8cb76d4f60">
+
+**Con N=4000, Tiempo de ejecución es 74 ms.**
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 52 01" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/585d8484-cb25-4021-912c-2630d93ef448">
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 53 27" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/7fa239cc-2286-4bee-8076-adf2e42ac206">
+
+**Con N=8000, Tiempo de ejecución es 67 ms.**
+
+<img width="1432" alt="Captura de pantalla 2023-11-04 a la(s) 00 56 04" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/2e99217d-27d6-48af-b97e-cc54fc2accb5">
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 55 45" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/6779954b-9239-46ce-bbf6-80e9d993f47e">
+
+**Con N=16000, Tiempo de ejecución es 57 ms.**
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 00 57 27" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/0dd794bb-c464-4615-96d4-7ff5cea3f43d">
+
+<img width="1439" alt="Captura de pantalla 2023-11-04 a la(s) 00 57 12" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/dcf8c685-0942-4342-8cb7-56fa33dfb3e1">
+
+**Con N=32000, Tiempo de ejecución es 62 ms.**
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 01 00 12" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/2de2aa85-e05d-477e-9ae0-259cdf68369b">
+
+<img width="1440" alt="Captura de pantalla 2023-11-04 a la(s) 01 00 24" src="https://github.com/MatiasMaravi/BD2-Project2/assets/91238497/78ef4f55-6614-404e-bd52-90b6021f5ee4">
+
+**Con N=64000, Tiempo de ejecución es 65 ms.**
+
+
+
