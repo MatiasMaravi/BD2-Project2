@@ -1,6 +1,7 @@
 
 function mostrarCampos() {
             var selectedOption = document.getElementById("options").value;
+
             var consult_i = document.getElementById("consult_i");
             var topk = document.getElementById("topk");
 
@@ -19,11 +20,13 @@ function mostrarIndice() {
     var consulta_i = document.getElementById("consult_i").value;
     var topk = document.getElementById("topk").value;
     var metodo = document.getElementById("options").value;
+    var selectedLanguage= document.getElementById("language").value;
 
     var formData = new FormData();
     formData.append('consulta_i', consulta_i);
     formData.append('topk', topk);
     formData.append('metodo', metodo);
+    formData.append('language',selectedLanguage)
 
     fetch('/mostrar_indice', {
         method: 'POST',

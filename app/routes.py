@@ -12,21 +12,48 @@ def index():
 
 @app.route('/mostrar_indice', methods=['POST'])
 def calcular_distancia_route():
+
     consulta = request.form.get('consulta_i')
     topk = request.form.get('topk')
+    language = request.form.get('language')
+
+
+
 
     consulta_str = str(consulta)
     topk_int = int(topk)
+    language_str = str(language)
 
-    sql_query = f'''
-        SELECT track_name,playlist_name, track_artist,ts_rank(content_idx, query) as rank 
-        FROM spotify_songs, to_tsquery('english', '{consulta_str}') query 
-        WHERE content_idx @@ query 
-        ORDER BY rank DESC 
-        LIMIT {topk_int};
-    '''
+    print(topk_int)
+    print(consulta_str)
+    print(language_str)
 
-    resultados, tiempo_ejecucion = run_query(sql_query)
+    sql_query = ""
+
+    if language_str == "spanish":
+        sql_query = '''
+            SELECT track_name,playlist_name, track_artist,ts_rank(content_idx, query) as rank 
+            FROM spotify_es, to_tsquery('spanish', %s) query 
+            WHERE content_idx @@ query 
+            ORDER BY rank DESC 
+            LIMIT %s;
+        '''
+
+
+
+    elif language_str == "english":
+        sql_query = '''
+            SELECT track_name,playlist_name, track_artist,ts_rank(content_idx, query) as rank 
+            FROM spotify_en, to_tsquery('english', %s) query 
+            WHERE content_idx @@ query 
+            ORDER BY rank DESC 
+            LIMIT %s;
+        '''
+
+
+
+    resultados, tiempo_ejecucion = run_query(sql_query, consulta_str, topk_int)
+
 
     # Construye una lista de resultados en un formato adecuado para JSON
     resultados_json = [{'track_name': resultado[0], 'playlist_name': resultado[1],'track_artist': resultado[2], 'rank': resultado[3]} for resultado in resultados]

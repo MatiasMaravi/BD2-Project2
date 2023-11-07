@@ -26,13 +26,14 @@ def close_db(error):
     if db is not None:
         db.close()
 
-def run_query(query):
+def run_query(query, consulta_str, topk_int):
     start_time = time.time()
     conn = get_db()
     cursor = conn.cursor()
-    cursor.execute(query)
+    cursor.execute(query, (consulta_str, topk_int))
     result = cursor.fetchall()
     cursor.close()
     end_time = time.time()
     execution_time = end_time - start_time
     return result, execution_time
+
