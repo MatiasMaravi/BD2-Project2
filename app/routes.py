@@ -24,9 +24,23 @@ def calcular_distancia_route():
     topk_int = int(topk)
     language_str = str(language)
 
-    print(topk_int)
-    print(consulta_str)
-    print(language_str)
+    lista = consulta_str.split(" ")
+    frase = ""
+    i = 0
+    if len(lista) > 1:
+        for i in range(len(lista)):
+            if i == 0:
+                frase += lista[i]
+            else:
+
+                frase += " & "
+                frase += lista[i]
+            i += 1
+    else:
+        frase = consulta_str
+
+
+
 
     sql_query = ""
 
@@ -52,7 +66,7 @@ def calcular_distancia_route():
 
 
 
-    resultados, tiempo_ejecucion = run_query(sql_query, consulta_str, topk_int)
+    resultados, tiempo_ejecucion = run_query(sql_query, frase, topk_int)
 
 
     # Construye una lista de resultados en un formato adecuado para JSON
