@@ -6,6 +6,8 @@ import os
 from pympler  import asizeof
 from collections import defaultdict
 import pandas as pd
+import numpy as np
+import math
 
 
 class BSBI:
@@ -15,8 +17,9 @@ class BSBI:
         self.current_block = {}
         self.blocks = []
         self.archivo=archivo
-        self.output_index_file = 'index.json'
         self.funcion_sizeof=funcion_sizeof
+        self.num_books=0
+        self.books=[]
 
     def SPIMI(self):
         # Cargamos la stoplist
@@ -29,8 +32,6 @@ class BSBI:
             next(f)
             df = pd.read_csv(self.archivo)
 
-            i=0
-
             for line in f:
 
                 tokens = [stemmer.stem(word.lower()) for word in nltk.word_tokenize(line) if word.isalpha() and word.lower() not in stoplist]
@@ -39,8 +40,9 @@ class BSBI:
 
                 tf = defaultdict(lambda: defaultdict(int))
 
+                self.books.append(df.loc[self.num_books,"track_id"])
                 for token in tokens:
-                    tf[token][df.loc[i,"track_id"]] += 1
+                    tf[token][df.loc[self.num_books,"track_id"]] += 1
 
                 # Añadimos los tf al bloque actual
                 for token in tf:
@@ -60,10 +62,7 @@ class BSBI:
                     self.blocks.append('block' + str(self.num_block) + '.json')
                     self.current_block = {}
 
-                #if(i==700):
-                #    break
-                
-                #i+=1    
+                self.num_books += 1
 
         if self.current_block:
             self.num_block += 1
@@ -384,4 +383,176 @@ class BSBI:
                             os.remove(ruta_archivo)
                             print(f"Se eliminó el archivo: {nombre_archivo}")
                     except json.JSONDecodeError:
-                        pass    
+                        pass
+
+
+    def building(self):
+        #Construimos el resto del indice invertido
+        
+
+        # TF
+
+        #Actualizamos todos los valores de los tfs en el indice invertido global
+
+        # Cargamos el indice invertido global por bloques
+
+        carpeta = "blocks_index"
+
+        index_temp = {}
+
+        for nombre_archivo in os.listdir(carpeta):
+            ruta_archivo = os.path.join(carpeta, nombre_archivo)
+            if os.path.isfile(ruta_archivo):
+                with open(ruta_archivo, "r") as f:
+                    index_temp = json.load(f)
+                    for key in index_temp:
+                        index_temp[key] = {k: math.log10(1 + v) for k, v in index_temp[key].items()}
+
+                with open(ruta_archivo, "w") as f:
+                    json.dump(index_temp, f,ensure_ascii=False, indent=4)
+
+        print("TF calculado")            
+
+        # IDF
+
+        # Cargamos el indice invertido global por bloques
+
+        df={}
+
+        for nombre_archivo in os.listdir(carpeta):
+            ruta_archivo = os.path.join(carpeta, nombre_archivo)
+            if os.path.isfile(ruta_archivo):
+                with open(ruta_archivo, "r") as f:
+                    index_temp = json.load(f)
+                    for key in index_temp:
+                        df[key] = len(index_temp[key])
+
+
+        # Calculamos el idf
+
+        div = math.log10(self.num_books)
+
+        for token in df:
+            df[token] = div - math.log10(df[token])
+
+        # Guardamos el idf en un archivo
+        with open("idf.json", "w") as f:
+            json.dump(df, f,ensure_ascii=False, indent=4)
+
+        print("IDF calculado")    
+
+        # Calculamos la norma
+        # Cargamos el indice invertido global por bloques
+        # Cargamos el idf
+
+
+
+        norma = {}
+
+        for book in self.books:
+            TF_IDF = []
+            for nombre_archivo in os.listdir(carpeta):
+                ruta_archivo = os.path.join(carpeta, nombre_archivo)
+                if os.path.isfile(ruta_archivo):
+                    with open(ruta_archivo, "r") as f:
+                        index_temp = json.load(f)
+                        TF_IDF.extend([index_temp[token][book] * df[token] if book in index_temp[token] else 0 for token in index_temp])
+            TF_IDF = np.array(TF_IDF)
+            norma[book] = np.linalg.norm(TF_IDF)
+
+        # Guardamos la norma en un archivo
+
+        with open("norma.json", "w") as f:
+            json.dump(norma, f,ensure_ascii=False, indent=4)
+
+        print("Norma calculada")        
+
+    def validate_query(self, query_term_unic,idf) -> set:
+        aux = set()
+        for term in query_term_unic:
+        # Validamos si existe el término en nuestros diccionarios
+            if term in idf:
+                aux.add(term)
+        return aux        
+
+
+    def retrieval(self, query, k) -> list:
+
+        stemmer = SnowballStemmer("english") # Verificar si las palabras estan en ingles
+
+        with open(os.path.join('Indice_invertido', 'stoplist.txt'), encoding='utf-8', ) as file:
+                stoplist = [line.rstrip().lower() for line in file]
+
+        queryPrep = [stemmer.stem(word.lower()) for word in nltk.word_tokenize(query) if word.isalpha() and word.lower() not in stoplist]
+
+        query_term_unic=set(queryPrep)
+
+        # Cargamos el idf y la norma
+
+        with open("idf.json", "r") as f:
+            idf = json.load(f)
+
+        with open("norma.json", "r") as f:
+            norma = json.load(f)     
+
+        score = {}
+
+        for key in norma.keys():
+            score[key] = 0
+
+        # Validamos si existe el termino en nuestros diccionarios
+        query_term_unic=self.validate_query(query_term_unic,idf)
+
+        if(len(query_term_unic)==0):
+            return score
+
+        lenght_query=[]
+
+        for term in query_term_unic:
+            # calcular el tf-idf del query
+            term_tf = math.log10(1+queryPrep.count(term))
+            term_idf = idf[term]
+
+            # Buscar el termino en el indice invertido global
+
+            for nombre_archivo in os.listdir("blocks_index"):
+                ruta_archivo = os.path.join("blocks_index", nombre_archivo)
+                if os.path.isfile(ruta_archivo):
+                    with open(ruta_archivo, "r") as f:
+                        index = json.load(f)
+                        if term in index:
+                            break
+
+            term_doc = index[term]
+
+            lenght_query.append(term_tf*term_idf)
+
+            for doc in term_doc:
+                w_td = index[term][doc]*term_idf
+                w_tq = term_tf*term_idf
+                score[doc] += w_td * w_tq
+
+        norma_query=np.linalg.norm(np.array(lenght_query))
+
+        for doc in score:
+            score[doc] /= (norma[doc] * norma_query)
+            score[doc] = round(score[doc], 2)
+
+        result = sorted(score.items(), key=lambda x: x[1], reverse=True)
+
+        return result[:k]           
+
+
+
+
+                    
+
+
+
+
+
+
+                            
+
+
+
