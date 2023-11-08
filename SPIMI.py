@@ -449,7 +449,27 @@ class BSBI:
 
         norma = {}
 
-        for book in self.books:
+
+        for nombre_archivo in os.listdir(carpeta):
+            ruta_archivo = os.path.join(carpeta, nombre_archivo)
+            if os.path.isfile(ruta_archivo):
+                with open(ruta_archivo, "r") as f:
+                    index_temp = json.load(f)
+                    for key in index_temp:
+                        for book in index_temp[key]:
+                            if book in norma:
+                                norma[book].append(index_temp[key][book]*df[key])
+                            else:
+                                norma[book] = [index_temp[key][book]*df[key]]
+
+        for key in norma:
+            if len(norma[key])<len(self.books):
+                norma[key].extend([0]*(len(self.books)-len(norma[key])))
+
+        for key in norma:
+            norma[key] = np.linalg.norm(np.array(norma[key]))        
+
+        """for book in self.books:
             TF_IDF = []
             for nombre_archivo in os.listdir(carpeta):
                 ruta_archivo = os.path.join(carpeta, nombre_archivo)
@@ -458,7 +478,7 @@ class BSBI:
                         index_temp = json.load(f)
                         TF_IDF.extend([index_temp[token][book] * df[token] if book in index_temp[token] else 0 for token in index_temp])
             TF_IDF = np.array(TF_IDF)
-            norma[book] = np.linalg.norm(TF_IDF)
+            norma[book] = np.linalg.norm(TF_IDF)"""
 
         # Guardamos la norma en un archivo
 
