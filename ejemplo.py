@@ -45,15 +45,10 @@ def merge(arr1, arr2):
 
 # Ejemplo de uso:
 dict1 = {'apple': 3, 'banana': 2, 'cherry': 5, 'mandarina': 1, 'grape': 4}
-dict2 = {'date': 1, 'grape': 4, 'apple': 6}
+dict2 = {'date': 1, 'grape': 4, 'apple': 6,}
 
 sorted_dict = merge_sort_dicts(dict1, dict2)
 print(sorted_dict)
 
-del sorted_dict['apple']
-print(sorted_dict)
-
-lista = [0,3,4,5,6,7]
-len= len(lista)-1
-
-print(lista[0:len])
+dicion={}
+print(len(dicion))
