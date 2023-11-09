@@ -7,6 +7,7 @@ from ..utils.aux import save_block, calcular_cuadrado, merge, actualizar_blocks,
 
 class BSBI:
     def __init__(self, size_block, archivo,funcion_sizeof):
+        self.contador_block=0
         self.size_block = size_block
         self.num_block = 0
         self.current_block = {}
