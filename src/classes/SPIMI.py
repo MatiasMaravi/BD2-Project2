@@ -7,7 +7,6 @@ from ..utils.aux import save_block, calcular_cuadrado, merge, actualizar_blocks,
 
 class BSBI:
     def __init__(self, size_block, archivo,funcion_sizeof):
-        self.contador_block=0
         self.size_block = size_block
         self.num_block = 0
         self.current_block = {}
@@ -18,7 +17,7 @@ class BSBI:
         self.books=[]
 
     def SPIMI(self):
-
+        # Cargamos la stoplist
         with open(os.path.abspath(self.archivo)) as f:
             next(f)
             df = pd.read_csv(self.archivo)
@@ -48,15 +47,19 @@ class BSBI:
 
                 # Si el tamaño del bloque es igual al tamaño de bloque que se ha definido, se guarda el bloque en la lista de bloques
                 if self.funcion_sizeof(self.current_block) >= self.size_block:
-                    self.rellenar(self.current_block)
+                    self.num_block += 1
+                    self.save_block("blocks_index",self.num_block,self.current_block)
                     self.blocks.append('block' + str(self.num_block) + '.json')
-                    
+                    self.current_block = {}
 
                 self.num_books += 1
 
         if self.current_block:
-            self.rellenar(self.current_block)
+            self.num_block += 1
+            self.save_block("blocks_index",self.num_block,self.current_block)
             self.blocks.append('block' + str(self.num_block) + '.json')
+            self.current_block = {}
+
     # Ordena los bloques y los fusiona en un solo índice invertido global que sigue dividido en bloques
 
     def merge_index(self):
@@ -76,7 +79,6 @@ class BSBI:
             return  
 
         # Divide en dos grupos iguales
-        
         final=calcular_cuadrado(num_blocks_merge)
         potencia_2=2**final
         # Gestiona desde donde se empieza a recorrer los bloques de la derecha y de la izquierda
@@ -107,7 +109,6 @@ class BSBI:
                     if(self.i<len(self.blocks) and (self.j<len(self.blocks))):
                         # Caso en el que los dos bloques se quedan vacios
                         if(len(self.left_merged)==0 and len(self.right_merged)==0):
-    
                             file_path = os.path.join("blocks_index", self.blocks[self.i])
                             with open(file_path, "rb") as f:
                                 self.left_merged = json.load(f)
@@ -116,10 +117,12 @@ class BSBI:
                             file_path = os.path.join("blocks_index", self.blocks[self.j])
                             with open(file_path, "rb") as f:
                                 self.right_merged = json.load(f)
+
                                 self.merge_dicts()
 
                         # Caso en el que el bloque de la izquierda se queda vacio
                         elif(len(self.left_merged)==0):
+                            
                             with open("blocks_index/" + self.blocks[self.i], "rb") as f:
                                 self.left_merged = json.load(f)
 
@@ -139,43 +142,66 @@ class BSBI:
                 # Verificaciones luego de salida del while, para ver si quedaron bloques sin comparar
 
                 # Rellenamos los datos que quedan en el diccionario ordenado y lo que se cargo en alguno de los dos diccionarios
-                if((len(self.sorted_dict)!=0) or (len(self.right_merged) != 0 )):
-                    if(len(self.left_merged)!=0):
-                        self.guardar={**self.sorted_dict,**self.left_merged}
-                        self.left_merged = {}
-                        self.i+=1
-                    elif(len(self.right_merged)!=0):
-                        self.guardar={**self.sorted_dict,**self.right_merged}
-                        self.right_merged = {}
-                        self.j+=1
-                    self.rellenar(self.guardar)
+                if(len(self.left_merged)!=0):
+                    self.guardar={**self.sorted_dict,**self.left_merged}
+                    self.contador_block+=1
+                    self.num_block += 1
+                    save_block("blocks_merge",self.num_block,self.guardar)
+                    self.guardar = {}
+                    self.left_merged = {}
                     self.sorted_dict = {}
+                    self.i+=1                
+
+                elif(len(self.right_merged)!=0):
+                    self.guardar={**self.sorted_dict,**self.right_merged}
+                    self.contador_block+=1
+                    self.num_block += 1
+                    save_block("blocks_merge",self.num_block,self.guardar)
+                    self.guardar = {}
+                    self.right_merged = {}
+                    self.sorted_dict = {}
+                    self.j+=1
+
                 # Rellenamos la data de los bloques que no se compararon
 
              
                 if(self.i<bloques_inicio_derecha and self.i<len(self.blocks)):
                     while(self.i<bloques_inicio_derecha and self.i<len(self.blocks)):
-                        with open("blocks_index/" + self.blocks[self.i], "rb") as f:
+                        with open("blocks_index/" + self.blocks[self.i], "rb") as f:    
                             bloque_izquierda_faltante = json.load(f)
                             self.guardar={**self.guardar,**bloque_izquierda_faltante}
-                            self.rellenar(self.guardar)
+                            self.contador_block+=1
+                            self.num_block += 1
+                            save_block("blocks_merge",self.num_block,self.guardar)
+                            self.guardar = {}   
+
                         self.i+=1
 
 
                 elif(self.j<bloques_inicio_derecha+b and self.j<len(self.blocks)):
                     while(self.j<bloques_inicio_derecha+b and self.j<len(self.blocks)):
-                        with open("blocks_index/" + self.blocks[self.j], "rb") as f:
+                        with open("blocks_index/" + self.blocks[self.j], "rb") as f:    
                             bloque_derecha_faltante = json.load(f)
                             self.guardar={**self.guardar,**bloque_derecha_faltante}
-                            self.rellenar(self.guardar)
+                            self.contador_block+=1
+                            self.num_block += 1
+                            save_block("blocks_merge",self.num_block,self.guardar)
+                            self.guardar = {}
+
                         self.j+=1
 
                 if self.guardar:
-                    self.rellenar(self.guardar)
+                    self.contador_block+=1
+                    self.num_block += 1
+                    save_block("blocks_merge",self.num_block,self.guardar)
+                    self.guardar = {}
 
                 if self.contador_block<2*b:
                     while self.contador_block<2*b:
-                        self.rellenar(self.guardar)
+                        self.num_block += 1
+                        save_block("blocks_merge",self.num_block,self.guardar)
+                        self.guardar = {}
+                        self.contador_block+=1                        
     
                 bloques_inicio_izquierda=bloques_inicio_derecha+b
                 bloques_inicio_derecha= bloques_inicio_izquierda+b
@@ -185,11 +211,6 @@ class BSBI:
             self.num_block=0
 
         eliminar_archivos_vacios("blocks_index")    
-    def rellenar(self,diccionario):
-        self.contador_block+=1
-        self.num_block += 1
-        save_block("blocks_merge",self.num_block,diccionario)
-        diccionario = {}
 
     def merge_dicts(self):
         # Obtenemos las claves de ambos diccionarios
@@ -215,8 +236,10 @@ class BSBI:
                     del self.right_merged[key]
 
                 if self.funcion_sizeof(self.sorted_dict) >= self.size_block:
-                    self.rellenar(self.sorted_dict)
-                  
+                    self.contador_block+=1
+                    self.num_block += 1
+                    save_block("blocks_merge",self.num_block,self.sorted_dict)
+                    self.sorted_dict = {}
             else:
                 if(len(self.left_merged)==0 and len(self.right_merged)==0):
                     self.i+=1
@@ -231,10 +254,13 @@ class BSBI:
                     self.j+=1
                     break
 
-                break
+                break        
     
         if(len(self.left_merged)==0 and len(self.right_merged)==0):
             self.i+=1
             self.j+=1
 
-            self.rellenar(self.sorted_dict)
+            self.contador_block+=1
+            self.num_block += 1
+            save_block("blocks_merge",self.num_block,self.sorted_dict)
+            self.sorted_dict = {}
