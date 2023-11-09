@@ -7,14 +7,18 @@ import sys
 
 def crear_indice():
     tiempo_inicial = time.time()
-    # Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
-    # Indice.SPIMI()
-    # Indice.merge_index()
+    Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
+    Indice.SPIMI()
+    Indice.merge_index()
     building()
     tiempo_final = time.time()
     print("indice creado en: ",tiempo_final-tiempo_inicial," segundos")
 
 def realizar_consulta():
+    import os
+    if not os.path.exists("blocks_index"):
+        print("No existe el indice invertido, por favor cree el indice primero")
+        return
     consulta = input("Ingrese la consulta: ")
     k = int(input("Ingrese el numero de resultados: "))
     resultado = retrieval(consulta,k)
