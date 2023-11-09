@@ -6,8 +6,8 @@ import sys
 def crear_indice():
     tiempo_inicial = time.time()
     Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
-    # Indice.SPIMI()
-    # Indice.merge_index()
+    Indice.SPIMI()
+    Indice.merge_index()
     building()
     tiempo_final = time.time()
     print("indice creado en: ",tiempo_final-tiempo_inicial," segundos")
