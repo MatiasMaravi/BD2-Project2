@@ -48,7 +48,7 @@ class BSBI:
                 # Si el tamaño del bloque es igual al tamaño de bloque que se ha definido, se guarda el bloque en la lista de bloques
                 if self.funcion_sizeof(self.current_block) >= self.size_block:
                     self.num_block += 1
-                    self.save_block("blocks_index",self.num_block,self.current_block)
+                    save_block("blocks_index",self.num_block,self.current_block)
                     self.blocks.append('block' + str(self.num_block) + '.json')
                     self.current_block = {}
 
@@ -56,7 +56,7 @@ class BSBI:
 
         if self.current_block:
             self.num_block += 1
-            self.save_block("blocks_index",self.num_block,self.current_block)
+            save_block("blocks_index",self.num_block,self.current_block)
             self.blocks.append('block' + str(self.num_block) + '.json')
             self.current_block = {}
 
