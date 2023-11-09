@@ -3,7 +3,7 @@ import os
 from collections import defaultdict
 import pandas as pd
 from ..utils.preprocesamiento import preprocesamiento
-
+from ..utils.aux import save_block, calcular_cuadrado, merge, actualizar_blocks, eliminar_archivos_vacios
 
 class BSBI:
     def __init__(self, size_block, archivo,funcion_sizeof):
@@ -47,18 +47,15 @@ class BSBI:
 
                 # Si el tamaño del bloque es igual al tamaño de bloque que se ha definido, se guarda el bloque en la lista de bloques
                 if self.funcion_sizeof(self.current_block) >= self.size_block:
-                    self.num_block += 1
-                    save_block("blocks_index",self.num_block,self.current_block)
+                    self.rellenar(self.current_block)
                     self.blocks.append('block' + str(self.num_block) + '.json')
-                    self.current_block = {}
+                    
 
                 self.num_books += 1
 
         if self.current_block:
-            self.num_block += 1
-            save_block("blocks_index",self.num_block,self.current_block)
+            self.rellenar(self.current_block)
             self.blocks.append('block' + str(self.num_block) + '.json')
-            self.current_block = {}
     # Ordena los bloques y los fusiona en un solo índice invertido global que sigue dividido en bloques
 
     def merge_index(self):
@@ -150,7 +147,7 @@ class BSBI:
                         self.guardar={**self.sorted_dict,**self.right_merged}
                         self.right_merged = {}
                         self.j+=1
-                    self.rellenar()
+                    self.rellenar(self.guardar)
                     self.sorted_dict = {}
                 # Rellenamos la data de los bloques que no se compararon
 
@@ -160,7 +157,7 @@ class BSBI:
                         with open("blocks_index/" + self.blocks[self.i], "rb") as f:
                             bloque_izquierda_faltante = json.load(f)
                             self.guardar={**self.guardar,**bloque_izquierda_faltante}
-                            self.rellenar()
+                            self.rellenar(self.guardar)
                         self.i+=1
 
 
@@ -169,15 +166,15 @@ class BSBI:
                         with open("blocks_index/" + self.blocks[self.j], "rb") as f:
                             bloque_derecha_faltante = json.load(f)
                             self.guardar={**self.guardar,**bloque_derecha_faltante}
-                            self.rellenar()
+                            self.rellenar(self.guardar)
                         self.j+=1
 
                 if self.guardar:
-                    self.rellenar()
+                    self.rellenar(self.guardar)
 
                 if self.contador_block<2*b:
                     while self.contador_block<2*b:
-                        self.rellenar()
+                        self.rellenar(self.guardar)
     
                 bloques_inicio_izquierda=bloques_inicio_derecha+b
                 bloques_inicio_derecha= bloques_inicio_izquierda+b
@@ -187,11 +184,11 @@ class BSBI:
             self.num_block=0
 
         eliminar_archivos_vacios("blocks_index")    
-    def rellenar(self):
+    def rellenar(self,diccionario):
         self.contador_block+=1
         self.num_block += 1
-        save_block("blocks_merge",self.num_block,self.guardar)
-        self.guardar = {}
+        save_block("blocks_merge",self.num_block,diccionario)
+        diccionario = {}
 
     def merge_dicts(self):
         # Obtenemos las claves de ambos diccionarios
@@ -217,10 +214,7 @@ class BSBI:
                     del self.right_merged[key]
 
                 if self.funcion_sizeof(self.sorted_dict) >= self.size_block:
-                    self.contador_block+=1
-                    self.num_block += 1
-                    save_block("blocks_merge",self.num_block,self.sorted_dict)
-                    self.sorted_dict = {}
+                    self.rellenar(self.sorted_dict)
                   
             else:
                 if(len(self.left_merged)==0 and len(self.right_merged)==0):
@@ -236,88 +230,10 @@ class BSBI:
                     self.j+=1
                     break
 
-                break        
+                break
     
         if(len(self.left_merged)==0 and len(self.right_merged)==0):
             self.i+=1
             self.j+=1
 
-            self.contador_block+=1
-            self.num_block += 1
-            save_block("blocks_merge",self.num_block,self.sorted_dict)
-            self.sorted_dict = {}
-
-
-    
-def merge(arr1, arr2):
-    merged = []
-    i, j = 0, 0
-
-    while i < len(arr1) and j < len(arr2):
-        if arr1[i] < arr2[j]:
-            merged.append(arr1[i])
-            i += 1
-        elif arr1[i] > arr2[j]:
-            merged.append(arr2[j])
-            j += 1
-        else:
-            # Si los elementos son iguales, agregar uno de ellos a merged
-            merged.append(arr1[i])
-            i += 1
-            j += 1
-
-    # Agregar cualquier elemento restante de arr1 y arr2
-    merged.extend(arr1[i:])
-    merged.extend(arr2[j:])
-
-    return merged
-
-
-def actualizar_blocks():
-
-    import shutil
-    import os
-    carpeta_origen = "blocks_merge"
-    carpeta_destino = "blocks_index"
-
-    shutil.rmtree(carpeta_destino)
-
-    os.rename(carpeta_origen, carpeta_destino)
-
-    print("Archivos actualizados")
-
-def eliminar_archivos_vacios(ruta_carpeta):
-    for nombre_archivo in os.listdir(ruta_carpeta):
-        ruta_archivo = os.path.join(ruta_carpeta, nombre_archivo)
-        if os.path.isfile(ruta_archivo):
-            with open(ruta_archivo, 'r') as archivo:
-                contenido = archivo.read()
-                try:
-                    datos = json.loads(contenido)
-                    if isinstance(datos, dict) and not datos:
-                        # Si el archivo contiene un diccionario vacío, eliminarlo
-                        os.remove(ruta_archivo)
-                except json.JSONDecodeError:
-                    pass
-
-def calcular_cuadrado(num_blocks_merge):
-    final=0
-
-    while(2**final<num_blocks_merge):
-        final+=1
-
-    return final
-
-def save_block(nombre_carpeta,num_block,bloque):
-        # Nombre del archivo dentro de la carpeta
-        nombre_archivo = 'block' + str(num_block) + '.json'
-
-        # Combinar la carpeta y el nombre de archivo para obtener la ruta completa
-        ruta_completa = os.path.join(nombre_carpeta, nombre_archivo)
-
-        # Asegúrate de que la carpeta exista antes de guardar el archivo
-        if not os.path.exists(nombre_carpeta):
-            os.makedirs(nombre_carpeta)
-
-        with open(ruta_completa, 'w',encoding="utf-8") as f:
-            json.dump(bloque, f,ensure_ascii=False, indent=4)
+            self.rellenar(self.sorted_dict)
