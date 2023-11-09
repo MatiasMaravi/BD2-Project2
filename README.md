@@ -40,3 +40,12 @@ Ejecutar el siguiente comando en la terminal:
 python3 main.py
 ```
 Después de ejecutar el comando se mostrará un menú donde podrás realizar la consulta textual sobre la tabla de canciones de spotify.
+También habrá la opción para crear el índice invertido (guardado en blocks_index) si aún no fue creado.
+## Experimento
+|   | PostgreSQL |
+| ------------- | ------------- |
+| N = 1000  | 14.778 ms  |
+| N = 2000  | 15.129 ms  | 
+| N = 4000  | 15.072 ms  | 
+| N = 8000  | 14.142 ms  | 
+| N = 16000  | 27.289 ms  | 
