@@ -1,21 +1,23 @@
-from SPIMI import BSBI
+from src.classes.SPIMI import BSBI
+from src.utils.building import building, retrieval
 import time
 import sys
 
 
+
 def crear_indice():
     tiempo_inicial = time.time()
-    Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
-    Indice.SPIMI()
-    Indice.building()
+    # Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
+    # Indice.SPIMI()
+    # Indice.merge_index()
+    building()
     tiempo_final = time.time()
     print("indice creado en: ",tiempo_final-tiempo_inicial," segundos")
 
 def realizar_consulta():
-    Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
     consulta = input("Ingrese la consulta: ")
     k = int(input("Ingrese el numero de resultados: "))
-    resultado = Indice.retrieval(consulta,k)
+    resultado = retrieval(consulta,k)
     print(resultado)
 
 

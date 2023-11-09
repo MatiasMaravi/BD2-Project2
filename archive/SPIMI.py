@@ -389,7 +389,6 @@ class BSBI:
     def building(self):
         #Construimos el resto del indice invertido
         
-
         # TF
 
         #Actualizamos todos los valores de los tfs en el indice invertido global
@@ -493,7 +492,7 @@ class BSBI:
         # Validamos si existe el término en nuestros diccionarios
             if term in idf:
                 aux.add(term)
-        return aux        
+        return aux
 
 
     def retrieval(self, query, k) -> list:
@@ -509,10 +508,10 @@ class BSBI:
 
         # Cargamos el idf y la norma
 
-        with open("idf.json", "r") as f:
+        with open("data/idf.json", "r") as f:
             idf = json.load(f)
 
-        with open("norma.json", "r") as f:
+        with open("data/norma.json", "r") as f:
             norma = json.load(f)     
 
         score = {}
