@@ -33,3 +33,10 @@ documentos de texto.
 2. **Construcción de una estructura multidimensional** para dar soporte a las
 búsqueda y recuperación eficiente de imágenes / audio usando vectores característicos. 
 Ambas implementaciones serán aplicadas para mejorar la búsqueda en un sistema de recomendación.
+
+## Ejemplo de uso
+Ejecutar el siguiente comando en la terminal:
+```bash
+python3 main.py
+```
+Después de ejecutar el comando se creará el archivo index.json que tiene el indice global ordenado de las canciones de spotify junto a su peso "tf". También se creará una carpeta "docs" con el índice global distribuido equitativamente en bloques.
