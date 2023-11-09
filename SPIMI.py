@@ -562,17 +562,3 @@ class BSBI:
 
         return result[:k]           
 
-
-
-
-                    
-
-
-
-
-
-
-                            
-
-
-
