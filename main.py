@@ -1,9 +1,12 @@
 from src.classes.InvertIndex import InvertIndex
 from app import app
 import psycopg2
+
 from flask import g
 
 import time
+
+
 
 
 app.config['DATABASE_URI'] = 'postgresql://postgres:40101109@localhost/BaseII'

@@ -22,6 +22,7 @@ function mostrarIndice() {
     var metodo = document.getElementById("options").value;
     var selectedLanguage= document.getElementById("language").value;
 
+
     var formData = new FormData();
     formData.append('consulta_i', consulta_i);
     formData.append('topk', topk);
