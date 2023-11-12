@@ -1,20 +1,15 @@
-from src.classes.InvertIndex import InvertIndex
+
 from app import app
 import psycopg2
-
 from flask import g
-
 import time
-
-
+from src.classes.SPIMI import BSBI
+from src.utils.building import building, retrieval
+import time
+import sys
 
 
 app.config['DATABASE_URI'] = 'postgresql://postgres:40101109@localhost/BaseII'
-
-
-
-
-
 
 
 
@@ -39,4 +34,26 @@ def run_query(query, consulta_str, topk_int):
     end_time = time.time()
     execution_time = end_time - start_time
     return result, execution_time
+
+def crear_indice():
+    tiempo_inicial = time.time()
+    Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
+    Indice.SPIMI()
+    Indice.merge_index()
+    building()
+    tiempo_final = time.time()
+    print("indice creado en: ",tiempo_final-tiempo_inicial," segundos")
+
+def realizar_consulta(consulta,topk):
+    import os
+    if not os.path.exists("blocks_index"):
+        print("No existe el indice invertido, por favor cree el indice primero")
+        return
+
+
+    resultado = retrieval(consulta,topk)
+    return resultado
+
+
+
 

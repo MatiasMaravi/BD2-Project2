@@ -1,10 +1,11 @@
 from flask import render_template, request, jsonify
 from app import app
-from main import get_db,run_query
+from main import get_db,run_query,realizar_consulta
 from pymongo import MongoClient
 from bson import ObjectId
 import json
 import time
+import pandas as pd
 
 
 def jsonify_with_objectid_support(obj):
@@ -122,10 +123,40 @@ def calcular_distancia_route():
 
         # Agrega el tiempo de ejecución a los resultados
         resultados_json = {'tiempo_ejecucion': execution_time, 'resultados': resultados_lista}
-        print(resultados_json)
+
 
         # Retornar los resultados como JSON
         return jsonify(resultados_json)
+
+    elif metodo_str == "own":
+        start_time = time.time()
+        result = realizar_consulta(consulta_str,topk_int)
+
+        end_time = time.time()
+
+        execution_time = end_time - start_time
+        df_canciones = pd.read_csv("spotify_songs.csv")
+
+
+        df_scores = pd.DataFrame(result, columns=['track_id', 'score'])
+
+        df_resultado = pd.merge(df_scores, df_canciones, on='track_id', how='left')
+
+        resultados_lista = [
+            {
+                'track_name': row['track_name'],
+                'playlist_name': row['playlist_name'],
+                'track_artist': row['track_artist'],
+                'rank': row['score']
+            } for index, row in df_resultado.iterrows()
+        ]
+
+        resultados_json = {'tiempo_ejecucion': execution_time, 'resultados': resultados_lista}
+
+        # Retornar los resultados como JSON
+        return jsonify(resultados_json)
+
+
     else:
 
 

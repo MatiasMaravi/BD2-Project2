@@ -47,9 +47,10 @@ function mostrarIndice() {
             tiempoEjecucionElement.remove();
         }
 
-        // Crea el nuevo elemento de tiempo de ejecución
+      // Crea el nuevo elemento de tiempo de ejecución
         const tiempoEjecucion = document.createElement('p');
-        tiempoEjecucion.textContent = 'Tiempo de ejecución: ' + data.tiempo_ejecucion + ' segundos';
+        const tiempoEnSegundos = data.tiempo_ejecucion * 1000;  // Convierte milisegundos a segundos
+        tiempoEjecucion.textContent = 'Tiempo de ejecución: ' + tiempoEnSegundos + ' ms';
         tiempoEjecucion.id = "tiempo-ejecucion";  // Asigna un ID al elemento
         resultTable.parentNode.insertBefore(tiempoEjecucion, resultTable);  // Inserta antes de la tabla
 
