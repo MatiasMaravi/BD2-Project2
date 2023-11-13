@@ -22,27 +22,17 @@ class BSBI:
         self.num_books=0
         self.books=[]
 ```
-- El metodo `SPIMI` se divide en etapas, en esta primera lo que hacemos es cargar el archivo con los stopwords, y lo guardamos en una lista.  
+-  El metodo `SPIMI` se divide en dos etapas, en esta primera lo que hacemos es abrir el archivo donde se encuentra toda la metadata y se lee linea por linea, luego se preprocesa cada linea, cabe resaltar que tomaremos cada linea como un documento, se calcula el tf (frecuencia en el documento) de cada palabra en cada documento y se añade a un diccionario `self.current_block` el cual funcionara como un bloque.
 
 ``` python
  def SPIMI(self):
-        # Cargamos la stoplist
-        with open(os.path.join('Indice_invertido', 'stoplist.txt'), encoding='utf-8', ) as file:
-                stoplist = [line.rstrip().lower() for line in file]
-        stemmer = SnowballStemmer("english") # Verificar si las palabras estan en ingles
-```
-
--  En esta segunda parte se abre el archivo donde se encuntra toda la metadata y se lee linea por linea, luego se preprocesa cada linea, cabe resaltar que tomaremos cada linea como un documento, se calcula el tf (frecuencia en el documento) de cada palabra en cada documento y se añade a un diccionario `self.current_block` el cual funcionara como un bloque.
-
-``` python
-        # Abrimos el archivo de metadata
         with open(os.path.abspath(self.archivo)) as f:
             next(f)
             df = pd.read_csv(self.archivo)
 
             for line in f:
 
-                tokens = [stemmer.stem(word.lower()) for word in nltk.word_tokenize(line) if word.isalpha() and word.lower() not in stoplist]
+                tokens = preprocesamiento(line)
 
                 # Calculamos el tf, guardaremos solo este valor debido a que el df se calcula en la fase de merge, con todos los bloques
 
@@ -61,27 +51,24 @@ class BSBI:
                         self.current_block[token] = tf[token]
 
 ``` 
-- En esta tercera parte lo que hacemos es calcular el tamaño del bloque actual, si el tamaño del bloque actual es mayor al tamaño del bloque que se le ha asignado, entonces se procede a ordenar el bloque actual y se guarda en un archivo, luego se limpia el bloque actual y se repite el proceso hasta que se termine de leer el archivo de metadata, si luego de leer toda la metadata aun queda informacion en el `self.current_block` entonces se carga a un bloque tambien.
+- En esta segunda parte lo que hacemos es ordenar el diccionario y calcular el tamaño del bloque actual, si el tamaño del bloque actual es mayor o igual al tamaño del bloque que se le ha asignado, entonces se procede a ordenar el bloque actual y se guarda en un archivo, luego se limpia el bloque actual y se repite el proceso hasta que se termine de leer el archivo de metadata, si luego de leer toda la metadata aun queda informacion en el `self.current_block` entonces se carga a un bloque tambien.
 
 ``` python
-                # Calculamos el tamaño del bloque actual
-                size_block = self.funcion_sizeof(self.current_block)
 
-                # Si el tamaño del bloque actual es mayor al tamaño del bloque que se le ha asignado
-                if size_block > self.size_block:
-                    # Ordenamos el bloque actual
-                    self.current_block = dict(sorted(self.current_block.items(), key=lambda item: item[0]))
-                    # Guardamos el bloque actual en un archivo
-                    self.save_block()
-                    # Limpiamos el bloque actual
-                    self.current_block = {}
-                    # Aumentamos el numero de bloques
+                self.current_block = dict(sorted(self.current_block.items()))
+
+                # Si el tamaño del bloque es igual al tamaño de bloque que se ha definido, se guarda el bloque en la lista de bloques
+                if self.funcion_sizeof(self.current_block) >= self.size_block:
                     self.num_block += 1
-                self.num_books+=1
+                    save_block("blocks_index",self.num_block,self.current_block)
+                    self.blocks.append('block' + str(self.num_block) + '.json')
+                    self.current_block = {}
+
+                self.num_books += 1
 
         if self.current_block:
             self.num_block += 1
-            self.save_block("blocks_index",self.num_block,self.current_block)
+            save_block("blocks_index",self.num_block,self.current_block)
             self.blocks.append('block' + str(self.num_block) + '.json')
             self.current_block = {}
 ```
@@ -338,6 +325,15 @@ def merge_dicts(self):
 
 ```
 
+
+
+
+
+
+
+
+
+
 - En la funcion `merge()` lo que hacemos es mergear las llaves de los diccionario de la izquierda y derecha y retornamos la lista de las llaves ordenadas.
 
 ``` python
@@ -367,99 +363,96 @@ def merge_dicts(self):
  
 ```
 
-- En la funcion `building()` actualizamos el valor del tf, aplicando la formula `log(1+tf)` y lo volvemos a guardar en cada bloque.
+- En la funcion `calculate_tf()` lo que hacemos es actualizar el valor del tf previamente calculado, aplicandole la formula `tf = 1 + log10(tf)`y luego lo volvemos a guardar en su bloque correspondiente.
 
 ``` python
+    def calculate_tf(carpeta):
+    index_temp = {}
 
-def building(self):
-        #Construimos el resto del indice invertido
-        
+    for nombre_archivo in os.listdir(carpeta):
+        ruta_archivo = os.path.join(carpeta, nombre_archivo)
+        if os.path.isfile(ruta_archivo):
+            with open(ruta_archivo, "r") as f:
+                index_temp = json.load(f)
+                for key in index_temp:
+                    index_temp[key] = {k: math.log10(1 + v) for k, v in index_temp[key].items()}
 
-        # TF
+            with open(ruta_archivo, "w") as f:
+                json.dump(index_temp, f,ensure_ascii=False, indent=4)
 
-        #Actualizamos todos los valores de los tfs en el indice invertido global
-
-        # Cargamos el indice invertido global por bloques
-
-        carpeta = "blocks_index"
-
-        index_temp = {}
-
-        for nombre_archivo in os.listdir(carpeta):
-            ruta_archivo = os.path.join(carpeta, nombre_archivo)
-            if os.path.isfile(ruta_archivo):
-                with open(ruta_archivo, "r") as f:
-                    index_temp = json.load(f)
-                    for key in index_temp:
-                        index_temp[key] = {k: math.log10(1 + v) for k, v in index_temp[key].items()}
-
-                with open(ruta_archivo, "w") as f:
-                    json.dump(index_temp, f,ensure_ascii=False, indent=4)
-
-```
-
-- Calculamos y guardamos el `idf`.
+```     
+En la funcion `calculate_idf()` lo que hacemos es calcular el idf de cada termino del indice invertido global, aplicandole la formula `idf = log10(N/df)` y luego lo guardamos en un archivo.
 
 ``` python
-
+def calculate_idf(carpeta,num_books):
     # IDF
 
-        # Cargamos el indice invertido global por bloques
+    # Cargamos el indice invertido global por bloques
 
-        df={}
+    df={}
 
-        for nombre_archivo in os.listdir(carpeta):
-            ruta_archivo = os.path.join(carpeta, nombre_archivo)
-            if os.path.isfile(ruta_archivo):
-                with open(ruta_archivo, "r") as f:
-                    index_temp = json.load(f)
-                    for key in index_temp:
-                        df[key] = len(index_temp[key])
+    for nombre_archivo in os.listdir(carpeta):
+        ruta_archivo = os.path.join(carpeta, nombre_archivo)
+        if os.path.isfile(ruta_archivo):
+            with open(ruta_archivo, "r") as f:
+                index_temp = json.load(f)
+                for key in index_temp:
+                    df[key] = len(index_temp[key])
 
-                # Calculamos el idf
 
-        div = math.log10(self.num_books)
+    # Calculamos el idf
 
-        for token in df:
-            df[token] = div - math.log10(df[token])
+    div = math.log10(num_books)
 
-        # Guardamos el idf en un archivo
-        with open("idf.json", "w") as f:
-            json.dump(df, f,ensure_ascii=False, indent=4)                
+    for token in df:
+        df[token] = div - math.log10(df[token])
 
-```
-
-- Y por ultimo calculamos y guardamos la `norma`.
+    # Guardamos el idf en un archivo
+    with open("data/idf.json", "w") as f:
+        json.dump(df, f,ensure_ascii=False, indent=4)
+```   
+- En la funcion `calculate_norma()` lo que hacemos es calcular la norma de cada documento de la coleccion, aplicandole la formula `norma = sqrt(sum((tf*idf)^2))` y luego lo guardamos en un archivo.
 
 ``` python
 
-        norma = {}
+def calculate_norma(carpeta,df,books):
+    # Calculamos la norma
+    # Cargamos el indice invertido global por bloques
+    # Cargamos el idf
+    norma = {}
+    for nombre_archivo in os.listdir(carpeta):
+        ruta_archivo = os.path.join(carpeta, nombre_archivo)
+        if os.path.isfile(ruta_archivo):
+            with open(ruta_archivo, "r") as f:
+                index_temp = json.load(f)
+                for key in index_temp:
+                    for book in index_temp[key]:
+                        if book in norma:
+                            norma[book].append(index_temp[key][book]*df[key])
+                        else:
+                            norma[book] = [index_temp[key][book]*df[key]]
 
+    for key in norma:
+        if len(norma[key])<len(books):
+            norma[key].extend([0]*(len(books)-len(norma[key])))
 
-        for nombre_archivo in os.listdir(carpeta):
-            ruta_archivo = os.path.join(carpeta, nombre_archivo)
-            if os.path.isfile(ruta_archivo):
-                with open(ruta_archivo, "r") as f:
-                    index_temp = json.load(f)
-                    for key in index_temp:
-                        for book in index_temp[key]:
-                            if book in norma:
-                                norma[book].append(index_temp[key][book]*df[key])
-                            else:
-                                norma[book] = [index_temp[key][book]*df[key]]
+    for key in norma:
+        norma[key] = np.linalg.norm(np.array(norma[key]))   
+            # Guardamos la norma en un archivo
 
-        for key in norma:
-            if len(norma[key])<len(self.books):
-                norma[key].extend([0]*(len(self.books)-len(norma[key])))
+    with open("data/norma.json", "w") as f:
+        json.dump(norma, f,ensure_ascii=False, indent=4)
+```
 
-        for key in norma:
-            norma[key] = np.linalg.norm(np.array(norma[key]))        
+- En la funcion `build_index()` lo que hacemos es llamar a las funciones `calculate_tf()`, `calculate_idf()` y `calculate_norma()` para calcular el tf, idf y la norma respectivamente.
 
-        # Guardamos la norma en un archivo
-
-        with open("norma.json", "w") as f:
-            json.dump(norma, f,ensure_ascii=False, indent=4)
-```            
+``` python
+def building():
+    dataframe = pd.read_csv("spotify_songs.csv")
+    calculate_tf("blocks_index")
+    df = calculate_idf("blocks_index",dataframe.shape[0])
+    calculate_norma("blocks_index",df,dataframe["track_id"].tolist())
+```
 
 - En la funcion `validate_query()` validamos si los terminos de la query se encuentran en el indice invertido, esto lo realizamos con el proposito de evitar errores al momento de querer calcular la similitud coseno, ya que si un termino no se encuentra en el indice invertido no se podria calcular la similitud coseno. AL final devolvemos solo los terminos que se encuentran en el indice invertido.
 
