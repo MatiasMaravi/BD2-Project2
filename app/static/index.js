@@ -15,6 +15,31 @@ function mostrarCampos() {
         }
 
 
+ function obtenerToken() {
+  const clientId = '6e1e00e04e804167834f5aac05e5279f';
+  const clientSecret = 'ea872997f65241b5a0523a4db217fd3f';
+  const authURL = 'https://accounts.spotify.com/api/token';
+  const authString = btoa(`${clientId}:${clientSecret}`);
+
+  const data = new URLSearchParams();
+  data.append('grant_type', 'client_credentials');
+
+  return fetch(authURL, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${authString}`,
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: data,
+  })
+  .then(response => response.json())
+  .then(tokenData => tokenData.access_token)
+  .catch(error => {
+    console.error('Error al obtener el token de acceso:', error);
+    return null;
+  });
+}
+
 
 function mostrarIndice() {
     var consulta_i = document.getElementById("consult_i").value;
@@ -76,16 +101,122 @@ function mostrarIndice() {
         // Recorre los datos y crea filas en la tabla
         data.resultados.forEach(resultado => {
             const newRow = document.createElement('tr');
-            const column1 = document.createElement('td');
-            const column2 = document.createElement('td');
-            const column3 = document.createElement('td');
-            const column4 = document.createElement('td');
+    const column1 = document.createElement('td');
+    const trackButton = document.createElement('button');
 
-            column1.textContent = resultado.track_name;
-            column2.textContent = resultado.playlist_name;
-            column3.textContent = resultado.track_artist;
-            column4.textContent = resultado.rank;
+    const modal = document.getElementById('modal');
 
+    trackButton.textContent = resultado.track_name; // Establecer el texto del botón
+
+
+
+trackButton.addEventListener('click', function() {
+  modal.style.display = 'block';
+
+  fetch('./static/datos.json')
+    .then(response => response.json())
+    .then(data => {
+      const trackIds = data.map(item => item.track_id);
+
+      fetch('./static/spotify_songs.csv')
+        .then(response => response.text())
+        .then(csvData => {
+          const parsedData = Papa.parse(csvData, { header: true }).data;
+          const filteredSongs = parsedData.filter(song => trackIds.includes(song.track_id));
+
+          const dataTable = document.getElementById('data-body');
+          dataTable.innerHTML = '';
+
+          // ... (código previo)
+
+filteredSongs.forEach(song => {
+  obtenerToken().then(accessToken => {
+    if (accessToken) {
+      fetch(`https://api.spotify.com/v1/tracks/${song.track_id}`, {
+        headers: {
+          'Authorization': `Bearer ${accessToken}`,
+        },
+      })
+      .then(response => response.json())
+      .then(trackData => {
+        const dataTable = document.getElementById('data-body');
+
+        const row = document.createElement('tr');
+        const cell1 = document.createElement('td');
+        const cell2 = document.createElement('td');
+        const cell3 = document.createElement('td');
+        const cell4 = document.createElement('td');
+
+        cell1.textContent = song.track_id;
+        cell2.textContent = song.track_name;
+
+        if (trackData.album && trackData.album.images && trackData.album.images.length > 0) {
+          const image = document.createElement('img');
+          image.src = trackData.album.images[0].url; // Obtener el URL de la primera imagen
+          image.alt = 'Track Image'; // Añadir un texto alternativo para la imagen
+          image.width = 100; // Definir un ancho (opcional)
+          cell3.appendChild(image);
+        } else {
+          cell3.textContent = 'No image available';
+        }
+
+
+        const audioPlayer = document.createElement('audio');
+        audioPlayer.controls = true;
+        audioPlayer.src = `./static/audios/${song.track_id}.mp3`;
+
+        cell4.appendChild(audioPlayer);
+
+        row.appendChild(cell1);
+        row.appendChild(cell2);
+        row.appendChild(cell3);
+        row.appendChild(cell4);
+
+        dataTable.appendChild(row);
+      })
+      .catch(error => {
+        console.error('Error al obtener datos de la pista:', error);
+      });
+    }
+  });
+});
+
+
+        })
+        .catch(error => {
+          console.error('Error al cargar spotify.csv:', error);
+        });
+    })
+    .catch(error => {
+      console.error('Error al cargar datos.json:', error);
+    });
+});
+
+
+
+
+
+
+    const closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    const column2 = document.createElement('td');
+    const column3 = document.createElement('td');
+    const column4 = document.createElement('td');
+
+    column2.textContent = resultado.playlist_name;
+    column3.textContent = resultado.track_artist;
+    column4.textContent = resultado.rank;
+
+            column1.appendChild(trackButton);
             newRow.appendChild(column1);
             newRow.appendChild(column2);
             newRow.appendChild(column3);
@@ -98,6 +229,9 @@ function mostrarIndice() {
         console.error('Error:', error);
     });
 }
+
+
+
 
 
 
