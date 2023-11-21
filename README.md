@@ -41,11 +41,22 @@ python3 main.py
 ```
 Después de ejecutar el comando se mostrará un menú donde podrás realizar la consulta textual sobre la tabla de canciones de spotify.
 También habrá la opción para crear el índice invertido (guardado en blocks_index) si aún no fue creado.
+
 ## Experimento
-|   | PostgreSQL |
-| ------------- | ------------- |
-| N = 1000  | 14.778 ms  |
-| N = 2000  | 15.129 ms  | 
-| N = 4000  | 15.072 ms  | 
-| N = 8000  | 14.142 ms  | 
-| N = 16000  | 27.289 ms  | 
+|   | PostgreSQL | MongoDB  | SPIMI  |
+| ------------- | ------------- | ------------- | ------------- |
+| N = 1000      | 14.778 ms     | 0.116 ms  | 513.140 ms  |
+| N = 2000      | 15.129 ms     | 0.197 ms  | 477.520 ms  |
+| N = 4000      | 15.072 ms     | 0.161 ms  | 474.942 ms  |
+| N = 8000      | 14.142 ms     | 0.204 ms  | 486.690 ms  |
+| N = 16000     | 27.289 ms     | 0.256 ms  | 462.502 ms |
+
+
+## Equipo:
+
+|    Matias Maravi    |    Leandro Machaca    |    Leonardo Isidro    |    Alejandro Calizaya    | Jerimy Sandoval |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ![](https://avatars.githubusercontent.com/u/91230547?v=4) | ![](https://avatars.githubusercontent.com/u/102132128?s=400&v=4) | ![](https://avatars.githubusercontent.com/u/90939274?v=4) | ![](https://avatars.githubusercontent.com/u/91271621?v=4) | ![](https://avatars.githubusercontent.com/u/91238497?v=4) |
+| [github.com/MatiasMaravi](https://github.com/MatiasMaravi) | [github.com/JLeandroJM](https://github.com/JLeandroJM) | [github.com/LeoIsidro](https://github.com/LeoIsidro) | [github.com/AlejandroCalizaya](https://github.com/AlejandroCalizaya)| [github.com/Jerimy2021](https://github.com/Jerimy2021) |
+
+
