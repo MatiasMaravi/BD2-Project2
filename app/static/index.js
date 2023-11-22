@@ -85,16 +85,19 @@ function mostrarIndice() {
         const header2 = document.createElement('th');
         const header3 = document.createElement('th');
         const header4 = document.createElement('th');
+        const header5 = document.createElement('th');
 
         header1.textContent = 'Track Name';
         header2.textContent = 'Playlist Name';
         header3.textContent = 'Track Artist';
-        header4.textContent = 'Rank';
+        header4.textContent = 'Lyrics';
+        header5.textContent= 'Rank';
 
         headerRow.appendChild(header1);
         headerRow.appendChild(header2);
         headerRow.appendChild(header3);
         headerRow.appendChild(header4);
+        headerRow.appendChild(header5);
 
         resultBody.appendChild(headerRow);
 
@@ -107,6 +110,7 @@ function mostrarIndice() {
     const modal = document.getElementById('modal');
 
     trackButton.textContent = resultado.track_name; // Establecer el texto del botón
+
 
 
 
@@ -197,6 +201,7 @@ filteredSongs.forEach(song => {
 
 
 
+
     const closeBtn = document.querySelector('.close');
     closeBtn.addEventListener('click', function() {
         modal.style.display = 'none';
@@ -210,17 +215,86 @@ filteredSongs.forEach(song => {
 
     const column2 = document.createElement('td');
     const column3 = document.createElement('td');
+
+
     const column4 = document.createElement('td');
+    const LyricsButton = document.createElement('button');
+
+    const modal2 = document.getElementById('modal2');
+    const modal2content = document.getElementById('modal2content');
+
+    LyricsButton.textContent = resultado.track_name;
+
+
+LyricsButton.addEventListener('click', function() {
+    modal2.style.display = 'block';
+
+    const cell1 = document.createElement('p');
+    const lyrics = resultado.lyrics;
+
+    // Palabra específica a resaltar (cambiar 'palabra' por la palabra deseada)
+    const palabraEspecifica = consulta_i;
+
+    // Dividir el texto en palabras individuales
+    const palabras = lyrics.split(/\s+/);
+
+    // Crear un nuevo fragmento para almacenar el contenido con las palabras resaltadas
+    const fragment = document.createDocumentFragment();
+
+    palabras.forEach(palabra => {
+        // Eliminar signos de puntuación alrededor de la palabra para la comparación
+        const palabraLimpia = palabra.replace(/[.,\/#!$¡%\^&\*;:{}=\-_`~()]/g, '');
+
+        // Comparar la palabra con la palabra específica (ignorando mayúsculas y minúsculas)
+        if (palabraLimpia.toLowerCase() === palabraEspecifica.toLowerCase()) {
+            const strong = document.createElement('strong');
+            strong.textContent = palabra + ' '; // Agregar espacio después de la palabra
+            fragment.appendChild(strong);
+        } else {
+            const textNode = document.createTextNode(palabra + ' ');
+            fragment.appendChild(textNode);
+        }
+    });
+
+    // Agregar el fragmento con las palabras resaltadas al elemento cell1
+    cell1.appendChild(fragment);
+
+    // Agregar cell1 al modal (modal2)
+    modal2content.appendChild(cell1);
+});
+
+
+
+
+    const closeBtn2 = document.querySelector('.close2');
+    closeBtn2.addEventListener('click', function() {
+        modal2.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal2) {
+            modal2.style.display = 'none';
+        }
+    });
+
+
+
+
+
+    const column5 = document.createElement('td')
 
     column2.textContent = resultado.playlist_name;
     column3.textContent = resultado.track_artist;
-    column4.textContent = resultado.rank;
+
+    column5.textContent = resultado.rank;
 
             column1.appendChild(trackButton);
+            column4.appendChild(LyricsButton);
             newRow.appendChild(column1);
             newRow.appendChild(column2);
             newRow.appendChild(column3);
             newRow.appendChild(column4);
+            newRow.appendChild(column5)
 
             resultBody.appendChild(newRow);
         });

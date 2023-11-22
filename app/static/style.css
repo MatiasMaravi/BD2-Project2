@@ -146,6 +146,45 @@ button {
 }
 
 
+/* Estilos para el modal */
+.modal2 {
+    display: none; /* Por defecto, el modal está oculto */
+    position: fixed; /* Posición fija para que esté pegado a la ventana */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa el ancho completo */
+    height: 100%; /* Ocupa la altura completa */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 999; /* Capa superior */
+    overflow: auto; /* Permite hacer scroll si el contenido es más grande */
+}
+
+/* Contenido del modal */
+.modal-content2 {
+    background-color: #fefefe; /* Fondo del contenido */
+    margin: 15% auto; /* Margen para centrar verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    max-height: 100%;
+    width: 90%; /* Ancho del contenido */
+}
+
+/* Estilos para el botón de cierre */
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 
 

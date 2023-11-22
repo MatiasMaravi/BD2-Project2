@@ -1,11 +1,12 @@
 from flask import render_template, request, jsonify
 from app import app
-from main import get_db,run_query,realizar_consulta
+from main import get_db,run_query,realizar_consulta,crear_tabla,consulta_similar,insertar_datos
 from pymongo import MongoClient
 from bson import ObjectId
 import json
 import time
 import pandas as pd
+
 
 
 def jsonify_with_objectid_support(obj):
@@ -56,6 +57,9 @@ def calcular_distancia_route():
     print(metodo_str)
 
     if metodo_str == "postgres":
+        #crear_tabla()
+       # insertar_datos()
+        #print(consulta_similar("0a4agFmqHXxcZl1nho1BxM", 10))
 
         lista = consulta_str.split(" ")
         frase = ""
@@ -75,7 +79,7 @@ def calcular_distancia_route():
 
         if language_str == "spanish":
             sql_query = '''
-                SELECT track_name,playlist_name, track_artist,ts_rank(content_idx, query) as rank 
+                SELECT track_name,playlist_name, track_artist,lyrics,ts_rank(content_idx, query) as rank 
                 FROM spotify_es, to_tsquery('spanish', %s) query 
                 WHERE content_idx @@ query 
                 ORDER BY rank DESC 
@@ -84,15 +88,17 @@ def calcular_distancia_route():
 
         elif language_str == "english":
             sql_query = '''
-                SELECT track_name,playlist_name, track_artist,ts_rank(content_idx, query) as rank 
+                SELECT track_name,playlist_name, track_artist,lyrics,ts_rank(content_idx, query) as rank 
                 FROM spotify_en, to_tsquery('english', %s) query 
                 WHERE content_idx @@ query 
                 ORDER BY rank DESC 
                 LIMIT %s;
             '''
+
+
         resultados, tiempo_ejecucion = run_query(sql_query, frase, topk_int)
 
-        resultados_json = [{'track_name': resultado[0], 'playlist_name': resultado[1],'track_artist': resultado[2], 'rank': resultado[3]} for resultado in resultados]
+        resultados_json = [{'track_name': resultado[0], 'playlist_name': resultado[1],'track_artist': resultado[2],'lyrics':resultado[3], 'rank': resultado[4]} for resultado in resultados]
 
 
         return jsonify({'tiempo_ejecucion': tiempo_ejecucion, 'resultados': resultados_json})
@@ -105,7 +111,7 @@ def calcular_distancia_route():
 
         resultado = collection.find(
             {"$text": {"$search": consulta_str}},
-            {"score": {"$meta": "textScore"}, "track_name": 1,"playlist_name":1, "track_artist": 1}
+            {"score": {"$meta": "textScore"}, "track_name": 1,"playlist_name":1, "track_artist": 1,"lyrics":1}
         ).sort([("score", {"$meta": "textScore"})]).limit(topk_int)
 
         end_time = time.time()
@@ -117,6 +123,7 @@ def calcular_distancia_route():
                 'track_name': resultado_item['track_name'],
                 'playlist_name':resultado_item['playlist_name'],
                 'track_artist': resultado_item['track_artist'],
+                'lyrics':resultado_item['lyrics'],
                 'rank': resultado_item['score']
             } for resultado_item in resultado
         ]
@@ -147,6 +154,7 @@ def calcular_distancia_route():
                 'track_name': row['track_name'],
                 'playlist_name': row['playlist_name'],
                 'track_artist': row['track_artist'],
+                'lyrics':row['lyrics'],
                 'rank': row['score']
             } for index, row in df_resultado.iterrows()
         ]
