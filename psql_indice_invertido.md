@@ -128,8 +128,8 @@ CREATE INDEX idxGinEs ON spotify_es USING gin(content_idx);
 ```
 
 # Fuentes
-Andrés Moya. (7 de agosto de 2012). *¿Cómo usar búsqueda de texto en PostgreSQL?*. Kaleidos. https://blog.kaleidos.net/como-usar-busqueda-de-texto-en-postgresql/
+- Andrés Moya. (7 de agosto de 2012). *¿Cómo usar búsqueda de texto en PostgreSQL?*. Kaleidos. https://blog.kaleidos.net/como-usar-busqueda-de-texto-en-postgresql/
 
-PostgreSQL. (s.f.). *PostgreSQL: Documentation: 16: 8.11. Text Search Types*. Recuperado el día 7 de noviembre de 2023 de https://www.postgresql.org/docs/current/datatype-textsearch.html
+- PostgreSQL. (s.f.). *PostgreSQL: Documentation: 16: 8.11. Text Search Types*. Recuperado el día 7 de noviembre de 2023 de https://www.postgresql.org/docs/current/datatype-textsearch.html
 
-PostgreSQL. (s.f.). *PostgreSQL: Documentation: 16: 12.9. Preferred Index Types for Text Search*. Recuperado el día 7 de noviembre de 2023 de https://www.postgresql.org/docs/current/textsearch-indexes.html
+- PostgreSQL. (s.f.). *PostgreSQL: Documentation: 16: 12.9. Preferred Index Types for Text Search*. Recuperado el día 7 de noviembre de 2023 de https://www.postgresql.org/docs/current/textsearch-indexes.html
