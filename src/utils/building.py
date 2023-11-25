@@ -20,7 +20,7 @@ def calculate_tf(carpeta):
 
     print("TF calculado")
     
-def calculate_idf(carpeta,num_books):
+def calculate_idf(carpeta,num_books,idfname):
     # IDF
 
     # Cargamos el indice invertido global por bloques
@@ -44,13 +44,13 @@ def calculate_idf(carpeta,num_books):
         df[token] = div - math.log10(df[token])
 
     # Guardamos el idf en un archivo
-    with open("data/idf.json", "w") as f:
+    with open("data/"+idfname+".json", "w") as f:
         json.dump(df, f,ensure_ascii=False, indent=4)
 
     print("IDF calculado")
     return df
     
-def calculate_norma(carpeta,df,books):
+def calculate_norma(carpeta,df,books,normaname):
     # Calculamos la norma
     # Cargamos el indice invertido global por bloques
     # Cargamos el idf
@@ -77,7 +77,7 @@ def calculate_norma(carpeta,df,books):
 
     # Guardamos la norma en un archivo
 
-    with open("data/norma.json", "w") as f:
+    with open("data/"+normaname+".json", "w") as f:
         json.dump(norma, f,ensure_ascii=False, indent=4)
 
     print("Norma calculada")
@@ -90,22 +90,22 @@ def validate_query(query_term_unic,idf) -> set:
             aux.add(term)
     return aux
 
-def building():
-    dataframe = pd.read_csv("spotify_songs.csv")
-    calculate_tf("blocks_index")
-    df = calculate_idf("blocks_index",dataframe.shape[0])
-    calculate_norma("blocks_index",df,dataframe["track_id"].tolist())
+def building(archivo,carpeta,idfname,normaname):
+    dataframe = pd.read_csv(archivo)
+    calculate_tf(carpeta)
+    df = calculate_idf(carpeta,dataframe.shape[0],idfname)
+    calculate_norma(carpeta,df,dataframe["track_id"].tolist(),normaname)
 
-def retrieval(query, k) -> list:
-    queryPrep = preprocesamiento(query)
+def retrieval(query, k, carpeta,idfname,normaname,idioma) -> list:
+    queryPrep = preprocesamiento(query,idioma)
     query_term_unic=set(queryPrep)
 
     # Cargamos el idf y la norma
 
-    with open("data/idf.json", "r") as f:
+    with open("data/"+idfname+".json", "r") as f:
         idf = json.load(f)
 
-    with open("data/norma.json", "r") as f:
+    with open("data/"+normaname+".json", "r") as f:
         norma = json.load(f)     
 
     score = {}
@@ -128,14 +128,16 @@ def retrieval(query, k) -> list:
 
         # Buscar el termino en el indice invertido global
 
-        for nombre_archivo in os.listdir("blocks_index"):
-            ruta_archivo = os.path.join("blocks_index", nombre_archivo)
-            if os.path.isfile(ruta_archivo):
-                with open(ruta_archivo, "r") as f:
-                    index = json.load(f)
-                    if term in index:
-                        break
-
+        #Buscamos el termino en los bloques con una busqueda binaria
+        # for nombre_archivo in os.listdir(carpeta):
+        #     ruta_archivo = os.path.join(carpeta, nombre_archivo)
+        #     if os.path.isfile(ruta_archivo):
+        #         with open(ruta_archivo, "r") as f:
+        #             index = json.load(f)
+        #             if term in index:
+        #                 break
+        lista = ordenar_lista(os.listdir(carpeta))
+        index = busqueda_binaria(term,carpeta,lista)
         term_doc = index[term]
 
         lenght_query.append(term_tf*term_idf)
@@ -154,4 +156,33 @@ def retrieval(query, k) -> list:
     result = sorted(score.items(), key=lambda x: x[1], reverse=True)
 
     return result[:k]
+def ordenar_lista(lista):
+    diccionario = {}
+    for i in lista:
+        diccionario[i] = int(i[5:-5])
+        
+    #Ordenamos por values
+    diccionario = {k: v for k, v in sorted(diccionario.items(), key=lambda item: item[1])}
+    lista_nueva = [k for k in diccionario.keys()]
+    return lista_nueva
 
+def busqueda_binaria(term, carpeta, lista):
+    mitad = len(lista) // 2
+    if mitad != 0:
+        ruta_archivo = os.path.join(carpeta, lista[mitad])
+        if os.path.isfile(ruta_archivo):
+            with open(ruta_archivo, "r") as f:
+                index_temp = json.load(f)
+                if term in index_temp:
+                    return index_temp
+                elif term < list(index_temp.keys())[0]:
+                    return busqueda_binaria(term, carpeta,lista[:mitad])
+                else:
+                    return busqueda_binaria(term, carpeta,lista[mitad:])
+    else:
+        ruta_archivo = os.path.join(carpeta, lista[mitad])
+        if os.path.isfile(ruta_archivo):
+            with open(ruta_archivo, "r") as f:
+                index_temp = json.load(f)
+                if term in index_temp:
+                    return index_temp

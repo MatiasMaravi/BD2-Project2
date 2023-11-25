@@ -24,12 +24,12 @@ def merge(arr1, arr2):
     return merged
 
 
-def actualizar_blocks():
+def actualizar_blocks(carpeta):
 
     import shutil
     import os
     carpeta_origen = "blocks_merge"
-    carpeta_destino = "blocks_index"
+    carpeta_destino = carpeta
 
     shutil.rmtree(carpeta_destino)
 
