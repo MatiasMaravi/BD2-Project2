@@ -125,17 +125,11 @@ class BSBI:
             bloques_inicio_derecha=b
             self.left_merged = {}
             self.right_merged = {}
-
-            print("nivel",p)
             
             # Recorre los bloques de la derecha y de la izquierda, por todos los bloques
             while(bloques_inicio_izquierda<potencia_2-b and bloques_inicio_derecha<potencia_2):
                 self.i=bloques_inicio_izquierda
                 self.j=bloques_inicio_derecha
-
-                print("bloques_inicio_izquierda",bloques_inicio_izquierda)
-                print("bloques_inicio_derecha",bloques_inicio_derecha)
-                print()
 
                 # Crea un diccionario vacio para guardar el diccionario ordenado
                 self.sorted_dict = {}
@@ -147,12 +141,10 @@ class BSBI:
                 while(self.i<bloques_inicio_derecha and self.j<bloques_inicio_derecha+b):
                     # Verificamos que el archivo de los bloques exista
                     if(self.i<len(self.blocks) and (self.j<len(self.blocks))):
-                        print("i",self.i," ", self.blocks[self.i])
-                        print("j",self.j," ", self.blocks[self.j])
 
                         # Caso en el que los dos bloques se quedan vacios
                         if(len(self.left_merged)==0 and len(self.right_merged)==0):
-                            print("entro")
+
                             file_path = os.path.join("blocks_index", self.blocks[self.i])
                             with open(file_path, "rb") as f:
                                 self.left_merged = json.load(f)
@@ -166,7 +158,7 @@ class BSBI:
 
                         # Caso en el que el bloque de la izquierda se queda vacio
                         elif(len(self.left_merged)==0):
-                            print("entrar_izquierda")
+
                             with open("blocks_index/" + self.blocks[self.i], "rb") as f:
                                 self.left_merged = json.load(f)
 
@@ -207,8 +199,7 @@ class BSBI:
                     self.j+=1
 
                 # Rellenamos la data de los bloques que no se compararon
-
-             
+ 
                 if(self.i<bloques_inicio_derecha and self.i<len(self.blocks)):
                     while(self.i<bloques_inicio_derecha and self.i<len(self.blocks)):
                         with open("blocks_index/" + self.blocks[self.i], "rb") as f:    
@@ -275,8 +266,6 @@ class BSBI:
         # Aplicamos Merge Sort a las claves
         sorted_keys = self.merge(keys1, keys2)
 
-        print("tamaño_left: ", len(self.left_merged))
-        print("tamaño_rigth: ", len(self.right_merged))
         for key in sorted_keys:
             if (len(self.left_merged)!=0 and len(self.right_merged)!=0): # Verificamos si alguno de los dos diccionarios se quedo vacio, para agregar un diccionario del lado que quedo
 
@@ -299,30 +288,26 @@ class BSBI:
                     self.sorted_dict = {}
                   
             else:
-                print("entro_else")
                 if(len(self.left_merged)==0 and len(self.right_merged)==0):
-                    print("aumento i y j")
-                    print()
+
                     self.i+=1
                     self.j+=1
                     break
 
                 elif(len(self.left_merged)==0):
-                    print("aumento i")
-                    print()
+
                     self.i+=1
                     break
 
                 elif(len(self.right_merged)==0):
-                    print("aumento j")
-                    print()
+
                     self.j+=1
                     break
 
                 break        
     
         if(len(self.left_merged)==0 and len(self.right_merged)==0):
-            print("SE ACABO LA DATA")
+
             self.i+=1
             self.j+=1
 
@@ -409,8 +394,7 @@ class BSBI:
 
                 with open(ruta_archivo, "w") as f:
                     json.dump(index_temp, f,ensure_ascii=False, indent=4)
-
-        print("TF calculado")            
+           
 
         # IDF
 
@@ -467,17 +451,6 @@ class BSBI:
 
         for key in norma:
             norma[key] = np.linalg.norm(np.array(norma[key]))        
-
-        """for book in self.books:
-            TF_IDF = []
-            for nombre_archivo in os.listdir(carpeta):
-                ruta_archivo = os.path.join(carpeta, nombre_archivo)
-                if os.path.isfile(ruta_archivo):
-                    with open(ruta_archivo, "r") as f:
-                        index_temp = json.load(f)
-                        TF_IDF.extend([index_temp[token][book] * df[token] if book in index_temp[token] else 0 for token in index_temp])
-            TF_IDF = np.array(TF_IDF)
-            norma[book] = np.linalg.norm(TF_IDF)"""
 
         # Guardamos la norma en un archivo
 
