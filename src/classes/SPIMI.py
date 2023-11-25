@@ -3,7 +3,7 @@ import os
 from collections import defaultdict
 import pandas as pd
 from ..utils.preprocesamiento import preprocesamiento
-from ..utils._aux import save_block, calcular_cuadrado, merge, actualizar_blocks, eliminar_archivos_vacios
+from ..utils.aux import save_block, calcular_cuadrado, merge, actualizar_blocks, eliminar_archivos_vacios
 
 class BSBI:
     def __init__(self, size_block, archivo,funcion_sizeof):
