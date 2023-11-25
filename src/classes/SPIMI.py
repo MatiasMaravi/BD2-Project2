@@ -6,7 +6,7 @@ from ..utils.preprocesamiento import preprocesamiento
 from ..utils.aux import save_block, calcular_cuadrado, merge, actualizar_blocks, eliminar_archivos_vacios
 
 class BSBI:
-    def __init__(self, size_block, archivo,funcion_sizeof):
+    def __init__(self, size_block, archivo,funcion_sizeof,carpeta):
         self.size_block = size_block
         self.num_block = 0
         self.current_block = {}
@@ -15,8 +15,9 @@ class BSBI:
         self.funcion_sizeof=funcion_sizeof
         self.num_books=0
         self.books=[]
+        self.carpeta = carpeta
 
-    def SPIMI(self):
+    def SPIMI(self,idioma):
         # Cargamos la stoplist
         with open(os.path.abspath(self.archivo)) as f:
             next(f)
@@ -24,7 +25,7 @@ class BSBI:
 
             for line in f:
 
-                tokens = preprocesamiento(line)
+                tokens = preprocesamiento(line,idioma)
 
                 # Calculamos el tf, guardaremos solo este valor debido a que el df se calcula en la fase de merge, con todos los bloques
 
@@ -48,7 +49,7 @@ class BSBI:
                 # Si el tamaño del bloque es igual al tamaño de bloque que se ha definido, se guarda el bloque en la lista de bloques
                 if self.funcion_sizeof(self.current_block) >= self.size_block:
                     self.num_block += 1
-                    save_block("blocks_index",self.num_block,self.current_block)
+                    save_block(self.carpeta,self.num_block,self.current_block)
                     self.blocks.append('block' + str(self.num_block) + '.json')
                     self.current_block = {}
 
@@ -56,7 +57,7 @@ class BSBI:
 
         if self.current_block:
             self.num_block += 1
-            save_block("blocks_index",self.num_block,self.current_block)
+            save_block(self.carpeta,self.num_block,self.current_block)
             self.blocks.append('block' + str(self.num_block) + '.json')
             self.current_block = {}
 
@@ -71,7 +72,7 @@ class BSBI:
         # Si solo hay un bloque, devolver el índice invertido de ese bloque
 
         if num_blocks_merge == 1:
-            with open("blocks_index/" + self.blocks[0], "rb") as f:
+            with open(self.carpeta + '/' + self.blocks[0], "rb") as f:
                 diccionario= json.load(f)
 
             self.num_block += 1
@@ -109,12 +110,12 @@ class BSBI:
                     if(self.i<len(self.blocks) and (self.j<len(self.blocks))):
                         # Caso en el que los dos bloques se quedan vacios
                         if(len(self.left_merged)==0 and len(self.right_merged)==0):
-                            file_path = os.path.join("blocks_index", self.blocks[self.i])
+                            file_path = os.path.join(self.carpeta, self.blocks[self.i])
                             with open(file_path, "rb") as f:
                                 self.left_merged = json.load(f)
 
 
-                            file_path = os.path.join("blocks_index", self.blocks[self.j])
+                            file_path = os.path.join(self.carpeta, self.blocks[self.j])
                             with open(file_path, "rb") as f:
                                 self.right_merged = json.load(f)
 
@@ -123,14 +124,14 @@ class BSBI:
                         # Caso en el que el bloque de la izquierda se queda vacio
                         elif(len(self.left_merged)==0):
                             
-                            with open("blocks_index/" + self.blocks[self.i], "rb") as f:
+                            with open(self.carpeta + '/' + self.blocks[self.i], "rb") as f:
                                 self.left_merged = json.load(f)
 
                             self.merge_dicts()
 
                         # Caso en el que el bloque de la derecha se queda vacio
                         elif(len(self.right_merged)==0):
-                            with open("blocks_index/" + self.blocks[self.j], "rb") as f:
+                            with open(self.carpeta + '/' + self.blocks[self.j], "rb") as f:
                                 self.right_merged = json.load(f)
 
                             self.merge_dicts()
@@ -167,7 +168,7 @@ class BSBI:
              
                 if(self.i<bloques_inicio_derecha and self.i<len(self.blocks)):
                     while(self.i<bloques_inicio_derecha and self.i<len(self.blocks)):
-                        with open("blocks_index/" + self.blocks[self.i], "rb") as f:    
+                        with open(self.carpeta + '/' + self.blocks[self.i], "rb") as f:    
                             bloque_izquierda_faltante = json.load(f)
                             self.guardar={**self.guardar,**bloque_izquierda_faltante}
                             self.contador_block+=1
@@ -180,7 +181,7 @@ class BSBI:
 
                 elif(self.j<bloques_inicio_derecha+b and self.j<len(self.blocks)):
                     while(self.j<bloques_inicio_derecha+b and self.j<len(self.blocks)):
-                        with open("blocks_index/" + self.blocks[self.j], "rb") as f:    
+                        with open(self.carpeta + '/' + self.blocks[self.j], "rb") as f:    
                             bloque_derecha_faltante = json.load(f)
                             self.guardar={**self.guardar,**bloque_derecha_faltante}
                             self.contador_block+=1
@@ -206,11 +207,11 @@ class BSBI:
                 bloques_inicio_izquierda=bloques_inicio_derecha+b
                 bloques_inicio_derecha= bloques_inicio_izquierda+b
 
-            actualizar_blocks()
+            actualizar_blocks(self.carpeta)
             self.blocks=self.blocks[:self.num_block]
             self.num_block=0
 
-        eliminar_archivos_vacios("blocks_index")    
+        eliminar_archivos_vacios(self.carpeta)    
 
     def merge_dicts(self):
         # Obtenemos las claves de ambos diccionarios
