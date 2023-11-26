@@ -109,7 +109,8 @@ function mostrarIndice() {
 
     const modal = document.getElementById('modal');
 
-    trackButton.textContent = resultado.track_name; // Establecer el texto del botón
+    trackButton.textContent = resultado.track_name;
+    // Establecer el texto del botón
 
 
 
@@ -117,9 +118,18 @@ function mostrarIndice() {
 trackButton.addEventListener('click', function() {
   modal.style.display = 'block';
 
-  fetch('./static/datos.json')
+  fetch('/obtener_datos', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ song_id: resultado.track_id })
+        })
     .then(response => response.json())
     .then(data => {
+
+        console.log(resultado.track_id);
+        console.log('Datos recibidos desde Flask:', data);
       const trackIds = data.map(item => item.track_id);
 
       fetch('./static/spotify_songs.csv')

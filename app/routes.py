@@ -6,6 +6,7 @@ from bson import ObjectId
 import json
 import time
 import pandas as pd
+from FAISS.testSimAudio import getSongs
 
 
 
@@ -57,9 +58,7 @@ def calcular_distancia_route():
     print(metodo_str)
 
     if metodo_str == "postgres":
-        #crear_tabla()
-       # insertar_datos()
-        #print(consulta_similar("0a4agFmqHXxcZl1nho1BxM", 10))
+
 
         lista = consulta_str.split(" ")
         frase = ""
@@ -79,7 +78,7 @@ def calcular_distancia_route():
 
         if language_str == "spanish":
             sql_query = '''
-                SELECT track_name,playlist_name, track_artist,lyrics,ts_rank(content_idx, query) as rank 
+                SELECT track_id,track_name,playlist_name, track_artist,lyrics,ts_rank(content_idx, query) as rank 
                 FROM spotify_es, to_tsquery('spanish', %s) query 
                 WHERE content_idx @@ query 
                 ORDER BY rank DESC 
@@ -88,7 +87,7 @@ def calcular_distancia_route():
 
         elif language_str == "english":
             sql_query = '''
-                SELECT track_name,playlist_name, track_artist,lyrics,ts_rank(content_idx, query) as rank 
+                SELECT track_id,track_name,playlist_name, track_artist,lyrics,ts_rank(content_idx, query) as rank 
                 FROM spotify_en, to_tsquery('english', %s) query 
                 WHERE content_idx @@ query 
                 ORDER BY rank DESC 
@@ -98,7 +97,7 @@ def calcular_distancia_route():
 
         resultados, tiempo_ejecucion = run_query(sql_query, frase, topk_int)
 
-        resultados_json = [{'track_name': resultado[0], 'playlist_name': resultado[1],'track_artist': resultado[2],'lyrics':resultado[3], 'rank': resultado[4]} for resultado in resultados]
+        resultados_json = [{'track_id': resultado[0],'track_name': resultado[1], 'playlist_name': resultado[2],'track_artist': resultado[3],'lyrics':resultado[4], 'rank': resultado[5]} for resultado in resultados]
 
 
         return jsonify({'tiempo_ejecucion': tiempo_ejecucion, 'resultados': resultados_json})
@@ -111,7 +110,7 @@ def calcular_distancia_route():
 
         resultado = collection.find(
             {"$text": {"$search": consulta_str}},
-            {"score": {"$meta": "textScore"}, "track_name": 1,"playlist_name":1, "track_artist": 1,"lyrics":1}
+            {"score": {"$meta": "textScore"},"track_id": 1, "track_name": 1,"playlist_name":1, "track_artist": 1,"lyrics":1}
         ).sort([("score", {"$meta": "textScore"})]).limit(topk_int)
 
         end_time = time.time()
@@ -120,6 +119,7 @@ def calcular_distancia_route():
 
         resultados_lista = [
             {
+                'track_id':resultado_item['track_id'],
                 'track_name': resultado_item['track_name'],
                 'playlist_name':resultado_item['playlist_name'],
                 'track_artist': resultado_item['track_artist'],
@@ -151,6 +151,7 @@ def calcular_distancia_route():
 
         resultados_lista = [
             {
+                'track_id':row['track_id'],
                 'track_name': row['track_name'],
                 'playlist_name': row['playlist_name'],
                 'track_artist': row['track_artist'],
@@ -171,6 +172,16 @@ def calcular_distancia_route():
 
         return jsonify({'error': 'Método no válido'})
 
+
+@app.route('/obtener_datos', methods=['POST'])
+def obtener_datos():
+    # Obtener el string de la consulta desde la solicitud POST
+    song_id = request.json['song_id']
+
+    # Llamar a la función getSongs para obtener los datos en el formato requerido
+    datos = getSongs(song_id)
+
+    return jsonify(datos)
 
 
 
