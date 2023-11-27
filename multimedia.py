@@ -90,8 +90,8 @@ def consulta_similar(track_id, k):
 
 #crear_tabla()
 #insertar_datos()
-# import time
-# start_time = time.time()
-# print(consulta_similar("02XnQdf7sipaKBBHixz3Zp",20))
-# end_time = time.time()
-# print(end_time - start_time)
+
+start_time = time.time()
+print(consulta_similar("02XnQdf7sipaKBBHixz3Zp",15000))
+end_time = time.time()
+print(end_time - start_time)

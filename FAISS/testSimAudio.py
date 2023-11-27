@@ -48,7 +48,3 @@ def getSongs(songID: str):
     # Devolviendo en formato necesario para mostrar en el frontend
     return [{"track_id": song} for song in df.iloc[indices, 0].values[1:]]
 
-# Prueba
-# topK = getSongs("51TG9W3y9qyO8BY5RXKgnZ")
-# print("Top 10:")
-# print(topK)
