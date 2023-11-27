@@ -1,0 +1,191 @@
+#container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+#form-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    margin-right: 20px;
+}
+
+/* Estilos para el contenedor del selector */
+.selector {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+     margin-bottom: 20px;
+}
+
+/* Estilos para la etiqueta */
+.selector label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el select */
+.selector select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón sobre el select */
+.selector select:hover {
+    background-color: #e0e0e0;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+#consult_i{
+     width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+}
+
+#topk{
+     width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#result-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+#result {
+    font-size: 16px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid black; /* Añade un borde negro al botón */
+    color: black; /* Cambia el color del texto a negro */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    padding: 5px 10px; /* Ajusta el relleno del botón según sea necesario */
+    border-radius: 5px; /* Opcional: añade bordes redondeados al botón */
+    /* Otros estilos si los necesitas */
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Reducir el margen superior e inferior */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Ajustar el ancho del modal */
+    max-height: 80%; /* Ajustar la altura máxima del modal */
+    overflow-y: auto; /* Permitir desplazamiento vertical si el contenido es largo */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Estilos para el modal */
+.modal2 {
+    display: none; /* Por defecto, el modal está oculto */
+    position: fixed; /* Posición fija para que esté pegado a la ventana */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa el ancho completo */
+    height: 100%; /* Ocupa la altura completa */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 999; /* Capa superior */
+    overflow: auto; /* Permite hacer scroll si el contenido es más grande */
+}
+
+/* Contenido del modal */
+.modal-content2 {
+    background-color: #fefefe; /* Fondo del contenido */
+    margin: 15% auto; /* Margen para centrar verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    max-height: 100%;
+    width: 90%; /* Ancho del contenido */
+}
+
+/* Estilos para el botón de cierre */
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Agrega más estilos según tus preferencias */
