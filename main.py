@@ -36,14 +36,6 @@ def run_query(query, consulta_str, topk_int):
     execution_time = end_time - start_time
     return result, execution_time
 
-def crear_indice():
-    tiempo_inicial = time.time()
-    Indice = BSBI(size_block=40960,archivo="new_spotify_songs.csv",funcion_sizeof=sys.getsizeof)
-    Indice.SPIMI()
-    Indice.merge_index()
-    building()
-    tiempo_final = time.time()
-    print("indice creado en: ",tiempo_final-tiempo_inicial," segundos")
 
 
 def realizar_consulta(idioma,consulta,topk):

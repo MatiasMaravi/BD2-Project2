@@ -6,11 +6,11 @@ import sys
 
 def crear_indice(idioma):
     tiempo_inicial = time.time()
-    Indice = BSBI(size_block=40960, archivo="spotify_songs_" + idioma + ".csv", funcion_sizeof=sys.getsizeof,
+    Indice = BSBI(size_block=40960, archivo="new_spotify_songs_" + idioma + ".csv", funcion_sizeof=sys.getsizeof,
                   carpeta="blocks_" + idioma)
     Indice.SPIMI(idioma=idioma)
     Indice.merge_index()
-    building(archivo="spotify_songs_" + idioma + ".csv", carpeta="blocks_" + idioma, idfname="idf_" + idioma,
+    building(archivo="new_spotify_songs_" + idioma + ".csv", carpeta="blocks_" + idioma, idfname="idf_" + idioma,
              normaname="norma_" + idioma)
     tiempo_final = time.time()
     print("indice creado en: ", tiempo_final - tiempo_inicial, " segundos")
