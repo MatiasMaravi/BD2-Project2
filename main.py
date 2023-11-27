@@ -55,24 +55,6 @@ def realizar_consulta(idioma,consulta,topk):
     print(resultado)
     return resultado
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
 def run_query(query):
     start_time = time.time()
     conn = get_db()
@@ -83,4 +65,3 @@ def run_query(query):
     end_time = time.time()
     execution_time = end_time - start_time
     return result, execution_time
->>>>>>> 2d92c14 (cambiar)
