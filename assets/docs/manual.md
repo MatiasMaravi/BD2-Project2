@@ -33,21 +33,21 @@ python3 app.py
 
 ### Formulario para realizar consulta
 
-![](../../images/formulario.png)
+![](../images/formulario.png)
 
 ### Muestra resultados de consulta textual
 
-![](../../images/result1.png)
+![](../images/result1.png)
 
 ### Podemos ver la letra de la cancion
 
 
-![](../../images/result2.png)
+![](../images/result2.png)
 
 ### Consultamos los mas parecidos en multimedia
 
 
-![](../../images/result3.png)
+![](../images/result3.png)
 
 
 ## Recursos
