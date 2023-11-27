@@ -41,4 +41,8 @@ Cabe resaltar que, en este caso, los resultados de la similitud de audios estamo
 # Fuentes
 - Meta. (s.f.) *GitHub - facebookresearch/faiss: A library for efficient similarity search and clustering of dense vectors*. Github. Recuperado el 25 de noviembre de 2023 de https://github.com/facebookresearch/faiss
 
+<<<<<<< HEAD
 - Meta. (s.f.) *Faiss indexes · facebookresearch/faiss Wiki · GitHub*. Github. Recuperado el 25 de noviembre de 2023 de https://github.com/facebookresearch/faiss/wiki/Faiss-indexes
+=======
+- Meta. (s.f.) *Faiss indexes · facebookresearch/faiss Wiki · GitHub*. Github. Recuperado el 25 de noviembre de 2023 de https://github.com/facebookresearch/faiss/wiki/Faiss-indexes
+>>>>>>> main
