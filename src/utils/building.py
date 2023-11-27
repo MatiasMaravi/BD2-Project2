@@ -173,7 +173,6 @@ def ordenar_lista(lista):
     lista_nueva = [k for k in diccionario.keys()]
     return lista_nueva
 
-
 def busqueda_binaria(term, carpeta, lista):
     mitad = len(lista) // 2
     if mitad != 0:
