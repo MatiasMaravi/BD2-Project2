@@ -15,12 +15,14 @@ Un equipo diverso y apasionado de estudiantes está detrás de este proyecto, li
 | Jose Leandro Machaca Soloaga        | JLeandroJM       |
 
 ## 📂 Estructura del Repositorio
-
+- 📁 `app`: En esta carpeta se encuentran los archivos necesarios para ejecutar el proyecto en web.
+- 📁 `archive`: En esta carpeta se encuentran algunos archivos que ya no se usan en el proyecto.
 - 📁 `assets`: En esta carpeta se encuentran los archivos estáticos del proyecto.
 - | 📁 `docs`: En esta carpeta se encuentran los documentos de texto que explican el proyecto.
 - | 📁 `images`: En esta carpeta se encuentran las imágenes que se usan en el proyecto.
 - | 📁 `resources`: En esta carpeta se encuentran los archivos auxiliares del proyecto.
-- 📁 `books`: En esta carpeta se encuentran los libros que se usan en el proyecto para realizar las consultas.
+- 📁 `FAISS`: En esta carpeta se encuentra nuestra experimentación del índice multidimensional FAISS.
+- 📁 `knn`: En esta carpeta se encuentra nuestra experimentación del algoritmo KNN.
 - 📁 `src`: En esta carpeta esta todo nuesto código fuente
 - |📁 `classes`: En esta carpeta se encuentran todas las clases que definimos para nuestro proyecto
 - |📁 `utils`: En esta carpeta se encuentran todas las funciones auxiliares necesarias para el proyecto
@@ -71,3 +73,5 @@ También habrá la opción para crear el índice invertido (guardado en blocks_i
 | [github.com/MatiasMaravi](https://github.com/MatiasMaravi) | [github.com/JLeandroJM](https://github.com/JLeandroJM) | [github.com/LeoIsidro](https://github.com/LeoIsidro) | [github.com/AlejandroCalizaya](https://github.com/AlejandroCalizaya)| [github.com/Jerimy2021](https://github.com/Jerimy2021) |
 
 
+## Wiki
+Para más información sobre nuestra implementación, puedes visitar nuestra [Wiki](https://github.com/MatiasMaravi/BD2-Project2/wiki) donde encontrarás más detalles sobre el proyecto.
