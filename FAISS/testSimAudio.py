@@ -5,7 +5,7 @@ import time
 print("Índice Faiss iniciado")
 
 # Leer archivo CSV
-df = pd.read_csv('./FAISS/new_features.csv')
+df = pd.read_csv('./FAISS/new_new_features.csv')
 
 # Seleccionar desde la columna 1 hasta la última
 songs = df.iloc[:, 1:].values

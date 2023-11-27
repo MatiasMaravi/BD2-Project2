@@ -149,7 +149,7 @@ def calcular_distancia_route():
         end_time = time.time()
 
         execution_time = end_time - start_time
-        df_canciones = pd.read_csv("spotify_songs.csv")
+        df_canciones = pd.read_csv("new_spotify_songs.csv")
 
 
         df_scores = pd.DataFrame(result, columns=['track_id', 'score'])

@@ -135,7 +135,7 @@ trackButton.addEventListener('click', function() {
         console.log('Datos recibidos desde Flask:', data);
       const trackIds = data.map(item => item.track_id);
 
-      fetch('./static/spotify_songs.csv')
+      fetch('./static/new_spotify_songs.csv')
         .then(response => response.text())
         .then(csvData => {
           const parsedData = Papa.parse(csvData, { header: true }).data;
@@ -205,7 +205,7 @@ filteredSongs.forEach(song => {
         });
     })
     .catch(error => {
-      console.error('Error al cargar datos.json:', error);
+      console.error('Error al cargar datos:', error);
     });
 });
 

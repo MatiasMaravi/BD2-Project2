@@ -38,7 +38,7 @@ def run_query(query, consulta_str, topk_int):
 
 def crear_indice():
     tiempo_inicial = time.time()
-    Indice = BSBI(size_block=40960,archivo="spotify_songs.csv",funcion_sizeof=sys.getsizeof)
+    Indice = BSBI(size_block=40960,archivo="new_spotify_songs.csv",funcion_sizeof=sys.getsizeof)
     Indice.SPIMI()
     Indice.merge_index()
     building()
