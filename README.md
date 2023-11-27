@@ -54,7 +54,7 @@ También habrá la opción para crear el índice invertido (guardado en blocks_i
 
 ## Equipo:
 
-|    Matias Maravi    |    Leandro Machaca    |    Leonardo Isidro    |    Alejandro Calizaya    | Jerimy Sandoval |
+|    Matias Maravi    |   Jerimy Sandoval   |    Leonardo Isidro    |    Alejandro Calizaya    | Leandro Machaca  |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | ![](https://avatars.githubusercontent.com/u/91230547?v=4) |![](https://avatars.githubusercontent.com/u/91238497?v=4)| ![](https://avatars.githubusercontent.com/u/90939274?v=4) | ![](https://avatars.githubusercontent.com/u/91271621?v=4) |     ![](https://avatars.githubusercontent.com/u/102132128?s=400&v=4) |
 | [github.com/MatiasMaravi](https://github.com/MatiasMaravi) |[github.com/Jerimy2021](https://github.com/Jerimy2021)| [github.com/LeoIsidro](https://github.com/LeoIsidro) | [github.com/AlejandroCalizaya](https://github.com/AlejandroCalizaya)|[github.com/JLeandroJM](https://github.com/JLeandroJM)|
