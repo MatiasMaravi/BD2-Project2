@@ -1,4 +1,3 @@
-
 from app import app
 import psycopg2
 from flask import g
@@ -71,3 +70,17 @@ def realizar_consulta(idioma,consulta,topk):
 
 
 
+<<<<<<< HEAD
+=======
+
+def run_query(query):
+    start_time = time.time()
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute(query)
+    result = cursor.fetchall()
+    cursor.close()
+    end_time = time.time()
+    execution_time = end_time - start_time
+    return result, execution_time
+>>>>>>> 2d92c14 (cambiar)
