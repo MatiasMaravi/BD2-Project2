@@ -6,13 +6,11 @@ búsqueda y recuperación de la información basado en el contenido.
 
 Un equipo diverso y apasionado de estudiantes está detrás de este proyecto, listo para sumergirse en el reino de las búsquedas y de la indexación multidimensional. Permítanos presentarnos:
 
-| Nombre Completo                     | Usuario Github   |
-|-------------------------------------|------------------|
-| Matias Fabricio Maravi Anyosa       | MatiasMaravi     |
-| Leonardo Daniel Salazar Isidro      | LeoIsidro        |
-| Jerimy Pierre Sandoval Rivera       | Jerimy2021       |
-| Alejandro Gerardo Calizaya Alvarez  | AlejandroCalizaya|
-| Jose Leandro Machaca Soloaga        | JLeandroJM       |
+|    Matias Maravi    |    Leandro Machaca    |    Leonardo Isidro    |    Alejandro Calizaya    | Jerimy Sandoval |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ![](https://avatars.githubusercontent.com/u/91230547?v=4) | ![](https://avatars.githubusercontent.com/u/102132128?s=400&v=4) | ![](https://avatars.githubusercontent.com/u/90939274?v=4) | ![](https://avatars.githubusercontent.com/u/91271621?v=4) | ![](https://avatars.githubusercontent.com/u/91238497?v=4) |
+| [github.com/MatiasMaravi](https://github.com/MatiasMaravi) | [github.com/JLeandroJM](https://github.com/JLeandroJM) | [github.com/LeoIsidro](https://github.com/LeoIsidro) | [github.com/AlejandroCalizaya](https://github.com/AlejandroCalizaya)| [github.com/Jerimy2021](https://github.com/Jerimy2021) |
+
 
 ## 📂 Estructura del Repositorio
 - 📁 `app`: En esta carpeta se encuentran los archivos necesarios para ejecutar el proyecto en web.
@@ -36,6 +34,28 @@ documentos de texto.
 2. **Construcción de una estructura multidimensional** para dar soporte a las
 búsqueda y recuperación eficiente de imágenes / audio usando vectores característicos. 
 Ambas implementaciones serán aplicadas para mejorar la búsqueda en un sistema de recomendación.
+## Descripción del dominio de datos
+Para probar la similitud de nuestro proyecto hacemos uso de un dataset de músicas de 
+[Spotify](https://www.kaggle.com/datasets/imuhammad/audio-features-and-lyrics-of-spotify-songs). Este dataset contiene 15 mil canciones de Spotify, cada canción tiene los siguientes atributos:
+- `track_id`: Song ID
+- `track_name`: Nombre de la música
+- `track_artist`: Nombre del artista
+- `lyrics`: Letra de la canción
+- `track_popularity`: Popularidad de la canción
+- `track_album_id`: Album ID
+- `track_album_name`: Nombre del album
+- `track_album_release_date`: Fecha de lanzamiento del album
+- `playlist_name`: Nombre de la playlist
+- `playlist_id`: Playlist ID
+- `playlist_genre`: Género de la playlist
+- `playlist_subgenre`: Subgénero de la playlist
+- `language`: Idioma de la canción
+
+En total solo eran 18 mil canciones, pero se eliminaron las canciones que no eran de idioma inglés ni español, por ello quedaron 15 mil canciones.
+
+## Importancia de aplicar indexación
+Si quisieramos tener una aplicación donde al colocar una query nos muestre las canciones más parecidas a la query, tendríamos que comparar la query con todas las canciones de la base de datos, esto sería muy ineficiente, ya que tendríamos que comparar la query con 15 mil canciones, por ello es necesario aplicar indexación para que la búsqueda sea más eficiente.
+El método de indexación que usamos lo hacemos sobre la metadata del dataset de spotify, para ello usamos el algoritmo SPIMI, que nos permite crear un índice invertido, que es una estructura de datos que nos permite buscar palabras en un documento de manera eficiente.
 
 ## Ejemplo de uso
 Ejecutar el siguiente comando en la terminal:
@@ -64,13 +84,8 @@ También habrá la opción para crear el índice invertido (guardado en blocks_i
 | N = 8000      | 230.965 ms     | 0.103 ms   | 0.198 ms   | 
 | N = 15000     | 444.175 ms     | 0.225 ms   | 0.206 ms   | 
 
-
-## Equipo:
-
-|    Matias Maravi    |    Leandro Machaca    |    Leonardo Isidro    |    Alejandro Calizaya    | Jerimy Sandoval |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| ![](https://avatars.githubusercontent.com/u/91230547?v=4) | ![](https://avatars.githubusercontent.com/u/102132128?s=400&v=4) | ![](https://avatars.githubusercontent.com/u/90939274?v=4) | ![](https://avatars.githubusercontent.com/u/91271621?v=4) | ![](https://avatars.githubusercontent.com/u/91238497?v=4) |
-| [github.com/MatiasMaravi](https://github.com/MatiasMaravi) | [github.com/JLeandroJM](https://github.com/JLeandroJM) | [github.com/LeoIsidro](https://github.com/LeoIsidro) | [github.com/AlejandroCalizaya](https://github.com/AlejandroCalizaya)| [github.com/Jerimy2021](https://github.com/Jerimy2021) |
+## Análisis y discusión
+El índice FAISS es mucho más óptimo en altas dimensiones a diferencias del knn secuencial y el knn con RTree porque está optimizado para trabajar con alta cantidad de datos y una alta dimensionalidad al hacer uso de grafos y trabajar en cpu.
 
 
 ## Wiki
