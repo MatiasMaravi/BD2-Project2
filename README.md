@@ -53,13 +53,13 @@ También habrá la opción para crear el índice invertido (guardado en blocks_i
 
 
 ## Experimento 2
-|   | KNN-Rtree | FAISS  | 
-| ------------- | ------------- | ------------- | 
-| N = 1000      | 0.050 ms     | 0.150 ms  | 
-| N = 2000      | 0.065 ms     | 0.102 ms  | 
-| N = 4000      | 0.072 ms     | 0.385 ms  | 
-| N = 8000      | 0.103 ms     | 0.130 ms  | 
-| N = 15000     | 0.225 ms     | 0.209 ms  | 
+|               | KNN-Secuencial | KNN-RTree     | FAISS     | 
+| ------------- | -------------- | ------------- | --------- |
+| N = 1000      | t1 ms          | 0.050 ms      | 0.150 ms  | 
+| N = 2000      | t2 ms          | 0.065 ms      | 0.102 ms  | 
+| N = 4000      | t3 ms          | 0.072 ms      | 0.385 ms  | 
+| N = 8000      | t4 ms          | 0.103 ms      | 0.130 ms  | 
+| N = 15000     | t5 ms          | 0.225 ms      | 0.209 ms  | 
 
 
 ## Equipo:
