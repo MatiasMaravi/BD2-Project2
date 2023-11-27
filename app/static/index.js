@@ -86,18 +86,21 @@ function mostrarIndice() {
         const header3 = document.createElement('th');
         const header4 = document.createElement('th');
         const header5 = document.createElement('th');
+        const header6 = document.createElement('th');
 
         header1.textContent = 'Track Name';
         header2.textContent = 'Playlist Name';
         header3.textContent = 'Track Artist';
         header4.textContent = 'Lyrics';
         header5.textContent= 'Rank';
+        header6.textContent = 'Audio';
 
         headerRow.appendChild(header1);
         headerRow.appendChild(header2);
         headerRow.appendChild(header3);
         headerRow.appendChild(header4);
         headerRow.appendChild(header5);
+        headerRow.appendChild(header6);
 
         resultBody.appendChild(headerRow);
 
@@ -141,7 +144,7 @@ trackButton.addEventListener('click', function() {
           const dataTable = document.getElementById('data-body');
           dataTable.innerHTML = '';
 
-          // ... (código previo)
+
 
 filteredSongs.forEach(song => {
   obtenerToken().then(accessToken => {
@@ -291,7 +294,14 @@ LyricsButton.addEventListener('click', function() {
 
 
 
-    const column5 = document.createElement('td')
+    const column5 = document.createElement('td');
+    const column6 = document.createElement('td');
+
+    const audioPlayer2 = document.createElement('audio');
+    audioPlayer2.controls = true;
+    audioPlayer2.src = `./static/audios/${resultado.track_id}.mp3`;
+
+    column6.appendChild(audioPlayer2);
 
     column2.textContent = resultado.playlist_name;
     column3.textContent = resultado.track_artist;
@@ -304,7 +314,8 @@ LyricsButton.addEventListener('click', function() {
             newRow.appendChild(column2);
             newRow.appendChild(column3);
             newRow.appendChild(column4);
-            newRow.appendChild(column5)
+            newRow.appendChild(column5);
+            newRow.appendChild(column6);
 
             resultBody.appendChild(newRow);
         });

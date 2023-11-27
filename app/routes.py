@@ -1,6 +1,6 @@
 from flask import render_template, request, jsonify
 from app import app
-from main import get_db,run_query,realizar_consulta,crear_tabla,consulta_similar,insertar_datos
+from main import get_db,run_query,realizar_consulta
 from pymongo import MongoClient
 from bson import ObjectId
 import json
@@ -137,7 +137,14 @@ def calcular_distancia_route():
 
     elif metodo_str == "own":
         start_time = time.time()
-        result = realizar_consulta(consulta_str,topk_int)
+        if language_str == 'spanish':
+
+            result = realizar_consulta('es', consulta_str, topk_int)
+        elif language_str == "english":
+            result = realizar_consulta('en', consulta_str, topk_int)
+        else:
+            print("no soporta el idiomaa")
+
 
         end_time = time.time()
 
