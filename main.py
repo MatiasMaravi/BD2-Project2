@@ -1,16 +1,55 @@
-import os
-import json
-from SPIMI import BSBI
+from src.classes.SPIMI import BSBI
+from src.utils.building import building, retrieval
+import time
+import sys
 
-# Construimos el indice
+def crear_indice(idioma):
+    tiempo_inicial = time.time()
+    Indice = BSBI(size_block=40960,archivo="spotify_songs_"+idioma+".csv",funcion_sizeof=sys.getsizeof,carpeta="blocks_"+idioma)
+    Indice.SPIMI(idioma=idioma)
+    Indice.merge_index()
+    building(archivo = "spotify_songs_"+idioma+".csv",carpeta="blocks_"+idioma,idfname="idf_"+idioma,normaname="norma_"+idioma)
+    tiempo_final = time.time()
+    print("indice creado en: ",tiempo_final-tiempo_inicial," segundos")
 
-Indice=BSBI(size_block=20480,archivo="spotify_songs.csv")
-Indice.SPIMI()
-merged_index = Indice.init_merge()
-Indice.delete_blocks()
-# Guarda el índice invertido fusionado en un archivo JSON
-with open("index.json", "w") as f:
-    json.dump(merged_index, f, indent=4, ensure_ascii=False)
+def realizar_consulta(idioma):
+    import os
+    if not os.path.exists("blocks_"+idioma):
+        print("No existe el indice invertido, por favor cree el indice primero")
+        return
+    consulta = input("Ingrese la consulta: ")
+    k = int(input("Ingrese el numero de resultados: "))
+    resultado = retrieval(consulta,k,"blocks_"+idioma,"idf_"+idioma,"norma_"+idioma,idioma)
+    print(resultado)
 
-print("Índice invertido fusionado guardado en index.json")
-Indice.equilibrar_blocks("index.json")
+def seleccionar_idioma():
+    print("1. Español")
+    print("2. Ingles")
+    idioma = input("Ingrese el idioma: ")
+    if idioma == "1":
+        return "es"
+    elif idioma == "2":
+        return "en"
+    else:
+        print("Idioma no soportado")
+        return seleccionar_idioma()
+
+def menu():
+    idioma = seleccionar_idioma()
+    print("1. Crear Indice Invertido")
+    print("2. Realizar Consulta")
+    print("3. Salir")
+    opcion = int(input("Ingrese una opcion: "))
+    if opcion == 1:
+        crear_indice(idioma)
+        input("Presione enter para continuar")
+        menu()
+    elif opcion == 2:
+        realizar_consulta(idioma)
+        input("Presione enter para continuar")
+        menu()
+    elif opcion == 3:
+        print("Adios")
+        
+if __name__ == "__main__":
+    menu()
