@@ -13,6 +13,7 @@ Un equipo diverso y apasionado de estudiantes está detrás de este proyecto, li
 | Jerimy Pierre Sandoval Rivera       | Jerimy2021       |
 | Alejandro Gerardo Calizaya Alvarez  | AlejandroCalizaya|
 | Jose Leandro Machaca Soloaga        | JLeandroJM       |
+
 ## 📂 Estructura del Repositorio
 
 - 📁 `assets`: En esta carpeta se encuentran los archivos estáticos del proyecto.
@@ -43,23 +44,23 @@ Después de ejecutar el comando se mostrará un menú donde podrás realizar la 
 También habrá la opción para crear el índice invertido (guardado en blocks_index) si aún no fue creado.
 
 ## Experimento
-|   | PostgreSQL | MongoDB  | SPIMI  |
-| ------------- | ------------- | ------------- | ------------- |
-| N = 1000      | 14.778 ms     | 0.116 ms  | 513.140 ms  |
-| N = 2000      | 15.129 ms     | 0.197 ms  | 477.520 ms  |
-| N = 4000      | 15.072 ms     | 0.161 ms  | 474.942 ms  |
-| N = 8000      | 14.142 ms     | 0.204 ms  | 486.690 ms  |
-| N = 15000     | 27.289 ms     | 0.256 ms  | 462.502 ms |
+|               | PostgreSQL     | MongoDB    | SPIMI      |
+| ------------- | -------------- | ---------- | ---------- |
+| N = 1000      | 14.778 ms      | 0.116 ms   | 513.140 ms |
+| N = 2000      | 15.129 ms      | 0.197 ms   | 477.520 ms |
+| N = 4000      | 15.072 ms      | 0.161 ms   | 474.942 ms |
+| N = 8000      | 14.142 ms      | 0.204 ms   | 486.690 ms |
+| N = 15000     | 27.289 ms      | 0.256 ms   | 462.502 ms |
 
 
 ## Experimento 2
-|               | KNN-Secuencial | KNN-RTree     | FAISS     | 
-| ------------- | -------------- | ------------- | --------- |
-| N = 1000      | t1 ms          | 0.050 ms      | 0.150 ms  | 
-| N = 2000      | t2 ms          | 0.065 ms      | 0.102 ms  | 
-| N = 4000      | t3 ms          | 0.072 ms      | 0.385 ms  | 
-| N = 8000      | t4 ms          | 0.103 ms      | 0.130 ms  | 
-| N = 15000     | t5 ms          | 0.225 ms      | 0.209 ms  | 
+|               | KNN-Secuencial | KNN-RTree  | FAISS      | 
+| ------------- | -------------- | ---------- | ---------- |
+| N = 1000      | 28.852 ms      | 0.050 ms   | 0.114 ms   | 
+| N = 2000      | 59.175 ms      | 0.065 ms   | 0.158 ms   | 
+| N = 4000      | 115.341 ms     | 0.072 ms   | 0.123 ms   | 
+| N = 8000      | 230.965 ms     | 0.103 ms   | 0.198 ms   | 
+| N = 15000     | 444.175 ms     | 0.225 ms   | 0.206 ms   | 
 
 
 ## Equipo:
