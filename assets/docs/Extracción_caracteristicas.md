@@ -1,5 +1,16 @@
 # Extraccion de caracteristicas de Dataset de Spotify
 Para poder comparar la similitud entre las canciones es necesario procesarlas y extraer sus caracteristicas, para ello se utilizo la libreria  "Librosa" que nos permite extraer las caracteristicas de las canciones. Más especificamente usamos la funcion "librosa.feature.chroma_stft" que nos permite extraer la cromatografia de la cancion, que es una representacion de la distribucion de la energia de la frecuencia de la cancion.
+
+# ¿Por qué escogimos estas característica?
+La libreria "Librosa" nos brinda diversas funciones para extraer las caracteristicas de las canciones. Algunas nos brindan la intensidad del audio a lo largo del tiempo, otras nos brindan la intensidad de las frecuencias a lo largo del tiempo. Pero para este proyecto nos pareció más importante el tono de todas las notas musicales a lo largo de la canción, por lo que decidimos usar la cromatografia de la cancion, que nos brinda la intensidad de cada nota musical a lo largo de la cancion.
+## ¿Qué es la cromatografia?
+La cromatografia es una representacion de la distribucion de la energia de la frecuencia de la cancion. La cromatografia es una matriz de 12 filas y n columnas, donde n es la cantidad de frames de la cancion, cada fila representa una nota musical y cada columna representa un frame de la cancion, el valor de cada celda representa la intensidad de la nota musical en el frame de la cancion. La cantidad de columnas es variable porque depende de la duracion de la cancion.
+![cromatografia](/assets/images/Figure_1.png)
+
+## ¿Cómo solucionamos el problema de columnas variables?
+Primero pensamos en usar PCA pero esto nos generó problemas ya que disminuía demasiado las caracteristicas. Necesitabamos un balance entre una considerable cantidad de caracteristicas para retener buena información. Pero no tantas para evitar el sobreajuste. Por lo que decidimos dividir la matriz en 30 segmentos uniformes y tomar la media de cada segmento. Esto nos devuelve una matriz de 12 filas y 30 columnas, donde cada columna representa un segmento de la cancion y cada fila representa una nota musical.
+
+# Funcion extract_features
 ``` python
 scaler = StandardScaler()
 def extract_features(file_path):
@@ -23,6 +34,7 @@ def extract_features(file_path):
     
     return features
 ```
+# Pasos para extraer las caracteristicas
 Ahora procederé a explicar detalladamente como es que extraemos las caracteristicas de las canciones:
 ## Paso 1
 Cargamos el archivo de audio con librosa.load, esto nos devuelve un arreglo de numpy con los valores de amplitud de la cancion y la frecuencia de muestreo. Es necesario que el archivo de audio este en formato .wav, por lo que se tuvo que convertir los archivos de audio de spotify a este formato, luego de procesada la cancion se elimina el archivo .wav y se deja el archivo original.
