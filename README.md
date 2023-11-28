@@ -87,6 +87,5 @@ También habrá la opción para crear el índice invertido (guardado en blocks_i
 ## Análisis y discusión
 El índice FAISS es mucho más óptimo en altas dimensiones a diferencias del knn secuencial y el knn con RTree porque está optimizado para trabajar con alta cantidad de datos y una alta dimensionalidad al hacer uso de grafos y trabajar en cpu.
 
-
 ## Wiki
 Para más información sobre nuestra implementación, puedes visitar nuestra [Wiki](https://github.com/MatiasMaravi/BD2-Project2/wiki) donde encontrarás más detalles sobre el proyecto.
