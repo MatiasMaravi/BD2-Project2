@@ -65,7 +65,9 @@ python3 main.py
 Después de ejecutar el comando se mostrará un menú donde podrás realizar la consulta textual sobre la tabla de canciones de spotify.
 También habrá la opción para crear el índice invertido (guardado en blocks_index) si aún no fue creado.
 
-## Experimento
+## Experimentación
+
+#### Búsqueda textual
 |               | PostgreSQL     | MongoDB    | SPIMI      |
 | ------------- | -------------- | ---------- | ---------- |
 | N = 1000      | 14.778 ms      | 0.116 ms   | 513.140 ms |
@@ -74,15 +76,21 @@ También habrá la opción para crear el índice invertido (guardado en blocks_i
 | N = 8000      | 14.142 ms      | 0.204 ms   | 486.690 ms |
 | N = 15000     | 27.289 ms      | 0.256 ms   | 462.502 ms |
 
+![Gráfico 1](https://github.com/MatiasMaravi/BD2-Project2/blob/AlejandroCalizaya-patch-1/assets/images/comp1.png)
 
-## Experimento 2
+
+#### Similitud de vectores
 |               | KNN-Secuencial | KNN-RTree  | FAISS      | 
 | ------------- | -------------- | ---------- | ---------- |
 | N = 1000      | 28.852 ms      | 0.050 ms   | 0.114 ms   | 
 | N = 2000      | 59.175 ms      | 0.065 ms   | 0.158 ms   | 
 | N = 4000      | 115.341 ms     | 0.072 ms   | 0.123 ms   | 
 | N = 8000      | 230.965 ms     | 0.103 ms   | 0.198 ms   | 
-| N = 15000     | 444.175 ms     | 0.225 ms   | 0.206 ms   | 
+| N = 15000     | 444.175 ms     | 0.225 ms   | 0.206 ms   |
+
+![Gráfico 2](https://github.com/MatiasMaravi/BD2-Project2/blob/AlejandroCalizaya-patch-1/assets/images/comp2.png)
+
+**Aclaración:** Si bien tenemos similares tiempos en Knn-RTree y FAISS, el primer método solamente hace uso de 100 dimensiones ya que es la cantidad máxima de características que soporta Postgres (herramienta que usamos para ejecutarlo).
 
 ## Análisis y discusión
 El índice FAISS es mucho más óptimo en altas dimensiones a diferencias del knn secuencial y el knn con RTree porque está optimizado para trabajar con alta cantidad de datos y una alta dimensionalidad al hacer uso de grafos y trabajar en cpu.
